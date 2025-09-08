@@ -1,5 +1,6 @@
 import { supabase } from '@/lib/supabaseClient';
 import { User } from '@/types/user';
+import Link from 'next/link';
 
 export default async function Home() {
     const { data: users, error } = await supabase
@@ -14,6 +15,7 @@ export default async function Home() {
           </div>
         )
       }
+
 
   return (
     <div>
@@ -35,6 +37,11 @@ export default async function Home() {
             </ul>
           </div>
         )}
+      </div>
+      <div>
+        <Link href="/Competitions">
+          View Competitions
+        </Link>
       </div>
     </div>
   );
