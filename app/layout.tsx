@@ -18,6 +18,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "UC Champion",
   description: "Student Council UC",
+  icons: {
+    icon: "/Asset/Logo/LOGO.webp", 
+  },
 };
 
 export default function RootLayout({
