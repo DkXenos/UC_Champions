@@ -8,7 +8,7 @@ export default function Navbar() {
 
   const navItems = [
     { href: '/Competitions', label: 'Lomba' },
-    { href: '/announcements', label: 'Pengumuman' },
+    { href: '/Announcement', label: 'Pengumuman' },
     { href: '/dashboard', label: 'Dashboard' },
   ];
 
@@ -36,6 +36,7 @@ export default function Navbar() {
               >
                 {item.label}
               </Link>
+            
             ))}
           </div>
         </div>
