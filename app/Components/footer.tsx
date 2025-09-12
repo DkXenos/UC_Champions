@@ -7,18 +7,18 @@ export default function Footer() {
         <div className="md:flex md:items-center md:justify-between">
           <div className="flex justify-center space-x-6 md:order-2">
             <Link href="#" className="text-gray-400 hover:text-gray-500">
-              About
+              Footer elemen1
             </Link>
             <Link href="/Competitions" className="text-gray-400 hover:text-gray-500">
               Competitions
             </Link>
             <Link href="#" className="text-gray-400 hover:text-gray-500">
-              Contact
+              footer elemen3 
             </Link>
           </div>
           <div className="mt-8 md:mt-0 md:order-1">
             <p className="text-center text-base text-gray-400">
-              &copy; 2024 UC Champions. All rights reserved.
+              &copy; copyright @ucchampion 2026 dll
             </p>
           </div>
         </div>

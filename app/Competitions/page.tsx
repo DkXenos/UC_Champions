@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { featuredCompetitions } from "../../lib/data";
 import {
@@ -11,15 +11,31 @@ import {
   PaginationNext,
   PaginationPrevious,
 } from "@/components/ui/pagination";
+import { Badge } from "@/components/ui/badge";
 
 export default function CompetitionsPage() {
   const [searchTerm, setSearchTerm] = useState("");
+  const [selectedCategory, setSelectedCategory] = useState("All");
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 6;
 
-  const filteredCompetitions = featuredCompetitions.filter((comp) =>
-    comp.title.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+  const categories = [
+    "All",
+    ...Array.from(new Set(featuredCompetitions.map((comp) => comp.category))),
+  ];
+
+  const filteredCompetitions = featuredCompetitions
+    .filter(
+      (comp) =>
+        selectedCategory === "All" || comp.category === selectedCategory
+    )
+    .filter((comp) =>
+      comp.title.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [searchTerm, selectedCategory]);
 
   const totalPages = Math.ceil(filteredCompetitions.length / itemsPerPage);
   const startIndex = (currentPage - 1) * itemsPerPage;
@@ -60,6 +76,19 @@ export default function CompetitionsPage() {
             />
           </div>
 
+          <div className="mb-8 flex justify-center flex-wrap gap-2">
+            {categories.map((category) => (
+              <Badge
+                key={category}
+                variant={selectedCategory === category ? "default" : "secondary"}
+                onClick={() => setSelectedCategory(category)}
+                className="cursor-pointer"
+              >
+                {category}
+              </Badge>
+            ))}
+          </div>
+
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {paginatedCompetitions.map((comp) => (
               <div
@@ -67,9 +96,7 @@ export default function CompetitionsPage() {
                 className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300"
               >
                 <div className="p-6">
-                  <span className="text-sm bg-indigo-100 text-indigo-800 font-semibold px-2.5 py-0.5 rounded-full">
-                    {comp.category}
-                  </span>
+                  <Badge variant="secondary">{comp.category}</Badge>
                   <h3 className="mt-4 text-xl font-semibold text-gray-900">
                     {comp.title}
                   </h3>

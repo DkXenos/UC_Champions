@@ -8,24 +8,24 @@ export default function Home() {
       <section className="py-20 md:py-32 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-6xl font-extrabold text-gray-900 tracking-tight">
-            Temukan dan Ikuti Lomba Impianmu
+            Find and Join Your Dream Competition
           </h1>
           <p className="mt-4 max-w-2xl mx-auto text-lg md:text-xl text-gray-500">
-            Platform terpusat untuk semua informasi kompetisi mahasiswa di
-            Universitas Ciputra.
+            A centralized platform for all student competition information at
+            Ciputra University.
           </p>
           <div className="mt-8 flex justify-center gap-4">
             <Link
               href="/Competitions"
               className="inline-block bg-indigo-600 text-white font-semibold px-8 py-3 rounded-lg hover:bg-indigo-700 transition"
             >
-              Lihat Semua Lomba
+              View All Competitions
             </Link>
             <Link
               href="/dashboard"
               className="inline-block bg-white text-indigo-600 font-semibold px-8 py-3 rounded-lg border border-indigo-200 hover:bg-indigo-50 transition"
             >
-              Dashboard Peserta
+              Participant Dashboard
             </Link>
           </div>
         </div>

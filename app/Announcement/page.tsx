@@ -62,7 +62,7 @@ export default function AnnouncementsPage() {
       </section>
 
       {isModalOpen && selectedWinner && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex justify-center items-center">
+        <div className="fixed inset-0 bg-black/50 bg-opacity-50 z-50 flex justify-center items-center">
           <div className="bg-white rounded-lg shadow-xl p-8 max-w-sm w-full">
             <h2 className="text-2xl font-bold mb-4 text-gray-900">
               Pemenang
