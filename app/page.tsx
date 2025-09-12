@@ -8,11 +8,10 @@ export default function Home() {
       <section className="py-20 md:py-32 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-6xl font-extrabold text-gray-900 tracking-tight">
-            Find and Join Your Dream Competition
+            UC Champion 2026
           </h1>
           <p className="mt-4 max-w-2xl mx-auto text-lg md:text-xl text-gray-500">
-            A centralized platform for all student competition information at
-            Ciputra University.
+            lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum.
           </p>
           <div className="mt-8 flex justify-center gap-4">
             <Link
@@ -25,7 +24,7 @@ export default function Home() {
               href="/dashboard"
               className="inline-block bg-white text-indigo-600 font-semibold px-8 py-3 rounded-lg border border-indigo-200 hover:bg-indigo-50 transition"
             >
-              Participant Dashboard
+              View Announcement
             </Link>
           </div>
         </div>

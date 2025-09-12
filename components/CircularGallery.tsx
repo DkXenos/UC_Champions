@@ -478,51 +478,51 @@ class App {
   ) {
     const defaultItems = [
       {
-        image: `https://picsum.photos/seed/1/800/600?grayscale`,
+        image: ``,
         text: 'UKM 1'
       },
       {
-        image: `https://picsum.photos/seed/2/800/600?grayscale`,
+        image: ``,
         text: 'UKM 2'
       },
       {
-        image: `https://picsum.photos/seed/3/800/600?grayscale`,
+        image: ``,
         text: 'UKM 3'
       },
       {
-        image: `https://picsum.photos/seed/4/800/600?grayscale`,
+        image: ``,
         text: 'UKM 4'
       },
       {
-        image: `https://picsum.photos/seed/5/800/600?grayscale`,
+        image: ``,
         text: 'UKM 5'
       },
       {
-        image: `https://picsum.photos/seed/16/800/600?grayscale`,
+        image: ``,
         text: 'UKM 6'
       },
       {
-        image: `https://picsum.photos/seed/17/800/600?grayscale`,
+        image: ``,
         text: 'Partner 1'
       },
       {
-        image: `https://picsum.photos/seed/8/800/600?grayscale`,
+        image: ``,
         text: 'Partner 2'
       },
       {
-        image: `https://picsum.photos/seed/9/800/600?grayscale`,
+        image: ``,
         text: 'Partner 3'
       },
       {
-        image: `https://picsum.photos/seed/10/800/600?grayscale`,
+        image: ``,
         text: 'Partner 4'
       },
       {
-        image: `https://picsum.photos/seed/21/800/600?grayscale`,
+        image: ``,
         text: 'Partner 5'
       },
       {
-        image: `https://picsum.photos/seed/12/800/600?grayscale`,
+        image: ``,
         text: 'Partner 6'
       }
     ];
