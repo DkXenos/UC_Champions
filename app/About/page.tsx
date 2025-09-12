@@ -13,8 +13,7 @@ export default function About() {
               About UC Champions
             </h1>
             <p className="mt-4 max-w-3xl mx-auto text-lg md:text-xl text-gray-500">
-              Your central hub for discovering and participating in student
-              competitions at Ciputra University.
+              lorem ipsum desription untuk uchamp.
             </p>
           </div>
 
@@ -22,36 +21,26 @@ export default function About() {
             <div className="space-y-8 text-lg text-gray-700">
               <div>
                 <h2 className="text-2xl font-bold text-gray-900 mb-3">
-                  Our Mission
+                  lorem ipsum desription untuk uchamp
                 </h2>
                 <p>
-                  Our mission is to provide a seamless and centralized platform
-                  that connects Ciputra University students with a wide range of
-                  competitions. We aim to foster a vibrant competitive spirit,
-                  encourage skill development, and celebrate the achievements of
-                  our talented students.
+                  lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum  desription untuk uchamp
                 </p>
               </div>
               <div>
                 <h2 className="text-2xl font-bold text-gray-900 mb-3">
-                  What We Offer
+                  lorem ipsum desription untuk uchamp
                 </h2>
                 <p>
-                  UC Champions simplifies the process of finding and joining
-                  competitions. Whether you're interested in technology,
-                  business, arts, or any other field, our platform provides
-                  up-to-date information, registration details, and winner
-                  announcements, all in one place.
+                  lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum  desription untuk uchamp
                 </p>
               </div>
               <div>
                 <h2 className="text-2xl font-bold text-gray-900 mb-3">
-                  Join Our Community
+                  lorem ipsum desription untuk uchamp
                 </h2>
                 <p>
-                  We believe that every student has the potential to be a
-                  champion. Explore the opportunities available on our platform,
-                  challenge yourself, and showcase your skills.
+                  lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum  desription untuk uchamp
                 </p>
               </div>
             </div>
