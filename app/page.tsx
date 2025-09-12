@@ -21,7 +21,7 @@ export default function Home() {
               View All Competitions
             </Link>
             <Link
-              href="/dashboard"
+              href="/Announcement"
               className="inline-block bg-white text-indigo-600 font-semibold px-8 py-3 rounded-lg border border-indigo-200 hover:bg-indigo-50 transition"
             >
               View Announcement
