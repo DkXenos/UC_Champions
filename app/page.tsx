@@ -11,7 +11,7 @@ export default function Home() {
             UC Champion 2026
           </h1>
           <p className="mt-4 max-w-2xl mx-auto text-lg md:text-xl text-gray-500">
-            lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum.
+            Race Beyond the Limits.
           </p>
           <div className="mt-8 flex justify-center gap-4">
             <Link
