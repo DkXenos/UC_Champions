@@ -19,7 +19,7 @@ export default function Navbar() {
           <div className="flex items-center flex-row">
             <Link href="/" className="flex items-center space-x-3">
               <img src="/Asset/Logo/LOGO.webp" alt="UC Champions Logo" className="h-12" />
-              <h1 className="text-2xl font-bold text-indigo-600">
+              <h1 className="text-2xl font-bold" style={{ color: '#E95A65' }}>
               UC Champions
               </h1>
             </Link>

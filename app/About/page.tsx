@@ -2,6 +2,8 @@
 
 import Link from "next/link";
 import CircularGallery from '../../components/CircularGallery'
+import RollingGallery from '../../components/RollingGallery'
+
 
 export default function About() {
   return (
@@ -48,7 +50,21 @@ export default function About() {
         </div>
       </section>
 
-      <section className="py-20">
+      <section className="py-20 w-screen">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-6">
+            <h1 className="text-3xl md:text-4xl font-extrabold text-gray-900">Our Media Partner</h1>
+          </div>
+          <div className="text-center mb-12">
+            <p className="mt-3 max-w-2xl mx-auto text-lg text-gray-500">ini bakal diisi media partner atau sponsor dgn icon icon yg dikasi nanti</p>
+          </div>
+          <div>
+            <RollingGallery autoplay={true} pauseOnHover={false}/>
+          </div>
+        </div>
+      </section>
+
+      {/* <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900">
@@ -67,7 +83,7 @@ export default function About() {
             />
           </div>
         </div>
-      </section>
+      </section> */}
     </main>
   );
 }
