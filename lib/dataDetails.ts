@@ -24,7 +24,7 @@ export const competitionDetails: CompetitionDetail[] = [
     id: "1",
     title: "Programming Contest",
     category: "Teknologi",
-    deadline: "15 Nov 2025",
+    deadline: "5 Nov 2025",
     ukm: "Tabletop",
     description: "Join our annual programming contest where you'll solve challenging algorithmic problems and showcase your coding skills. This competition is designed for students who are passionate about programming and want to test their problem-solving abilities.",
     requirements: [
@@ -40,9 +40,9 @@ export const competitionDetails: CompetitionDetail[] = [
       "All participants receive participation certificates"
     ],
     timeline: [
-      { date: "1 Okt 2025", event: "Registration Opens" },
-      { date: "10 Nov 2025", event: "Registration Closes" },
-      { date: "12 Nov 2025", event: "Technical Briefing" },
+      { date: "2 Okt 2025", event: "Registration Opens" },
+      { date: "1 Nov 2025", event: "Registration Closes" },
+      { date: "14 Nov 2025", event: "Technical Briefing" },
       { date: "15 Nov 2025", event: "Competition Day" },
       { date: "15 Nov 2025", event: "Award Ceremony" }
     ],

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { featuredCompetitions } from '../../lib/data';
 import { competitionDetails } from '../../lib/dataDetails';
@@ -8,7 +8,20 @@ import { Badge } from '@/components/ui/badge';
 import Link from 'next/link';
 import CompetitionNotAvailable from '../Components/CompetitionNotAvailable';
 
-export default function CompetitionDetailPage() {
+// Loading component for Suspense
+function LoadingCompetition() {
+  return (
+    <main className="bg-gray-50 min-h-screen py-20">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-indigo-600 mx-auto mb-4"></div>
+        <p className="text-gray-600">Loading competition details...</p>
+      </div>
+    </main>
+  );
+}
+
+// Component that uses useSearchParams
+function CompetitionDetailContent() {
   const searchParams = useSearchParams();
   const id = searchParams.get('id');
 
@@ -267,5 +280,14 @@ export default function CompetitionDetailPage() {
         </div>
       </section>
     </main>
+  );
+}
+
+// Main component with Suspense boundary
+export default function CompetitionDetailPage() {
+  return (
+    <Suspense fallback={<LoadingCompetition />}>
+      <CompetitionDetailContent />
+    </Suspense>
   );
 }

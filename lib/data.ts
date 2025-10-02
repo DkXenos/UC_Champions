@@ -25,7 +25,7 @@ export const featuredCompetitions: Competition[] = [
     id: "3",
     title: "Business Plan Competition",
     category: "Bisnis",
-    deadline: "25 Okt 2025",
+    deadline: "20 Okt 2025",
     ukm: "Tabletop", 
   },
   {
