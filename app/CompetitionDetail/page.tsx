@@ -2,9 +2,11 @@
 
 import { useState, useEffect } from 'react';
 import { useSearchParams } from 'next/navigation';
-import { competitionDetails, featuredCompetitions } from '../../lib/data';
+import { featuredCompetitions } from '../../lib/data';
+import { competitionDetails } from '../../lib/dataDetails';
 import { Badge } from '@/components/ui/badge';
 import Link from 'next/link';
+import CompetitionNotAvailable from '../Components/CompetitionNotAvailable';
 
 export default function CompetitionDetailPage() {
   const searchParams = useSearchParams();
@@ -38,63 +40,10 @@ export default function CompetitionDetailPage() {
 
   // If no detailed data exists, show "not yet available" page
   if (!competition) {
-    return (
-      <main className="bg-gray-50 min-h-screen py-20">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="mb-6">
-            <Link
-              href="/Competitions"
-              className="text-indigo-600 hover:text-indigo-500 font-medium"
-            >
-              ← Back to Competitions
-            </Link>
-          </div>
-          
-          <div className="bg-white rounded-lg shadow-md p-12 text-center">
-            <div className="mb-6">
-              <Badge variant="secondary" className="mb-4">
-                {basicCompetition.category}
-              </Badge>
-              <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-                {basicCompetition.title}
-              </h1>
-            </div>
-            
-            <div className="mb-8">
-              <div className="w-24 h-24 bg-gray-200 rounded-full mx-auto mb-6 flex items-center justify-center">
-                <span className="text-4xl text-gray-400">📋</span>
-              </div>
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">Details Not Yet Available</h2>
-              <p className="text-gray-600 max-w-2xl mx-auto mb-6">
-                We're still working on the detailed information for this competition. 
-                Please check back later or contact the organizers for more information.
-              </p>
-              
-              <div className="bg-gray-50 rounded-lg p-6 max-w-md mx-auto mb-8">
-                <div className="text-sm text-gray-600 space-y-2">
-                  <div><span className="font-semibold">Competition:</span> {basicCompetition.title}</div>
-                  <div><span className="font-semibold">Category:</span> {basicCompetition.category}</div>
-                  <div><span className="font-semibold">Deadline:</span> {basicCompetition.deadline}</div>
-                  <div><span className="font-semibold">Organized by:</span> {basicCompetition.ukm}</div>
-                </div>
-              </div>
-            </div>
-            
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                href="/Competitions"
-                className="inline-block bg-gray-200 text-gray-800 font-semibold px-8 py-3 rounded-lg hover:bg-gray-300 transition"
-              >
-                Browse Other Competitions
-              </Link>
-            </div>
-          </div>
-        </div>
-      </main>
-    );
+    return <CompetitionNotAvailable competition={basicCompetition} />;
   }
 
-  // Countdown calculation function
+    // Countdown calculation function
   const calculateTimeLeft = (deadline: string) => {
     // Parse the deadline (assuming format like "15 Agu 2024")
     const monthMap: { [key: string]: string } = {
@@ -103,15 +52,25 @@ export default function CompetitionDetailPage() {
       'Sep': '09', 'Okt': '10', 'Nov': '11', 'Des': '12'
     };
     
+    console.log('Parsing deadline:', deadline);
     const parts = deadline.split(' ');
+    console.log('Deadline parts:', parts);
+    
     if (parts.length === 3) {
       const day = parts[0].padStart(2, '0');
       const month = monthMap[parts[1]] || '01';
       const year = parts[2];
+      
+      console.log(`Parsed date: ${year}-${month}-${day}`);
+      
       const deadlineDate = new Date(`${year}-${month}-${day}T23:59:59`);
+      console.log('Deadline date object:', deadlineDate);
       
       const now = new Date();
+      console.log('Current date:', now);
+      
       const difference = deadlineDate.getTime() - now.getTime();
+      console.log('Time difference (ms):', difference);
       
       if (difference > 0) {
         const days = Math.floor(difference / (1000 * 60 * 60 * 24));
@@ -119,9 +78,12 @@ export default function CompetitionDetailPage() {
         const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
         const seconds = Math.floor((difference % (1000 * 60)) / 1000);
         
+        console.log(`Countdown: ${days}d ${hours}h ${minutes}m ${seconds}s`);
+        
         return { days, hours, minutes, seconds, expired: false };
       }
     }
+    console.log('Deadline has expired or invalid format');
     return { days: 0, hours: 0, minutes: 0, seconds: 0, expired: true };
   };
 
