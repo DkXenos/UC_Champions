@@ -9,10 +9,10 @@ export type Competition = {
 export const featuredCompetitions: Competition[] = [
   {
     id: "1",
-    title: "Programming Contest",
-    category: "Teknologi",
-    deadline: "15 Nov 2025",
-    ukm: "Tabletop", 
+    title: "Programming Contest", //ini judul kompetisi
+    category: "Teknologi", //kek buat di badge yg filtering gitu jadi bisa jadi kek ukm or kategori e
+    deadline: "15 Nov 2025", //ini deadline kompetisi kapan terakhir daftar
+    ukm: "Tabletop", //ukm e apa
   },
   {
     id: "2",
