@@ -3,9 +3,48 @@
 import Link from "next/link";
 import CircularGallery from '../../components/CircularGallery'
 import RollingGallery from '../../components/RollingGallery'
+import LogoLoop from '../../components/LogoLoop'
 
 
 export default function About() {
+  
+  const TEMP_LOGO_PATH = 'Asset/Logo/LOGO.webp';
+  
+  const partnerLogos = [
+    {
+      src: TEMP_LOGO_PATH,
+      alt: "Partner 1",
+    },
+    {
+      src: TEMP_LOGO_PATH,
+      alt: "Partner 2",
+    },
+    {
+      src: TEMP_LOGO_PATH,
+      alt: "Partner 3",
+    },
+    {
+      src: TEMP_LOGO_PATH,
+      alt: "Partner 4",
+    },
+    {
+      src: TEMP_LOGO_PATH,
+      alt: "Partner 5",
+    },
+    {
+      src: TEMP_LOGO_PATH,
+      alt: "Partner 6",
+    },
+    {
+      src: TEMP_LOGO_PATH,
+      alt: "Partner 7",
+    },
+    {
+      src: TEMP_LOGO_PATH,
+      alt: "Partner 8",
+    }
+  ];
+
   return (
     <main className="bg-gray-50 min-h-screen">
       <section className="py-20 md:py-28">
@@ -50,16 +89,33 @@ export default function About() {
         </div>
       </section>
 
-      <section className="py-20 w-screen">
+      <section className="pt-20 pb-4 w-screen">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-6">
             <h1 className="text-3xl md:text-4xl font-extrabold text-gray-900">Our Media Partner</h1>
           </div>
-          <div className="text-center mb-12">
+          <div className="text-center mb-1">
             <p className="mt-3 max-w-2xl mx-auto text-lg text-gray-500">ini bakal diisi media partner atau sponsor dgn icon icon yg dikasi nanti</p>
           </div>
           <div>
             <RollingGallery autoplay={true} pauseOnHover={false}/>
+          </div>
+        </div>
+      </section>
+
+
+      <section className="pt-4 pb-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900">
+              Our Sponsors
+            </h2>
+            <p className="mt-3 max-w-2xl mx-auto text-lg text-gray-500">
+              Logo logo sponsor uchamp nanti
+            </p>
+          </div>
+          <div className="flex justify-center">
+            <LogoLoop logos={partnerLogos} speed={30} pauseOnHover={true} />
           </div>
         </div>
       </section>

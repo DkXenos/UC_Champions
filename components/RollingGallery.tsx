@@ -96,7 +96,7 @@ const RollingGallery: React.FC<RollingGalleryProps> = ({ autoplay = false, pause
   };
 
   return (
-    <div className="relative h-[800px] w-full overflow-hidden">
+    <div className="relative h-[500px] w-full overflow-hidden ">
       <div
         className="absolute top-0 left-0 h-full w-[48px] z-10"
         style={{
@@ -109,7 +109,7 @@ const RollingGallery: React.FC<RollingGalleryProps> = ({ autoplay = false, pause
           background: ''
         }}
       />
-      <div className="flex h-full items-center justify-center [perspective:1000px] [transform-style:preserve-3d]">
+      <div className="flex h-[20rem] items-center justify-center [perspective:1000px] [transform-style:preserve-3d]">
         <motion.div
           drag="x"
           dragElastic={0}
