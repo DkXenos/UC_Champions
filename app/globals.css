@@ -1,6 +1,30 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+@font-face {
+  font-family: 'Cafe24PROUP';
+  src: url('/Typeface/Cafe24PROUP/webfont/Cafe24PROUP.woff2') format('woff2'),
+       url('/Typeface/Cafe24PROUP/webfont/Cafe24PROUP.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'friend';
+  src: url('/Typeface/friend/friend.otf') format('otf'),
+       url('/Typeface/friend/friend.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Seenonim';
+  src: url('/Typeface/Seenonim/seenonim-v1.otf') format('otf'),
+       url('/Typeface/Seenonim/seenonim-v1.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {

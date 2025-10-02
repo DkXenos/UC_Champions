@@ -105,7 +105,7 @@ export default function CompetitionsPage() {
                   </p>
                   <div className="mt-6">
                     <Link
-                      href={`/Competitions/${comp.id}`}
+                      href={`/CompetitionDetail?id=${comp.id}`}
                       className="font-semibold text-indigo-600 hover:text-indigo-500"
                     >
                       Lihat Detail &rarr;
