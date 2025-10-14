@@ -1,48 +1,178 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import "../App.css";
+import "../styles/navbar.css";
+import { div } from "motion/react-client";
+import { useRef } from "react";
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
 
 export default function Navbar() {
   const pathname = usePathname();
+  const container = useRef(null);
+  const titleRef = useRef<HTMLHeadingElement>(null);
+
+  useGSAP(
+    () => {
+      const title = titleRef.current;
+      if (title) {
+        const screenWidth = window.innerWidth;
+        
+        
+        gsap.set(title, { x: screenWidth });
+
+        
+        gsap.to(title, {
+          x: -title.offsetWidth,
+          duration: 5,
+          repeat: -1,
+          ease: "linear",
+        });
+      }
+    },
+    { scope: container, dependencies: [] }
+  );
 
   const navItems = [
-    { href: '/', label: 'Home' },
-    { href: '/Competitions', label: 'Competitions' },
-    { href: '/Announcement', label: 'Announcement' },
-    { href: '/About', label: 'About' },
+    { href: "/", label: "Home" },
+    { href: "/Competitions", label: "Competitions" },
+    { href: "/Announcement", label: "Announcement" },
+    { href: "/About", label: "About" },
   ];
 
   return (
-    <nav className="bg-white shadow-sm sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16">
-          <div className="flex items-center flex-row">
-            <Link href="/" className="flex items-center space-x-3">
-              <img src="/Asset/Logo/LOGO.webp" alt="UC Champions Logo" className="h-12" />
-              <h1 className="text-2xl font-bold" style={{ color: '#E95A65' }}>
-              UC Champions
-              </h1>
-            </Link>
-          </div>
-          <div className="hidden sm:ml-6 sm:flex sm:items-center sm:space-x-4">
-            {navItems.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
-                  pathname === item.href
-                    ? 'text-indigo-600 bg-indigo-50'
-                    : 'text-gray-700 hover:bg-gray-50'
-                }`}
-              >
-                {item.label}
-              </Link>
-            
-            ))}
-          </div>
+    <>
+      <div className="navbar">
+        <div className="navbar-container">
+          <div></div>
+          <ul className="nav main-nav-list">
+            <li className="nav-item">
+              <a className="button-navbar" aria-current="page" href="#">
+                HOME
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="button-navbar" href="#">
+                COMPETITIONS
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="button-navbar" href="#">
+                ANNOUNCEMENT
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="button-navbar">ABOUT</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </nav>
+      <div ref={container} style={{ overflow: "hidden", width: "100vw", position: "relative", height: "50px" }}>
+        <img
+          src="Asset/navbar/navbarbottom.svg"
+          alt="navbabottom"
+          className="navbar-bottom"
+        />
+        <h1 ref={titleRef} className="bottom-title" style={{ position: 'absolute', whiteSpace: 'nowrap' }}>
+          WELCOME TO UC CHAMPION 2026
+        </h1>
+      </div>
+    </>
   );
 }
+
+{/* <>
+      <div className="fixed top-0 z-[1000]">
+        <nav
+          className="relative w-screen z-[10] h-[60px] sm:h-[113px] flex items-center justify-between px-6 sm:px-8"
+        >
+          <div className="flex-1 relative z-20 flex items-center">
+            <Link href="/">
+              <img
+                src="/Asset/Logo/LOGO.webp"
+                alt="logo"
+                className="h-10 w-auto block"
+                style={{ zIndex: 20 }}
+              />
+            </Link>
+          </div>
+
+          <div className="hidden md:flex font-roboto font-extrabold items-center gap-4">
+            <Link
+              href="/"
+              className={
+                pathname === "/"
+                  ? "group button-navbar-selected p-1 lg:p-2 xl:p-2 rounded-full border-solid border-2 sm:px-6"
+                  : "group button-navbar p-1 lg:p-2 xl:p-2 rounded-full border-solid border-2 sm:px-6"
+              }
+            >
+              <p
+                className={
+                  pathname === "/"
+                    ? "text-[#FFF0B8]"
+                    : "bg-gradient-to-b from-[#F5AC01] to-[#C03A00] bg-clip-text text-transparent group-hover:text-[#FFF0B8]"
+                }
+              >
+                BERANDA
+              </p>
+            </Link>
+            <Link
+              href="/about"
+              className={
+                pathname !== "/about"
+                  ? "group button-navbar p-1 lg:p-2 rounded-full border-solid border-2 sm:px-6"
+                  : "group button-navbar-selected p-1 lg:p-2 rounded-full border-solid border-2 sm:px-6"
+              }
+            >
+              <p
+                className={
+                  pathname === "/about"
+                    ? "text-[#FFF0B8]"
+                    : "bg-gradient-to-b from-[#F5AC01] to-[#C03A00] bg-clip-text text-transparent group-hover:text-[#FFF0B8]"
+                }
+              >
+                TENTANG
+              </p>
+            </Link>
+            <Link
+              href="/schedule"
+              className={
+                pathname !== "/schedule"
+                  ? "group button-navbar p-1 lg:p-2 rounded-full border-solid border-2 sm:px-6"
+                  : "group button-navbar-selected p-1 lg:p-2 rounded-full border-solid border-2 sm:px-6"
+              }
+            >
+              <p
+                className={
+                  pathname === "/schedule"
+                    ? "text-[#FFF0B8]"
+                    : "bg-gradient-to-b from-[#F5AC01] to-[#C03A00] bg-clip-text text-transparent group-hover:text-[#FFF0B8]"
+                }
+              >
+                JADWAL
+              </p>
+            </Link>
+            <Link
+              href="/rules"
+              className={
+                pathname !== "/rules"
+                  ? "group button-navbar p-1 lg:p-2 rounded-full border-solid border-2 sm:px-6"
+                  : "group button-navbar-selected p-1 lg:p-2 rounded-full border-solid border-2 sm:px-6"
+              }
+            >
+              <p
+                className={
+                  pathname === "/rules"
+                    ? "text-[#FFF0B8]"
+                    : "bg-gradient-to-b from-[#F5AC01] to-[#C03A00] bg-clip-text text-transparent group-hover:text-[#FFF0B8]"
+                }
+              >
+                PERATURAN
+              </p>
+            </Link>
+          </div>
+        </nav>
+      </div>
+    </> */}
