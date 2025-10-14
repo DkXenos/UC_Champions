@@ -4,8 +4,8 @@
   text-decoration: none;
   color: #333;
   font-weight: bold;
-  --button-left-gradient: #c980d4;
-  --button-right-gradient: #ed6b7a;
+  --button-left-gradient: #ed6b7a;
+  --button-right-gradient: #c980d4;
   --button-left-border: #f2b028;
   --button-right-border: #fff0b8;
   background-image: linear-gradient(
@@ -92,6 +92,10 @@
     var(--button-right-gradient)
   );
 }
+.navbar-logo{
+    height: auto;
+    width: 6rem;
+}
 .main-nav-list {
   display: flex;
   list-style: none;
@@ -110,7 +114,7 @@
 .navbar-bottom {
   position: absolute;
   top: -1px;
-  z-index: 0;
+  z-index: 1;
   width: 100%;
   height: auto;
 }
@@ -121,4 +125,17 @@
   z-index: 1;
   top: 0.5rem;
   position: relative;
+}
+.navbar-bottom-decor {
+  position: absolute;
+  top: 10rem;
+  z-index: 0;
+  width: 100%;
+  height: auto;
+}
+.containerbottom{
+    overflow: "hidden";
+    width: 100%;
+    height: 0rem;
+    position: relative;
 }

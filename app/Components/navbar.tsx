@@ -4,7 +4,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import "../App.css";
 import "../styles/navbar.css";
-import { div } from "motion/react-client";
 import { useRef } from "react";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -19,11 +18,9 @@ export default function Navbar() {
       const title = titleRef.current;
       if (title) {
         const screenWidth = window.innerWidth;
-        
-        
+
         gsap.set(title, { x: screenWidth });
 
-        
         gsap.to(title, {
           x: -title.offsetWidth,
           duration: 5,
@@ -46,44 +43,66 @@ export default function Navbar() {
     <>
       <div className="navbar">
         <div className="navbar-container">
-          <div></div>
+          <div className="navbar-logo">
+            <img src="Asset/Logo/LOGO.webp" alt="logo" />
+          </div>
           <ul className="nav main-nav-list">
             <li className="nav-item">
-              <a className="button-navbar" aria-current="page" href="#">
+              <Link href="/" className="button-navbar">
                 HOME
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="button-navbar" href="#">
+              <Link href="/Competitions" className="button-navbar">
                 COMPETITIONS
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="button-navbar" href="#">
+              <Link href="/Announcement" className="button-navbar">
                 ANNOUNCEMENT
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="button-navbar">ABOUT</a>
+              <Link href="/About" className="button-navbar">
+                ABOUT
+              </Link>
             </li>
           </ul>
         </div>
       </div>
-      <div ref={container} style={{ overflow: "hidden", width: "100vw", position: "relative", height: "50px" }}>
+      <div
+        ref={container}
+        style={{
+          
+        }}
+        className="containerbottom"
+      >
         <img
           src="Asset/navbar/navbarbottom.svg"
           alt="navbabottom"
           className="navbar-bottom"
         />
-        <h1 ref={titleRef} className="bottom-title" style={{ position: 'absolute', whiteSpace: 'nowrap' }}>
+        <h1
+          ref={titleRef}
+          className="bottom-title"
+          style={{ position: "absolute", whiteSpace: "nowrap" }}
+        >
           WELCOME TO UC CHAMPION 2026
         </h1>
+      </div>
+      <div>
+        <img
+          src="Asset/navbar/navbarbottomdecor.svg"
+          alt="navbabottom"
+          className="navbar-bottom-decor"
+        />
       </div>
     </>
   );
 }
 
-{/* <>
+{
+  /* <>
       <div className="fixed top-0 z-[1000]">
         <nav
           className="relative w-screen z-[10] h-[60px] sm:h-[113px] flex items-center justify-between px-6 sm:px-8"
@@ -175,4 +194,5 @@ export default function Navbar() {
           </div>
         </nav>
       </div>
-    </> */}
+    </> */
+}

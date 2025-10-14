@@ -1,0 +1,53 @@
+.button-decor{
+    border: 4px solid transparent;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  --button-left-gradient: #ed6b7a;
+  --button-right-gradient: #c980d4;
+  --button-left-border: #f2b028;
+  --button-right-border: #fff0b8;
+  background-image: linear-gradient(
+      90deg,
+      var(--button-left-gradient),
+      var(--button-right-gradient)
+    ),
+    radial-gradient(
+      circle at top left,
+      var(--button-left-border),
+      var(--button-right-border)
+    );
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  transition: --button-left-gradient 300ms, --button-right-gradient 300ms;
+  border-radius: 2rem;
+  font: bold;
+  color: white;
+}
+
+.homepage-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.homepage{
+}
+.img-title{
+    width: 60rem;
+    height: auto;
+    margin-top: 5rem;
+}
+.infobutton{
+    margin-top: 0rem;
+    margin-bottom: 5rem;
+    font-family: "Friend";
+    font-size: 1.5rem;
+}
+.videobg{
+    
+}
+.videoframe{
+}
+
