@@ -27,7 +27,25 @@ export default function Home() {
           </div>
           <div className="videobg">
             <img src="Asset/Homepage/videobg.svg" alt="videobg" className="videoframe"/>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/TXo3j1jmKlQ?si=fnflcHY8HbpbesEO"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+              className="video"
+            ></iframe>
           </div>
+          <div className="bottomline">
+            <img src="Asset/Homepage/startline.svg" alt="" />
+          </div>
+        </div>
+        <div className="footer-manual">
+          <img src="Asset/Footer/footerdecornew.svg" alt="" className="footerdecor" />
+          <img src="Asset/Footer/bgfooter.svg" alt="footer" />
         </div>
       </div>
     </>

@@ -1,5 +1,5 @@
-.button-decor{
-    border: 4px solid transparent;
+.button-decor {
+  border: 4px solid transparent;
   padding: 0.5rem 1rem;
   text-decoration: none;
   color: #333;
@@ -26,28 +26,46 @@
   color: white;
 }
 
-.homepage-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.homepage-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-.homepage{
+.homepage {
 }
-.img-title{
-    width: 60rem;
-    height: auto;
+.img-title {
+  width: 60rem;
+  height: auto;
+  margin-top: 5rem;
+}
+.infobutton {
+  margin-top: 0rem;
+  margin-bottom: 5rem;
+  font-family: "Friend";
+  font-size: 1.5rem;
+}
+.videobg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.videoframe {
+    position: absolute;
+    z-index: 0;
+}
+.video{
     margin-top: 5rem;
+    margin-bottom: 6rem;
+    position: relative;
 }
-.infobutton{
-    margin-top: 0rem;
-    margin-bottom: 5rem;
-    font-family: "Friend";
-    font-size: 1.5rem;
-}
-.videobg{
-    
-}
-.videoframe{
-}
+.bottomline{
 
+}
+.footer-manual{
+
+}
+.footerdecor{
+    position: absolute;
+}
