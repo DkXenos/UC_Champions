@@ -4,11 +4,11 @@ export default function Footer() {
   return (
     <>
       <div className="mainfooter">
-        <img
+        {/* <img
           src="Asset/Footer/footerdecor.svg"
           alt=""
           className="footerdecor"
-        />
+        /> */}
         <img src="Asset/Footer/bgfooter.svg" alt="footer" />
       </div>
     </>

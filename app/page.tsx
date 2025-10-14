@@ -43,10 +43,7 @@ export default function Home() {
             <img src="Asset/Homepage/startline.svg" alt="" />
           </div>
         </div>
-        <div className="footer-manual">
-          <img src="Asset/Footer/footerdecornew.svg" alt="" className="footerdecor" />
-          <img src="Asset/Footer/bgfooter.svg" alt="footer" />
-        </div>
+       
       </div>
     </>
   );
