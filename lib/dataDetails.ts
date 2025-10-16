@@ -90,10 +90,10 @@ export const competitionDetails: CompetitionDetail[] = [
   },
   {
     id: "3",
-    title: "Business Plan Competition",
-    category: "Bisnis",
+    title: "UC VORTEX ARENA",
+    category: "Esport",
     deadline: "25 Okt 2025",
-    ukm: "Tabletop",
+    ukm: "ESPORTS",
     description: "Showcase your creativity and design thinking skills in our UI/UX Design Challenge. Design innovative user interfaces and experiences for real-world problems.",
     requirements: [
       "Portfolio of previous design work",

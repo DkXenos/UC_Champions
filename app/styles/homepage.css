@@ -33,6 +33,7 @@
   flex-direction: column;
 }
 .homepage {
+  
 }
 .img-title {
   width: 60rem;
@@ -62,4 +63,12 @@
 }
 .bottomline{
 
+}
+.leftdecor{
+    position: absolute;
+    left: 0;
+    bottom: 0rem;
+    height: 20rem;
+    width: auto;
+    
 }

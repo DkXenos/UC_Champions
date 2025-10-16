@@ -9,42 +9,42 @@ export type Competition = {
 export const featuredCompetitions: Competition[] = [
   {
     id: "1",
-    title: "Programming Contest", //ini judul kompetisi
-    category: "Teknologi", //kek buat di badge yg filtering gitu jadi bisa jadi kek ukm or kategori e
+    title: "BCD DANCE COMPETITION", //ini judul kompetisi
+    category: "Dnace", //kek buat di badge yg filtering gitu jadi bisa jadi kek ukm or kategori e
     deadline: "15 Nov 2025", //ini deadline kompetisi kapan terakhir daftar
     ukm: "Tabletop", //ukm e apa
   },
   {
     id: "2",
-    title: "UI/UX Design Challenge",
-    category: "Desain",
+    title: "TARI X TEATER COMPETITION",
+    category: "Creative",
     deadline: "25 Nov 2025",
     ukm: "Tabletop", 
   },
   {
     id: "3",
-    title: "Business Plan Competition",
-    category: "Bisnis",
+    title: "ESPORTS TOURNAMENT",
+    category: "Esport",
     deadline: "20 Okt 2025",
     ukm: "Tabletop", 
   },
   {
     id: "4",
-    title: "Digital Marketing Challenge",
+    title: "BALAWARTA ARTIKEL",
     category: "Pemasaran",
     deadline: "30 Agu 2024",
     ukm: "Tabletop", 
   },
   {
     id: "5",
-    title: "National Essay Competition",
-    category: "Menulis",
+    title: "UCDS DEBATE COMPETITION",
+    category: "Debate",
     deadline: "05 Sep 2024",
     ukm: "Tabletop", 
   },
   {
     id: "6",
-    title: "Mobile Photography Contest",
+    title: "PMK SHORT MOVIE",
     category: "Fotografi",
     deadline: "10 Sep 2024",
     ukm: "esport", 

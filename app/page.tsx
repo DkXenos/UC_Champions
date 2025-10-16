@@ -1,7 +1,6 @@
 import "./styles/homepage.css";
 import Link from "next/link";
 
-
 export default function Home() {
   return (
     <>
@@ -22,11 +21,15 @@ export default function Home() {
           />
           <div className="infobutton button-decor">
             <Link href="/About" className="button-info">
-            WHAT'S UC CHAMPION?
+              WHAT'S UC CHAMPION?
             </Link>
           </div>
           <div className="videobg">
-            <img src="Asset/Homepage/videobg.svg" alt="videobg" className="videoframe"/>
+            <img
+              src="Asset/Homepage/videobg.svg"
+              alt="videobg"
+              className="videoframe"
+            />
             <iframe
               width="560"
               height="315"
@@ -39,11 +42,16 @@ export default function Home() {
               className="video"
             ></iframe>
           </div>
+          
           <div className="bottomline">
             <img src="Asset/Homepage/startline.svg" alt="" />
           </div>
         </div>
-       
+        {/* <img
+            src="Asset/Homepage/leftdecor.svg"
+            alt=""
+            className="leftdecor"
+          /> */}
       </div>
     </>
   );

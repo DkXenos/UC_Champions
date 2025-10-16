@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import "./styles.css";
 import { featuredCompetitions } from "../../lib/data";
 import {
   Pagination,

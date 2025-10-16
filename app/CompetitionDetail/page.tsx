@@ -6,6 +6,7 @@ import { featuredCompetitions } from '../../lib/data';
 import { competitionDetails } from '../../lib/dataDetails';
 import { Badge } from '@/components/ui/badge';
 import Link from 'next/link';
+import "./styles.css";
 import CompetitionNotAvailable from '../Components/CompetitionNotAvailable';
 
 // Loading component for Suspense
