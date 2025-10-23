@@ -54,21 +54,38 @@
 }
 .videoframe {
     position: absolute;
-    z-index: 0;
+    z-index: 8;
 }
 .video{
     margin-top: 5rem;
     margin-bottom: 6rem;
     position: relative;
+    z-index: 10;
 }
 .bottomline{
-
+  display: flex;
+  justify-content: end;
+  align-items: end;
 }
 .leftdecor{
     position: absolute;
     left: 0;
-    bottom: 0rem;
-    height: 20rem;
+    height: 30rem;
     width: auto;
-    
+    z-index: 9;
+}
+.rightdecor{
+  position: absolute;
+  right: 0;
+  height: 30rem;
+  width: auto;
+  z-index: 9;
+}
+.icedecor{
+  position: absolute;
+   position: absolute;
+  right: 0;
+  height: 40rem;
+  width: auto;
+  z-index: 8;
 }

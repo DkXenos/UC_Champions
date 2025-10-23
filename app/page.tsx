@@ -42,16 +42,27 @@ export default function Home() {
               className="video"
             ></iframe>
           </div>
-          
+
           <div className="bottomline">
             <img src="Asset/Homepage/startline.svg" alt="" />
+            <img
+              src="Asset/Homepage/leftdecor.svg"
+              alt=""
+              className="leftdecor"
+            />
+            
+            <img
+              src="Asset/Homepage/icedecor.svg"
+              alt=""
+              className="icedecor"
+            />
+            <img
+              src="Asset/Homepage/rightdecor.svg"
+              alt=""
+              className="rightdecor"
+            />
           </div>
         </div>
-        {/* <img
-            src="Asset/Homepage/leftdecor.svg"
-            alt=""
-            className="leftdecor"
-          /> */}
       </div>
     </>
   );
