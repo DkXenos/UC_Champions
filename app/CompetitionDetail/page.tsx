@@ -141,103 +141,217 @@ function CompetitionDetailContent() {
 
   return (
     <>
-      <main className="">
-        <div
-          className="compdetail"
-          style={{
-            backgroundImage: `url('Asset/CompetitionDetail/mainbg.svg')`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-          }}
-        >
-          <div className="compDetail-container">
-            <div className="backtocomp-button">
-              <Link href="/Competitions" className="">
-                ← Back to Competitions
-              </Link>
-            </div>
+      <main
+        className="compdetail-main"
+        style={{
+          backgroundImage: `url('Asset/CompetitionDetail/mainbgimg.png')`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          // minHeight: "100vh",
+        }}
+      >
+        <div className="compDetail-container">
+          {/* Back Button */}
+          <div className="backtocomp-button">
+            <Link href="/Competitions">← Back to Competitions</Link>
+          </div>
 
-            <div className="title-section">
-              <img
-                src="Asset/CompetitionDetail/titlebg.svg"
-                alt="titlebg"
-                className="titlebg"
-              />
-            </div>
-
-            <div className="info-section">
-              <img
-                src="Asset/CompetitionDetail/aboutbg.svg"
-                alt="titlebg"
-                className="aboutbg"
-              />
-              <img
-                src="Asset/CompetitionDetail/infobg.svg"
-                alt="titlebg"
-                className="infobg"
-              />
-            </div>
-
-            <div className="countdown-section">
-              <div className="countdownbg">
-                {/* bagian conditional statement buat jika countdown suda abis */}
-                {isExpired ? (
-                  <div className="text-center">
-                    <div className="text-4xl font-bold mb-2">
-                      Registration Closed
-                    </div>
-                    <p className="text-indigo-200">
-                      The registration deadline has passed
-                    </p>
-                  </div>
-                ) : (
-                  <div>
-                    {/* <p className="timeleft-text">
-                      Time remaining until registration closes
-                    </p> */}
-                    <div className="grid grid-cols-4 gap-4 text-center">
-                      <div className="days-section countdown-decor">
-                        <div className="daysleft text-decor">
-                          {timeLeft.days}
-                        </div>
-                        <div className="text-decor">Days</div>
-                      </div>
-                      <div className="hours-section countdown-decor">
-                        <div className="hoursleft text-decor">
-                          {timeLeft.hours}
-                        </div>
-                        <div className="text-decor">Hours</div>
-                      </div>
-                      <div className="minutes-section countdown-decor">
-                        <div className="minutesleft text-decor">
-                          {timeLeft.minutes}
-                        </div>
-                        <div className="text-decor">Minutes</div>
-                      </div>
-                      <div className="seconds-section countdown-decor">
-                        <div className="secondsleft text-decor">
-                          {timeLeft.seconds}
-                        </div>
-                        <div className="text-decor">Seconds</div>
-                      </div>
-                    </div>
-                    <h2 className="countdown-title">Registration Countdown</h2>
-                  </div>
-                )}
+          {/* Title Section with Background */}
+          <div className="title-section">
+            <div
+              className="title-bg-wrapper"
+              style={{
+                backgroundImage: `url('Asset/CompetitionDetail/titlebg.svg')`,
+                backgroundSize: "contain",
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
+              }}
+            >
+              <div className="title-content">
+                <Badge variant="secondary" className="mb-4 badge-decor">
+                  {competition.category}
+                </Badge>
+                <h1 className="competition-title title-decor" data-text={competition.title}>{competition.title}</h1>
+                <div className="competition-meta">
+                  <span>Deadline: {competition.deadline}</span>
+                  <span>Organized by: {competition.ukm}</span>
+                  <span>{competition.location}</span>
+                </div>
               </div>
-            </div>
-
-            <div className="secondary-section">
-              <img
-                src="Asset/CompetitionDetail/secondaryboard.svg"
-                alt="secondbg"
-                className="secondbg"
-              />
             </div>
           </div>
 
-          <div></div>
+          {/* Info Section - About and Quick Info Side by Side */}
+          <div className="info-section">
+            {/* About Section */}
+            <div
+              className="about-wrapper"
+              style={{
+                backgroundImage: `url('Asset/CompetitionDetail/aboutbg.svg')`,
+                backgroundSize: "contain",
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
+              }}
+            >
+              <div className="about-content">
+                <h2 className="section-title">About This Competition</h2>
+                <p className="about-text">{competition.description}</p>
+              </div>
+            </div>
+
+            {/* Quick Info Section */}
+            <div
+              className="info-wrapper"
+              style={{
+                backgroundImage: `url('Asset/CompetitionDetail/infobg.svg')`,
+                backgroundSize: "contain",
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
+              }}
+            >
+              <div className="info-content">
+                <h3 className="section-title">Quick Information</h3>
+                <div className="info-item">
+                  <span className="info-label">Registration Fee:</span>
+                  <span className="info-value">
+                    {competition.registrationFee}
+                  </span>
+                </div>
+                <div className="info-item">
+                  <span className="info-label">Max Participants:</span>
+                  <span className="info-value">
+                    {competition.maxParticipants}
+                  </span>
+                </div>
+                <div className="info-item">
+                  <span className="info-label">Location:</span>
+                  <span className="info-value">{competition.location}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Countdown Section */}
+          <div className="countdown-section">
+            {isExpired ? (
+              <div className="countdown-expired">
+                <div className="expired-text">Registration Closed</div>
+                <p className="expired-subtext">
+                  The registration deadline has passed
+                </p>
+              </div>
+            ) : (
+              <div className="countdown-wrapper">
+                <div className="countdown-grid">
+                  <div className="countdown-item countdown-decor">
+                    <div className="countdown-number text-decor">
+                      {timeLeft.days}
+                    </div>
+                    <div className="countdown-label text-decor">Days</div>
+                  </div>
+                  <div className="countdown-item countdown-decor">
+                    <div className="countdown-number text-decor">
+                      {timeLeft.hours}
+                    </div>
+                    <div className="countdown-label text-decor">Hours</div>
+                  </div>
+                  <div className="countdown-item countdown-decor">
+                    <div className="countdown-number text-decor">
+                      {timeLeft.minutes}
+                    </div>
+                    <div className="countdown-label text-decor">Minutes</div>
+                  </div>
+                  <div className="countdown-item countdown-decor">
+                    <div className="countdown-number text-decor">
+                      {timeLeft.seconds}
+                    </div>
+                    <div className="countdown-label text-decor">Seconds</div>
+                  </div>
+                </div>
+                <h2 className="countdown-title">Registration Countdown</h2>
+              </div>
+            )}
+          </div>
+
+          {/* Secondary Board - Timeline and Prizes Only */}
+          <div
+            className="secondary-section"
+            style={{
+              backgroundImage: `url('Asset/CompetitionDetail/secondaryboard.svg')`,
+              backgroundSize: "contain",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+            }}
+          >
+            <div className="secondary-content">
+              {/* Timeline */}
+              <div className="secondary-block">
+                <img
+                  src="Asset/CompetitionDetail/timelinebglast.svg"
+                  alt="timelinebg"
+                  className="timelinebg"
+                />
+                <h2 className="timeline-title">Timeline</h2>
+                <div className="timeline-list">
+                  {competition.timeline.map((item, index) => (
+                    <div key={index} className="timeline-item">
+                      <div className="timeline-details">
+                        <div className="timeline-event">{item.event}</div>
+                        <div className="timeline-date">{item.date}</div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Prizes */}
+              <div className="secondary-block">
+                <img
+                  src="Asset/CompetitionDetail/prizebg.svg"
+                  alt="timelinebg"
+                  className="prizebg"
+                />
+                <h2 className="timeline-title">Prizes</h2>
+                <div className="prizes-list">
+                  {competition.prizes.map((prize, index) => (
+                    <div key={index} className="prize-item">
+                      {prize}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Requirements Section - Separate with requirementborder background */}
+          <div
+            className="requirement-section"
+            style={{
+              backgroundImage: `url('Asset/CompetitionDetail/requirementborder.svg')`,
+              backgroundSize: "contain",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+            }}
+          >
+            <div className="requirement-content">
+              <h2 className="section-title">Requirements</h2>
+              <ul className="requirements-list">
+                {competition.requirements.map((req, index) => (
+                  <li key={index} className="requirement-item">
+                    <span className="bullet">•</span>
+                    <span>{req}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+          {/* <div className="register-button-wrapper">
+            <button className="register-button">
+              Register Now
+            </button>
+          </div> */}
         </div>
         {/* Hero Section
         <section className="bg-white py-16">
