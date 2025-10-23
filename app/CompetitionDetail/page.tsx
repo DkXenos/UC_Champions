@@ -182,7 +182,7 @@ function CompetitionDetailContent() {
             </div>
           </div>
 
-          {/* Info Section - About and Quick Info Side by Side */}
+          {/* info section test */}
           <div className="info-section">
             {/* About Section */}
             <div
