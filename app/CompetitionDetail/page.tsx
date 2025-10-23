@@ -52,7 +52,7 @@ function CompetitionDetailContent() {
           </p>
           <Link
             href="/Competitions"
-            className="inline-block bg-indigo-600 text-white font-semibold px-8 py-3 rounded-lg hover:bg-indigo-700 transition"
+            className="inline-block text-white font-semibold px-8 py-3 rounded-lg hover:bg-indigo-700 transition"
           >
             Back to Competitions
           </Link>
@@ -230,6 +230,7 @@ function CompetitionDetailContent() {
                 </div>
               </div>
             </div>
+            <img src="Asset/CompetitionDetail/minecart.png" alt="minecart" className="minecart" />
           </div>
 
           {/* Countdown Section */}
