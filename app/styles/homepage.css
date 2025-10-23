@@ -35,6 +35,21 @@
 .homepage {
   
 }
+.leftcloud {
+  position: absolute;
+  left: 0;
+  height: 10rem;
+  width: auto;
+  z-index: 5;
+}
+.rightcloud{
+  position: absolute;
+  right: 0;
+  height: 10rem;
+  width: auto;
+  z-index: 5;
+}
+
 .img-title {
   width: 60rem;
   height: auto;

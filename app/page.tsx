@@ -13,6 +13,16 @@ export default function Home() {
           backgroundRepeat: "no-repeat",
         }}
       >
+        <img
+            src="Asset/Homepage/leftcloudup.svg"
+            alt="left cloud up"
+            className="leftcloud"
+          />
+          <img
+            src="Asset/Homepage/rightcloudup.svg"
+            alt="right cloud up"
+            className="rightcloud"
+          />
         <div className="homepage-container ">
           <img
             src="Asset/Homepage/maintitle.svg"
@@ -46,7 +56,7 @@ export default function Home() {
           <div className="bottomline">
             <img src="Asset/Homepage/startline.svg" alt="" />
             <img
-              src="Asset/Homepage/leftdecor.svg"
+              src="Asset/Homepage/leftdecor.png"
               alt=""
               className="leftdecor"
             />
