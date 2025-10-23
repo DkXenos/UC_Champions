@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import "../App.css";
 import "../styles/navbar.css";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 
@@ -12,6 +12,15 @@ export default function Navbar() {
   const pathname = usePathname();
   const container = useRef(null);
   const titleRef = useRef<HTMLHeadingElement>(null);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
 
   useGSAP(
     () => {
@@ -46,6 +55,7 @@ export default function Navbar() {
           <div className="navbar-logo">
             <img src="Asset/Logo/LOGO.webp" alt="logo" />
           </div>
+          {/* Desktop Navigation */}
           <ul className="nav main-nav-list">
             <li className="nav-item">
               <Link href="/" className="button-navbar">
@@ -68,13 +78,81 @@ export default function Navbar() {
               </Link>
             </li>
           </ul>
+
+          {/* Hamburger Menu Button */}
+          <button
+            className="hamburger-menu"
+            onClick={toggleMenu}
+            aria-label="Toggle menu"
+          >
+            <div className={`hamburger-line ${isMenuOpen ? 'open-top' : ''}`} />
+            <div className={`hamburger-line ${isMenuOpen ? 'open-middle' : ''}`} />
+            <div className={`hamburger-line ${isMenuOpen ? 'open-bottom' : ''}`} />
+          </button>
         </div>
       </div>
+
+      {/* Mobile Menu - Below Navbar */}
+      <div className={`mobile-menu-dropdown ${isMenuOpen ? 'open' : ''}`}>
+        <div className="mobile-menu-content">
+          <Link
+            href="/"
+            onClick={closeMenu}
+            className={
+              pathname === "/"
+                ? "button-navbar-selected mobile-nav-link"
+                : "button-navbar mobile-nav-link"
+            }
+          >
+            <p className={pathname === "/" ? "mobile-nav-text active" : "mobile-nav-text default"}>
+              HOME
+            </p>
+          </Link>
+          <Link
+            href="/Competitions"
+            onClick={closeMenu}
+            className={
+              pathname === "/Competitions"
+                ? "button-navbar-selected mobile-nav-link"
+                : "button-navbar mobile-nav-link"
+            }
+          >
+            <p className={pathname === "/Competitions" ? "mobile-nav-text active" : "mobile-nav-text default"}>
+              COMPETITIONS
+            </p>
+          </Link>
+          <Link
+            href="/Announcement"
+            onClick={closeMenu}
+            className={
+              pathname === "/Announcement"
+                ? "button-navbar-selected mobile-nav-link"
+                : "button-navbar mobile-nav-link"
+            }
+          >
+            <p className={pathname === "/Announcement" ? "mobile-nav-text active" : "mobile-nav-text default"}>
+              ANNOUNCEMENT
+            </p>
+          </Link>
+          <Link
+            href="/About"
+            onClick={closeMenu}
+            className={
+              pathname === "/About"
+                ? "button-navbar-selected mobile-nav-link"
+                : "button-navbar mobile-nav-link"
+            }
+          >
+            <p className={pathname === "/About" ? "mobile-nav-text active" : "mobile-nav-text default"}>
+              ABOUT
+            </p>
+          </Link>
+        </div>
+      </div>
+
       <div
         ref={container}
-        style={{
-          
-        }}
+        style={{}}
         className="containerbottom"
       >
         <img
