@@ -165,24 +165,30 @@
     height: auto;
     margin-top: 5rem;
   }
-  .infobutton {
+.infobutton {
     margin-top: 0rem;
-    margin-bottom: 5rem;
+    margin-bottom: 05rem;
     font-family: "Friend";
     font-size: 1.5rem;
-  }
-  .videobg {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
   }
   .videoframe {
     position: absolute;
     z-index: 8;
+    width: 40rem;
+    height: auto;
+    margin-bottom: 10rem;
+    margin-top: 7rem;
   }
   .video {
-    margin-top: 5rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    position: relative;
+    z-index: 10;
+    width: 30rem;
+    height: 17rem;
+  }
+  .video {
+    margin-top: 3rem;
     margin-bottom: 6rem;
     position: relative;
     z-index: 10;

@@ -12,14 +12,130 @@ export default function Navbar() {
   const pathname = usePathname();
   const container = useRef(null);
   const titleRef = useRef<HTMLHeadingElement>(null);
+  const mobileMenuRef = useRef<HTMLDivElement>(null);
+  const hamburgerLine1Ref = useRef<HTMLDivElement>(null);
+  const hamburgerLine2Ref = useRef<HTMLDivElement>(null);
+  const hamburgerLine3Ref = useRef<HTMLDivElement>(null);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
+    const menu = mobileMenuRef.current;
+    const line1 = hamburgerLine1Ref.current;
+    const line2 = hamburgerLine2Ref.current;
+    const line3 = hamburgerLine3Ref.current;
+
+    if (!isMenuOpen) {
+      // Open animation
+      setIsMenuOpen(true);
+      
+      if (menu) {
+        gsap.to(menu, {
+          height: "auto",
+          opacity: 1,
+          duration: 0.4,
+          ease: "power2.out",
+        });
+      }
+
+      // Hamburger to X animation
+      if (line1 && line2 && line3) {
+        gsap.to(line1, {
+          rotation: 45,
+          y: 6,
+          backgroundColor: "#FFF0B8",
+          duration: 0.3,
+          ease: "power2.out",
+        });
+        gsap.to(line2, {
+          opacity: 0,
+          duration: 0.2,
+          ease: "power2.out",
+        });
+        gsap.to(line3, {
+          rotation: -45,
+          y: -6,
+          backgroundColor: "#FFF0B8",
+          duration: 0.3,
+          ease: "power2.out",
+        });
+      }
+    } else {
+      // Close animation
+      if (menu) {
+        gsap.to(menu, {
+          height: 0,
+          opacity: 0,
+          duration: 0.3,
+          ease: "power2.in",
+          onComplete: () => setIsMenuOpen(false),
+        });
+      }
+
+      // X to hamburger animation
+      if (line1 && line2 && line3) {
+        gsap.to(line1, {
+          rotation: 0,
+          y: 0,
+          backgroundColor: "",
+          duration: 0.3,
+          ease: "power2.out",
+        });
+        gsap.to(line2, {
+          opacity: 1,
+          duration: 0.2,
+          delay: 0.1,
+          ease: "power2.out",
+        });
+        gsap.to(line3, {
+          rotation: 0,
+          y: 0,
+          backgroundColor: "",
+          duration: 0.3,
+          ease: "power2.out",
+        });
+      }
+    }
   };
 
   const closeMenu = () => {
-    setIsMenuOpen(false);
+    const menu = mobileMenuRef.current;
+    const line1 = hamburgerLine1Ref.current;
+    const line2 = hamburgerLine2Ref.current;
+    const line3 = hamburgerLine3Ref.current;
+
+    if (menu) {
+      gsap.to(menu, {
+        height: 0,
+        opacity: 0,
+        duration: 0.3,
+        ease: "power2.in",
+        onComplete: () => setIsMenuOpen(false),
+      });
+    }
+
+    // X to hamburger animation
+    if (line1 && line2 && line3) {
+      gsap.to(line1, {
+        rotation: 0,
+        y: 0,
+        backgroundColor: "",
+        duration: 0.3,
+        ease: "power2.out",
+      });
+      gsap.to(line2, {
+        opacity: 1,
+        duration: 0.2,
+        delay: 0.1,
+        ease: "power2.out",
+      });
+      gsap.to(line3, {
+        rotation: 0,
+        y: 0,
+        backgroundColor: "",
+        duration: 0.3,
+        ease: "power2.out",
+      });
+    }
   };
 
   useGSAP(
@@ -85,15 +201,15 @@ export default function Navbar() {
             onClick={toggleMenu}
             aria-label="Toggle menu"
           >
-            <div className={`hamburger-line ${isMenuOpen ? 'open-top' : ''}`} />
-            <div className={`hamburger-line ${isMenuOpen ? 'open-middle' : ''}`} />
-            <div className={`hamburger-line ${isMenuOpen ? 'open-bottom' : ''}`} />
+            <div ref={hamburgerLine1Ref} className="hamburger-line" />
+            <div ref={hamburgerLine2Ref} className="hamburger-line" />
+            <div ref={hamburgerLine3Ref} className="hamburger-line" />
           </button>
         </div>
       </div>
 
       {/* Mobile Menu - Below Navbar */}
-      <div className={`mobile-menu-dropdown ${isMenuOpen ? 'open' : ''}`}>
+      <div ref={mobileMenuRef} className="mobile-menu-dropdown" style={{ height: 0, opacity: 0 }}>
         <div className="mobile-menu-content">
           <Link
             href="/"
