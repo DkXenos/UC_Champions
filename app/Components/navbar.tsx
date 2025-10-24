@@ -81,7 +81,7 @@ export default function Navbar() {
 
           {/* Hamburger Menu Button */}
           <button
-            className="hamburger-menu"
+            className="hamburger-menu hamburger-decor"
             onClick={toggleMenu}
             aria-label="Toggle menu"
           >

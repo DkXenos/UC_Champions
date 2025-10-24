@@ -92,6 +92,9 @@
     var(--button-right-gradient)
   );
 }
+.hamburger-decor{
+
+}
 .navbar-logo{
     height: auto;
     width: 6rem;
@@ -253,6 +256,7 @@
     z-index: 101;
     gap: 0.25rem;
     position: relative;
+
   }
   
   .hamburger-line {
