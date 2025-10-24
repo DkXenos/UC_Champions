@@ -93,7 +93,7 @@
   );
 }
 .hamburger-decor{
-
+  background-color: red;
 }
 .navbar-logo{
     height: auto;
@@ -249,7 +249,7 @@
     justify-content: center;
     width: 2.5rem;
     height: 2.5rem;
-    border-radius: 9999px;
+    border-radius: 30rem;
     background: transparent;
     border: none;
     cursor: pointer;
@@ -291,7 +291,7 @@
     display: block;
     position: relative;
     width: 100%;
-    background: linear-gradient(to bottom, #F0B130, #F0B130);
+    background: linear-gradient(to bottom, #fff0b8, #fff0b8);
     z-index: 99;
     overflow: hidden;
     transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
@@ -315,8 +315,7 @@
   
   .mobile-nav-link {
     padding: 0.6rem;
-    border-radius: 9999px;
-    border: 2px solid;
+    border-radius: 30rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     width: 100%;
@@ -330,14 +329,16 @@
   }
   
   .mobile-nav-text.default {
-    background: linear-gradient(to bottom, #F5AC01, #C03A00);
+    background: linear-gradient(to bottom, #ffffff, #ffffff);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-family: "Seenonim";
   }
   
   .mobile-nav-text.active {
-    color: #FFF0B8;
+    color: #ffffff;
+    font-family: "Seenonim";
   }
 
   /* Bottom section with scrolling text */

@@ -2,7 +2,7 @@
 
 import "./styles/homepage.css";
 import Link from "next/link";
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 
@@ -11,7 +11,6 @@ export default function Home() {
   const rightDecorRef = useRef<HTMLImageElement>(null);
 
   useGSAP(() => {
-    // Animate left decor from left side
     if (leftDecorRef.current) {
       gsap.from(leftDecorRef.current, {
         x: -500,
@@ -20,8 +19,6 @@ export default function Home() {
         delay: 0.3,
       });
     }
-
-    // Animate right decor from right side
     if (rightDecorRef.current) {
       gsap.from(rightDecorRef.current, {
         x: 500,
@@ -44,15 +41,15 @@ export default function Home() {
         }}
       >
         <img
-            src="Asset/Homepage/leftcloudup.svg"
-            alt="left cloud up"
-            className="leftcloud"
-          />
-          <img
-            src="Asset/Homepage/rightcloudup.svg"
-            alt="right cloud up"
-            className="rightcloud"
-          />
+          src="Asset/Homepage/leftcloudup.svg"
+          alt="left cloud up"
+          className="leftcloud"
+        />
+        <img
+          src="Asset/Homepage/rightcloudup.svg"
+          alt="right cloud up"
+          className="rightcloud"
+        />
         <div className="homepage-container ">
           <img
             src="Asset/Homepage/maintitle.svg"
@@ -84,14 +81,14 @@ export default function Home() {
           </div>
 
           <div className="bottomline">
-            <img src="Asset/Homepage/startline.svg" alt="" />
+            <img src="Asset/Homepage/startline.svg" alt="" className="startline"/>
             <img
               ref={leftDecorRef}
               src="Asset/Homepage/leftdecor.png"
               alt=""
               className="leftdecor"
             />
-            
+
             <img
               src="Asset/Homepage/icedecor.svg"
               alt=""
