@@ -20,10 +20,11 @@
     );
   background-origin: border-box;
   background-clip: padding-box, border-box;
-  transition: --button-left-gradient 300ms, --button-right-gradient 300ms;
   border-radius: 2rem;
   font: bold;
   color: white;
+  will-change: transform;
+  transform: translateZ(0);
 }
 
 .button-navbar:hover,
@@ -59,7 +60,6 @@
     );
   background-origin: border-box;
   background-clip: padding-box, border-box;
-  transition: --button-left-gradient 300ms, --button-right-gradient 300ms;
   font-size: 1.5rem;
   font: bold;
   color: white;
@@ -70,6 +70,8 @@
   padding-bottom: 0.5rem;
   z-index: 2;
   position: relative;
+  will-change: transform;
+  transform: translateZ(0);
 }
 .navbar-container {
   display: flex;
@@ -92,9 +94,7 @@
     var(--button-right-gradient)
   );
 }
-.hamburger-decor{
-  background-color: red;
-}
+
 .navbar-logo{
     height: auto;
     width: 6rem;
@@ -277,10 +277,12 @@
     display: block;
     position: relative;
     width: 100%;
-    background: linear-gradient(to bottom, #fff0b8, #fff0b8);
+    background: #fff0b8;
     z-index: 99;
     overflow: hidden;
     will-change: height, opacity;
+    transform: translateZ(0);
+    backface-visibility: hidden;
   }
   
   .mobile-menu-content {
@@ -308,10 +310,7 @@
   }
   
   .mobile-nav-text.default {
-    background: linear-gradient(to bottom, #ffffff, #ffffff);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #ffffff;
     font-family: "Seenonim";
   }
   

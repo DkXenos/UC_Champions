@@ -32,8 +32,8 @@ export default function Navbar() {
         gsap.to(menu, {
           height: "auto",
           opacity: 1,
-          duration: 0.4,
-          ease: "power2.out",
+          duration: 0.3,
+          ease: "power3.out",
         });
       }
 
@@ -42,21 +42,19 @@ export default function Navbar() {
         gsap.to(line1, {
           rotation: 45,
           y: 6,
-          backgroundColor: "#FFF0B8",
-          duration: 0.3,
-          ease: "power2.out",
+          duration: 0.25,
+          ease: "power3.out",
         });
         gsap.to(line2, {
           opacity: 0,
-          duration: 0.2,
+          duration: 0.15,
           ease: "power2.out",
         });
         gsap.to(line3, {
           rotation: -45,
           y: -6,
-          backgroundColor: "#FFF0B8",
-          duration: 0.3,
-          ease: "power2.out",
+          duration: 0.25,
+          ease: "power3.out",
         });
       }
     } else {
@@ -65,8 +63,8 @@ export default function Navbar() {
         gsap.to(menu, {
           height: 0,
           opacity: 0,
-          duration: 0.3,
-          ease: "power2.in",
+          duration: 0.25,
+          ease: "power3.in",
           onComplete: () => setIsMenuOpen(false),
         });
       }
@@ -76,22 +74,20 @@ export default function Navbar() {
         gsap.to(line1, {
           rotation: 0,
           y: 0,
-          backgroundColor: "",
-          duration: 0.3,
-          ease: "power2.out",
+          duration: 0.25,
+          ease: "power3.out",
         });
         gsap.to(line2, {
           opacity: 1,
-          duration: 0.2,
-          delay: 0.1,
+          duration: 0.15,
+          delay: 0.08,
           ease: "power2.out",
         });
         gsap.to(line3, {
           rotation: 0,
           y: 0,
-          backgroundColor: "",
-          duration: 0.3,
-          ease: "power2.out",
+          duration: 0.25,
+          ease: "power3.out",
         });
       }
     }
@@ -107,8 +103,8 @@ export default function Navbar() {
       gsap.to(menu, {
         height: 0,
         opacity: 0,
-        duration: 0.3,
-        ease: "power2.in",
+        duration: 0.25,
+        ease: "power3.in",
         onComplete: () => setIsMenuOpen(false),
       });
     }
@@ -118,22 +114,20 @@ export default function Navbar() {
       gsap.to(line1, {
         rotation: 0,
         y: 0,
-        backgroundColor: "",
-        duration: 0.3,
-        ease: "power2.out",
+        duration: 0.25,
+        ease: "power3.out",
       });
       gsap.to(line2, {
         opacity: 1,
-        duration: 0.2,
-        delay: 0.1,
+        duration: 0.15,
+        delay: 0.08,
         ease: "power2.out",
       });
       gsap.to(line3, {
         rotation: 0,
         y: 0,
-        backgroundColor: "",
-        duration: 0.3,
-        ease: "power2.out",
+        duration: 0.25,
+        ease: "power3.out",
       });
     }
   };
