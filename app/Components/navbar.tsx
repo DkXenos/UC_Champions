@@ -20,115 +20,29 @@ export default function Navbar() {
 
   const toggleMenu = () => {
     const menu = mobileMenuRef.current;
-    const line1 = hamburgerLine1Ref.current;
-    const line2 = hamburgerLine2Ref.current;
-    const line3 = hamburgerLine3Ref.current;
 
     if (!isMenuOpen) {
-      // Open animation
       setIsMenuOpen(true);
-      
       if (menu) {
-        gsap.to(menu, {
-          height: "auto",
-          opacity: 1,
-          duration: 0.3,
-          ease: "power3.out",
-        });
-      }
-
-      // Hamburger to X animation
-      if (line1 && line2 && line3) {
-        gsap.to(line1, {
-          rotation: 45,
-          y: 6,
-          duration: 0.25,
-          ease: "power3.out",
-        });
-        gsap.to(line2, {
-          opacity: 0,
-          duration: 0.15,
-          ease: "power2.out",
-        });
-        gsap.to(line3, {
-          rotation: -45,
-          y: -6,
-          duration: 0.25,
-          ease: "power3.out",
-        });
+        menu.style.height = "auto";
+        menu.style.opacity = "1";
       }
     } else {
-      // Close animation
+      setIsMenuOpen(false);
       if (menu) {
-        gsap.to(menu, {
-          height: 0,
-          opacity: 0,
-          duration: 0.25,
-          ease: "power3.in",
-          onComplete: () => setIsMenuOpen(false),
-        });
-      }
-
-      // X to hamburger animation
-      if (line1 && line2 && line3) {
-        gsap.to(line1, {
-          rotation: 0,
-          y: 0,
-          duration: 0.25,
-          ease: "power3.out",
-        });
-        gsap.to(line2, {
-          opacity: 1,
-          duration: 0.15,
-          delay: 0.08,
-          ease: "power2.out",
-        });
-        gsap.to(line3, {
-          rotation: 0,
-          y: 0,
-          duration: 0.25,
-          ease: "power3.out",
-        });
+        menu.style.height = "0";
+        menu.style.opacity = "0";
       }
     }
   };
 
   const closeMenu = () => {
     const menu = mobileMenuRef.current;
-    const line1 = hamburgerLine1Ref.current;
-    const line2 = hamburgerLine2Ref.current;
-    const line3 = hamburgerLine3Ref.current;
-
+    
+    setIsMenuOpen(false);
     if (menu) {
-      gsap.to(menu, {
-        height: 0,
-        opacity: 0,
-        duration: 0.25,
-        ease: "power3.in",
-        onComplete: () => setIsMenuOpen(false),
-      });
-    }
-
-    // X to hamburger animation
-    if (line1 && line2 && line3) {
-      gsap.to(line1, {
-        rotation: 0,
-        y: 0,
-        duration: 0.25,
-        ease: "power3.out",
-      });
-      gsap.to(line2, {
-        opacity: 1,
-        duration: 0.15,
-        delay: 0.08,
-        ease: "power2.out",
-      });
-      gsap.to(line3, {
-        rotation: 0,
-        y: 0,
-        duration: 0.25,
-        ease: "power3.out",
-      });
+      menu.style.height = "0";
+      menu.style.opacity = "0";
     }
   };
 

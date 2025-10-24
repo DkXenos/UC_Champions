@@ -11,16 +11,14 @@
 }
 @font-face {
   font-family: 'Friend';
-  src: url('/Typeface/friend/friend.otf') format('otf'),
-       url('/Typeface/friend/friend.otf') format('otf');
+  src: url('/Typeface/friend/Friend.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Seenonim';
-  src: url('/Typeface/Seenonim/seenonim-v1.otf') format('otf'),
-       url('/Typeface/Seenonim/seenonim-v1.otf') format('otf');
+  src: url('/Typeface/Seenonim/OTF/seenonim-v1.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
