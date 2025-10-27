@@ -4,7 +4,7 @@ import Link from "next/link";
 import CircularGallery from '../../components/CircularGallery'
 import RollingGallery from '../../components/RollingGallery'
 import LogoLoop from '../../components/LogoLoop'
-
+import "./styles.css";
 
 export default function About() {
   
@@ -46,100 +46,150 @@ export default function About() {
   ];
 
   return (
-    <main className="bg-gray-50 min-h-screen">
-      <section className="py-20 md:py-28">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight">
-              About UC Champions
-            </h1>
-            <p className="mt-4 max-w-3xl mx-auto text-lg md:text-xl text-gray-500">
-              lorem ipsum desription untuk uchamp.
-            </p>
-          </div>
+    <>
+      <div
+        className="about-background"
+        style={{
+          backgroundImage: `url('Asset/Aboutpage/about_backgrounds.svg')`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
 
-          <div className="bg-white rounded-lg shadow-lg p-8 md:p-12">
-            <div className="space-y-8 text-lg text-gray-700">
-              <div>
-                <h2 className="text-2xl font-bold text-gray-900 mb-3">
-                  lorem ipsum desription untuk uchamp
-                </h2>
-                <p>
-                  lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum  desription untuk uchamp
-                </p>
-              </div>
-              <div>
-                <h2 className="text-2xl font-bold text-gray-900 mb-3">
-                  lorem ipsum desription untuk uchamp
-                </h2>
-                <p>
-                  lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum  desription untuk uchamp
-                </p>
-              </div>
-              <div>
-                <h2 className="text-2xl font-bold text-gray-900 mb-3">
-                  lorem ipsum desription untuk uchamp
-                </h2>
-                <p>
-                  lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum  desription untuk uchamp
-                </p>
+      <div className="about-container">
+
+          <img
+            src="Asset/Aboutpage/about_title.svg"
+            alt="about-title"
+            className="about-title"
+          />
+    
+          <img
+            src="Asset/Aboutpage/about_description.svg"
+            alt="about-description"
+            className="about-description"
+          />
+          
+          <div className="partners-container">
+
+            <img 
+            src="Asset/Aboutpage/partners_title.svg" 
+            alt="partner-title" 
+            className="partners-title"
+            />
+
+            {/* data media partner kak.. */}
+
+            <div className="partners-rectangle-container">
+
+              <div className="partners-rectangle">
+              <img 
+                src="Asset/Aboutpage/rectangle.svg" 
+                alt="partners rectangle" 
+                className="partners_rectangle"
+              />
+              <div className="partners-rectangle-overlay">
+                <span className="partners-overlay-text">LOGO</span>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
 
-      <section className="pt-20 pb-4 w-screen">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-6">
-            <h1 className="text-3xl md:text-4xl font-extrabold text-gray-900">Our Media Partner</h1>
-          </div>
-          <div className="text-center mb-1">
-            <p className="mt-3 max-w-2xl mx-auto text-lg text-gray-500">ini bakal diisi media partner atau sponsor dgn icon icon yg dikasi nanti</p>
-          </div>
-          <div>
-            <RollingGallery autoplay={true} pauseOnHover={false}/>
-          </div>
-        </div>
-      </section>
+            <div className="partners-rectangle">
+              <img 
+                src="Asset/Aboutpage/rectangle.svg" 
+                alt="partners rectangle" 
+                className="partners_rectangle"
+              />
+              <div className="partners-rectangle-overlay">
+                <span className="partners-overlay-text">LOGO</span>
+              </div>
+            </div>
 
+            <div className="partners-rectangle">
+              <img 
+                src="Asset/Aboutpage/rectangle.svg" 
+                alt="partners rectangle" 
+                className="partners_rectangle"
+              />
+              <div className="partners-rectangle-overlay">
+                <span className="partners-overlay-text">LOGO</span>
+              </div>
+            </div>
 
-      <section className="pt-4 pb-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900">
-              Our Sponsors
-            </h2>
-            <p className="mt-3 max-w-2xl mx-auto text-lg text-gray-500">
-              Logo logo sponsor uchamp nanti
-            </p>
-          </div>
-          <div className="flex justify-center">
-            <LogoLoop logos={partnerLogos} speed={30} pauseOnHover={true} />
-          </div>
-        </div>
-      </section>
+            <div className="partners-rectangle">
+              <img 
+                src="Asset/Aboutpage/rectangle.svg" 
+                alt="partners rectangle" 
+                className="partners_rectangle"
+              />
+              <div className="partners-rectangle-overlay">
+                <span className="partners-overlay-text">LOGO</span>
+              </div>
+            </div>
 
-      {/* <section className="py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900">
-              Our Media Partner
-            </h2>
-            <p className="mt-3 max-w-2xl mx-auto text-lg text-gray-500">
-              atau ini jg bisa dikasi buat list list ukm yang berpartisipasi.
-            </p>
+            </div>
           </div>
-          <div style={{ height: "600px", position: "relative" }}>
-            <CircularGallery
-              bend={3}
-              textColor="#ffffff"
-              borderRadius={0.05}
-              scrollEase={0.02}
+
+          <div className="sponsor-container">
+
+            <img 
+            src="Asset/Aboutpage/sponsor_title.svg" 
+            alt="partner-title" 
+            className="sponsor-title"
             />
+
+            {/* data sponsor kak.. */}
+
+            <div className="partners-rectangle-container">
+
+              <div className="partners-rectangle">
+              <img 
+                src="Asset/Aboutpage/rectangle.svg" 
+                alt="partners rectangle" 
+                className="partners_rectangle"
+              />
+              <div className="partners-rectangle-overlay">
+                <span className="partners-overlay-text">LOGO</span>
+              </div>
+            </div>
+
+            <div className="partners-rectangle">
+              <img 
+                src="Asset/Aboutpage/rectangle.svg" 
+                alt="partners rectangle" 
+                className="partners_rectangle"
+              />
+              <div className="partners-rectangle-overlay">
+                <span className="partners-overlay-text">LOGO</span>
+              </div>
+            </div>
+
+            <div className="partners-rectangle">
+              <img 
+                src="Asset/Aboutpage/rectangle.svg" 
+                alt="partners rectangle" 
+                className="partners_rectangle"
+              />
+              <div className="partners-rectangle-overlay">
+                <span className="partners-overlay-text">LOGO</span>
+              </div>
+            </div>
+
+            <div className="partners-rectangle">
+              <img 
+                src="Asset/Aboutpage/rectangle.svg" 
+                alt="partners rectangle" 
+                className="partners_rectangle"
+              />
+              <div className="partners-rectangle-overlay">
+                <span className="partners-overlay-text">LOGO</span>
+              </div>
+            </div>
+
           </div>
-        </div>
-      </section> */}
-    </main>
+          </div>
+        </div>   
+      </div>       
+    </>
   );
 }

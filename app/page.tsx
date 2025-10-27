@@ -47,11 +47,7 @@ export default function Home() {
             <img src="Asset/Homepage/startline.svg" alt="" />
           </div>
         </div>
-        {/* <img
-            src="Asset/Homepage/leftdecor.svg"
-            alt=""
-            className="leftdecor"
-          /> */}
+    
       </div>
     </>
   );

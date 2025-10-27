@@ -1,0 +1,225 @@
+.competition-container {
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.img-title{
+    width: 75rem;
+    height: auto;
+    margin-top: 5rem;
+}
+
+.search-input {
+  background-image: url("/Asset/Competitionpage/search_bar.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: transparent;
+  width: 40rem;   
+  height: 5rem;  
+  color: rgb(150, 47, 82);
+  border: none;
+  display: inline-flex;
+  align-items: left;
+  justify-content: left;
+  text-align: left;
+  padding-left: 5rem;
+  transition: 0.3s;
+}
+
+.search-input:focus {
+  border-color: #6366f1; /* ungu indigo */
+  box-shadow: 0 0 5px rgba(99, 102, 241, 0.4);
+  outline: none;
+}
+
+.categories-content {
+  display: flex;
+  flex-wrap: wrap; /* biar kalau banyak badge bisa turun ke baris bawah */
+  justify-content: center; /* horizontal center */
+  align-items: center; /* vertical center */
+  max-width: 70%;
+  margin: 0 auto; /* biar kontainer juga di tengah halaman */
+}
+ 
+.categories-pointer {
+  background-image: url("/Asset/Competitionpage/categories_card.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: transparent;
+  width: 10rem;   /* semua badge sama lebar */
+  height: 4rem;  /* semua badge sama tinggi */
+  color: white;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: 0.3s;
+  margin: 0.2rem; /* jarak antar badge */
+}
+
+.categories-pointer:hover {
+  opacity: 0.8;
+}
+
+.competition-detail-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem; 
+  margin-top: 3rem;
+}
+
+.competition-detail-card {
+  background-image: url("/Asset/Competitionpage/competition_card.svg");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+  background-color: transparent;
+  height: 15rem; 
+  width: 30rem;  /* semua badge sama tinggi */
+  color: white;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  transition: 0.3s; /* jarak antar badge */
+}
+
+.detail-card{
+  margin-left: 2rem;
+}
+
+.categories-pointer-detail {
+  background-image: url("/Asset/Competitionpage/categories_card.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: transparent;
+  width: 12rem;   /* semua badge sama lebar */
+  height: 4.5rem;  /* semua badge sama tinggi */
+  color: white;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: 0.3s;
+  margin: 0.2rem; /* jarak antar badge */
+}
+
+.title-text{
+  font-size: 24px;
+  font-weight:bold;
+  color: #95183D;
+}
+
+.deadline-text{
+  color: #95183D;
+  margin-bottom: 2rem;
+}
+
+.detail-text{
+  font-weight: bold;
+  color: #E36F8F;
+}
+
+/* .stacked-images {
+  position: relative; 
+  width: 100%; 
+  height: auto; 
+}
+
+.stacked-images img {
+  position: absolute;
+}
+
+.img1 {
+  z-index:1; 
+  top: 100px;
+}
+
+.img2 {
+  z-index: 4; 
+  opacity: 0.8; 
+}
+
+.img3 {
+  z-index: 3;
+  left: 0;
+  top:-380px;
+}
+
+.img4 {
+  z-index: 2;
+  right: 0;
+  top: -100px;
+} */
+
+
+.competition-container {
+  position: relative; /* penting agar anak absolut bisa ditempatkan di dalam container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Portal & car sebagai dekorasi di bawah card */
+.komponen-hiasan {
+  position: absolute;/* geser portal ke bawah card */
+  bottom:100px; /* atur jarak dari bawah container */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 35rem;
+  z-index: 2; /* lebih kecil dari card agar di bawah */
+}
+
+/* Card kompetisi tetap di atas portal */
+.competition-detail-container {
+  position: relative;
+  z-index: 3; /* pastikan card lebih tinggi dari portal */
+}
+
+/* Footer bertumpuk paling bawah */
+.stacked-images {
+  position: relative;
+  width: 100%;
+  margin-top: 12rem; /* jarak setelah portal */
+}
+
+.stacked-images img {
+  position: absolute;
+}
+
+.img1 {
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+}
+
+.img2 {
+  z-index: 3;
+  bottom: 0;
+  right: 0;
+  opacity: 0.9;
+}
+
+.pagination-arrow {
+  color: rgb(150, 47, 82);
+  font-size: medium;
+  font-weight: bold;
+}
+
+.pagination-number {
+  color: rgb(150, 47, 82);
+  font-size: medium;
+  font-weight:500;
+}

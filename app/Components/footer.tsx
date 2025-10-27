@@ -5,11 +5,11 @@ export default function Footer() {
     <>
       <div className="mainfooter">
         {/* <img
-          src="Asset/Footer/footerdecor.svg"
+          src="Asset/Footer/footer.svg"
           alt=""
           className="footerdecor"
         /> */}
-        <img src="Asset/Footer/bgfooter.svg" alt="footer" />
+        <img src="Asset/Footer/footer.svg" alt="footer" />
       </div>
     </>
   );

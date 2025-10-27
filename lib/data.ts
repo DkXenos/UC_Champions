@@ -10,7 +10,7 @@ export const featuredCompetitions: Competition[] = [
   {
     id: "1",
     title: "BCD DANCE COMPETITION", //ini judul kompetisi
-    category: "Dnace", //kek buat di badge yg filtering gitu jadi bisa jadi kek ukm or kategori e
+    category: "Dance", //kek buat di badge yg filtering gitu jadi bisa jadi kek ukm or kategori e
     deadline: "15 Nov 2025", //ini deadline kompetisi kapan terakhir daftar
     ukm: "Tabletop", //ukm e apa
   },
