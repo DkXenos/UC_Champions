@@ -83,7 +83,6 @@ export default function Home() {
           <div className="bottomline">
             <img src="Asset/Homepage/startline.svg" alt="" className="startline"/>
             <img
-              ref={leftDecorRef}
               src="Asset/Homepage/leftdecor.png"
               alt=""
               className="leftdecor"
@@ -95,7 +94,6 @@ export default function Home() {
               className="icedecor"
             />
             <img
-              ref={rightDecorRef}
               src="Asset/Homepage/rightdecor.svg"
               alt=""
               className="rightdecor"
