@@ -1,3 +1,57 @@
+.comp-detail-decor {
+  border: solid transparent;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  --button-left-gradient: #FCF6E8;
+  --button-right-gradient: #EECB6B;
+  --button-left-border: #ed6b7a;
+  --button-right-border: #c980d4;
+  background-image: linear-gradient(
+      90deg,
+      var(--button-left-gradient),
+      var(--button-right-gradient)
+    ),
+    radial-gradient(
+      circle at top left,
+      var(--button-left-border),
+      var(--button-right-border)
+    );
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  border-radius: 2rem;
+  font: bold;
+  color: white;
+}
+
+.search-decor {
+  border: 0.5rem solid transparent;
+
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  --button-left-gradient: #FCF6E8;
+  --button-right-gradient: #EECB6B;
+  --button-left-border: #ed6b7a;
+  --button-right-border: #c980d4;
+  background-image: linear-gradient(
+      90deg,
+      var(--button-left-gradient),
+      var(--button-right-gradient)
+    ),
+    radial-gradient(
+      circle at top left,
+      var(--button-left-border),
+      var(--button-right-border)
+    );
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  border-radius: 2rem;
+  font: bold;
+  color: rgb(0, 0, 0);
+  border-radius: 100rem;
+}
+
 .competition-container {
   z-index: 0;
   display: flex;
@@ -13,14 +67,9 @@
 }
 
 .search-input {
-  background-image: url("/Asset/Competitionpage/search_bar.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
   background-color: transparent;
-  width: 40rem;   
+  width: 20rem;   
   height: 5rem;  
-  color: rgb(150, 47, 82);
   border: none;
   display: inline-flex;
   align-items: left;
@@ -44,6 +93,8 @@
   align-items: center; /* vertical center */
   max-width: 70%;
   margin: 0 auto; /* biar kontainer juga di tengah halaman */
+  z-index: 100;
+  position: relative;
 }
  
 .categories-pointer {
@@ -79,7 +130,6 @@
 }
 
 .competition-detail-card {
-  background-image: url("/Asset/Competitionpage/competition_card.svg");
   background-repeat: no-repeat;
   background-position: left;
   background-size: contain;
@@ -87,11 +137,11 @@
   height: 15rem; 
   width: 30rem;  /* semua badge sama tinggi */
   color: white;
-  border: none;
   display: inline-flex;
   align-items: center;
   transition: 0.3s; /* jarak antar badge */
   font-family: "Seenonim";
+  border: 0.5rem solid transparent;
 }
 
 .detail-card{
@@ -183,6 +233,7 @@
   position: absolute;
   bottom: 0;
   left: 0;
+  z-index: 1;
 }
 .img-car{
   width: 35rem;
@@ -234,4 +285,78 @@
   font-size: medium;
   font-weight:500;
   font-family: "Seenonim";
+}
+
+
+@media (max-width: 3840px) and (max-height: 2160px) {
+}
+@media (max-width: 2850px) and (max-height: 1800px) {
+}
+@media (max-width: 2560px) and (max-height: 1600px) {
+}
+@media (max-width: 2560px) and (max-height: 1140px) {
+}
+@media (max-width: 1920px) and (max-height: 1080px) {
+}
+@media (max-width: 1900px) and (max-height: 1920px) {
+}
+@media (max-width: 1900px) and (max-height: 1200px) {
+}
+@media (max-width: 1728px) and (max-height: 1117px) {
+}
+@media (max-width: 1538px) and (max-height: 2048px) {
+}
+@media (max-width: 1512px) and (max-height: 982px) {
+}
+@media (max-width: 1366px) and (max-height: 1024px) {
+}
+@media (max-width: 1366px) and (max-height: 768px) {
+}
+@media (max-width: 1280px) and (max-height: 800px) {
+}
+@media (max-width: 1180px) and (max-height: 820px) {
+}
+@media (max-width: 1024px) and (max-height: 1366px) and (orientation: portrait) {
+}
+@media (max-width: 1024px) and (max-height: 768px) and (orientation: landscape) {
+}
+@media (max-width: 1024px) and (max-height: 600px) {
+}
+@media (max-width: 956px) and (max-height: 440px) and (orientation: landscape) {
+}
+@media (max-width: 932px) and (max-height: 430px) {
+}
+@media (max-width: 912px) and (max-height: 1368px) and (orientation: portrait) {
+}
+@media (max-width: 853px) and (max-height: 1280px) and (orientation: portrait) {
+}
+@media (max-width: 844px) and (max-height: 390px) {
+}
+@media (max-width: 820px) and (max-height: 1180px) {
+}
+@media (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+}
+@media (max-width: 740px) and (max-height: 360px) and (orientation: landscape) {
+}
+@media (max-width: 720px) and (max-height: 540px) and (orientation: landscape) {
+}
+@media (max-width: 540px) and (max-height: 720px) and (orientation: portrait) {
+}
+@media(max-width: 459px) and (max-height: 841px) and (orientation: portrait){
+}
+@media (max-width: 440px) and (max-height: 956px) and (orientation: portrait) {
+}
+@media (max-width: 430px) and (max-height: 932px) and (orientation: portrait) {
+}
+@media (max-width: 414px) and (max-height: 896px) and (orientation: portrait){
+}
+@media (max-width: 393px) and (max-height: 873px) and (orientation: portrait) {
+}
+@media (max-width: 390px) and (max-height: 844px) and (orientation: portrait) {
+}
+@media (max-width: 375px) and (max-height: 667px) and (orientation: portrait) {
+}
+@media (max-width: 360px) and (max-height: 740px) and (orientation: portrait) {
+}
+@media (max-width: 344px) and (max-height: 882px) and (orientation: portrait) {
 }
