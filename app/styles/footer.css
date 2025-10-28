@@ -1,6 +1,12 @@
 .mainfooter{
     position: relative;
 }
-/* .footerdecor{
-    position: absolute; 
-} */
+.footerdecor{
+    position: absolute;
+    bottom: 0;
+    z-index: 20;
+}
+.bgfooter{
+    position: relative;
+    z-index: 19;
+}
