@@ -9,4 +9,5 @@
 .bgfooter{
     position: relative;
     z-index: 19;
+    bottom: 0;
 }

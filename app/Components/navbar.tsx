@@ -187,7 +187,6 @@ export default function Navbar() {
         <h1
           ref={titleRef}
           className="bottom-title"
-          style={{ position: "absolute"}}
         >
           WELCOME TO UC CHAMPION 2026
         </h1>
