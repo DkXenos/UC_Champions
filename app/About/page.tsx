@@ -63,12 +63,16 @@ export default function About() {
             src="Asset/Aboutpage/about_title.svg"
             alt="about-title"
             className="about-title"
+            loading="lazy"
+            decoding="async"
           />
     
           <img
             src="Asset/Aboutpage/about_description.svg"
             alt="about-description"
             className="about-description"
+            loading="lazy"
+            decoding="async"
           />
           
           <div className="partners-container">
@@ -77,6 +81,8 @@ export default function About() {
             src="Asset/Aboutpage/partners_title.svg" 
             alt="partner-title" 
             className="partners-title"
+            loading="lazy"
+            decoding="async"
             />
 
             {/* data media partner kak.. */}
@@ -88,6 +94,8 @@ export default function About() {
                 src="Asset/Aboutpage/rectangle.svg" 
                 alt="partners rectangle" 
                 className="partners_rectangle"
+                loading="lazy"
+                decoding="async"
               />
               <div className="partners-rectangle-overlay">
                 <span className="partners-overlay-text">LOGO</span>
@@ -99,6 +107,8 @@ export default function About() {
                 src="Asset/Aboutpage/rectangle.svg" 
                 alt="partners rectangle" 
                 className="partners_rectangle"
+                loading="lazy"
+                decoding="async"
               />
               <div className="partners-rectangle-overlay">
                 <span className="partners-overlay-text">LOGO</span>
@@ -110,6 +120,8 @@ export default function About() {
                 src="Asset/Aboutpage/rectangle.svg" 
                 alt="partners rectangle" 
                 className="partners_rectangle"
+                loading="lazy"
+                decoding="async"
               />
               <div className="partners-rectangle-overlay">
                 <span className="partners-overlay-text">LOGO</span>
@@ -121,6 +133,8 @@ export default function About() {
                 src="Asset/Aboutpage/rectangle.svg" 
                 alt="partners rectangle" 
                 className="partners_rectangle"
+                loading="lazy"
+                decoding="async"
               />
               <div className="partners-rectangle-overlay">
                 <span className="partners-overlay-text">LOGO</span>
@@ -136,6 +150,8 @@ export default function About() {
             src="Asset/Aboutpage/sponsor_title.svg" 
             alt="partner-title" 
             className="sponsor-title"
+            loading="lazy"
+            decoding="async"
             />
 
             {/* data sponsor kak.. */}
@@ -147,6 +163,8 @@ export default function About() {
                 src="Asset/Aboutpage/rectangle.svg" 
                 alt="partners rectangle" 
                 className="partners_rectangle"
+                loading="lazy"
+                decoding="async"
               />
               <div className="partners-rectangle-overlay">
                 <span className="partners-overlay-text">LOGO</span>
@@ -158,6 +176,8 @@ export default function About() {
                 src="Asset/Aboutpage/rectangle.svg" 
                 alt="partners rectangle" 
                 className="partners_rectangle"
+                loading="lazy"
+                decoding="async"
               />
               <div className="partners-rectangle-overlay">
                 <span className="partners-overlay-text">LOGO</span>
@@ -169,6 +189,8 @@ export default function About() {
                 src="Asset/Aboutpage/rectangle.svg" 
                 alt="partners rectangle" 
                 className="partners_rectangle"
+                loading="lazy"
+                decoding="async"
               />
               <div className="partners-rectangle-overlay">
                 <span className="partners-overlay-text">LOGO</span>
@@ -180,6 +202,8 @@ export default function About() {
                 src="Asset/Aboutpage/rectangle.svg" 
                 alt="partners rectangle" 
                 className="partners_rectangle"
+                loading="lazy"
+                decoding="async"
               />
               <div className="partners-rectangle-overlay">
                 <span className="partners-overlay-text">LOGO</span>

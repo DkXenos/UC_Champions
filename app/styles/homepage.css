@@ -26,6 +26,26 @@
   color: white;
 }
 
+/* GPU Acceleration for all animated/positioned elements */
+.leftdecor,
+.rightdecor,
+.leftcloud,
+.rightcloud,
+.icedecor {
+  will-change: transform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+.homepage {
+  will-change: auto; /* Don't keep background on GPU */
+}
+
+.video {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
 @media (max-width: 3840px) and (max-height: 2160px) {
   .homepage-container {
     display: flex;

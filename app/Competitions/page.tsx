@@ -71,6 +71,8 @@ export default function CompetitionsPage() {
             src="Asset/Competitionpage/title_competition.svg"
             alt="main-title"
             className="img-title"
+            loading="lazy"
+            decoding="async"
         />
 
           <div className="search-container">
@@ -178,12 +180,12 @@ export default function CompetitionsPage() {
           </div> */}
 
 <div className="komponen-hiasan">
-  <img src="Asset/Competitionpage/portal.svg" alt="portal" className="img-portal" />
-  <img src="Asset/Competitionpage/car.svg" alt="car" className="img-car" />
+  <img src="Asset/Competitionpage/portal.svg" alt="portal" className="img-portal" loading="lazy" decoding="async" />
+  <img src="Asset/Competitionpage/car.svg" alt="car" className="img-car" loading="lazy" decoding="async" />
 </div>
 
 <div className="stacked-images">
-  <img src="Asset/Homepage/startline.svg" alt="" className="img1" /> 
+  <img src="Asset/Homepage/startline.svg" alt="" className="img1" loading="lazy" decoding="async" /> 
 </div>
         </div>
       </section>

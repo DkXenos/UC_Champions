@@ -44,11 +44,15 @@ export default function Home() {
           src="Asset/Homepage/leftcloudup.svg"
           alt="left cloud up"
           className="leftcloud"
+          loading="lazy"
+          decoding="async"
         />
         <img
           src="Asset/Homepage/rightcloudup.svg"
           alt="right cloud up"
           className="rightcloud"
+          loading="lazy"
+          decoding="async"
         />
         <div className="homepage-container ">
           <img
@@ -66,6 +70,8 @@ export default function Home() {
               src="Asset/Homepage/videobg.svg"
               alt="videobg"
               className="videoframe"
+              loading="lazy"
+              decoding="async"
             />
             <iframe
               width="560"
@@ -77,26 +83,41 @@ export default function Home() {
               referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
               className="video"
+              loading="lazy"
             ></iframe>
           </div>
 
           <div className="bottomline">
-            <img src="Asset/Homepage/startline.svg" alt="" className="startline"/>
+            <img 
+              src="Asset/Homepage/startline.svg" 
+              alt="" 
+              className="startline"
+              loading="lazy"
+              decoding="async"
+            />
             <img
+              ref={leftDecorRef}
               src="Asset/Homepage/leftdecor.png"
               alt=""
               className="leftdecor"
+              loading="lazy"
+              decoding="async"
             />
 
             <img
               src="Asset/Homepage/icedecor.svg"
               alt=""
               className="icedecor"
+              loading="lazy"
+              decoding="async"
             />
             <img
+              ref={rightDecorRef}
               src="Asset/Homepage/rightdecor.svg"
               alt=""
               className="rightdecor"
+              loading="lazy"
+              decoding="async"
             />
           </div>
         </div>

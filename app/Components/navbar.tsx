@@ -56,9 +56,9 @@ export default function Navbar() {
 
         gsap.to(title, {
           x: -title.offsetWidth,
-          duration: 5,
+          duration: 20, // Slower = less GPU usage
           repeat: -1,
-          ease: "linear",
+          ease: "none", // Linear is more performant than ease
         });
       }
     },
