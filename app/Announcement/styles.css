@@ -100,14 +100,14 @@
     right: 0;
     width: 17rem;
     height: auto;
-    z-index: 99;
+    z-index: 200;
   }
   .bankiri {
     position: absolute;
     left: 0;
     width: 17rem;
     height: auto;
-    z-index: 99;
+    z-index: 200;
   }
   .bottom-section {
     display: flex;
