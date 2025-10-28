@@ -2,33 +2,8 @@
 
 import "./styles/homepage.css";
 import Link from "next/link";
-import { useRef } from "react";
-import { gsap } from "gsap";
-import { useGSAP } from "@gsap/react";
 
 export default function Home() {
-  const leftDecorRef = useRef<HTMLImageElement>(null);
-  const rightDecorRef = useRef<HTMLImageElement>(null);
-
-  useGSAP(() => {
-    if (leftDecorRef.current) {
-      gsap.from(leftDecorRef.current, {
-        x: -500,
-        duration: 1.5,
-        ease: "power3.out",
-        delay: 0.3,
-      });
-    }
-    if (rightDecorRef.current) {
-      gsap.from(rightDecorRef.current, {
-        x: 500,
-        duration: 1.5,
-        ease: "power3.out",
-        delay: 0.3,
-      });
-    }
-  }, []);
-
   return (
     <>
       <div
@@ -96,7 +71,6 @@ export default function Home() {
               decoding="async"
             />
             <img
-              ref={leftDecorRef}
               src="Asset/Homepage/leftdecor.png"
               alt=""
               className="leftdecor"
@@ -112,7 +86,6 @@ export default function Home() {
               decoding="async"
             />
             <img
-              ref={rightDecorRef}
               src="Asset/Homepage/rightdecor.svg"
               alt=""
               className="rightdecor"

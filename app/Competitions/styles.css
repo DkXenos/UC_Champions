@@ -61,6 +61,8 @@
   text-align: center;
   transition: 0.3s;
   margin: 0.2rem; /* jarak antar badge */
+  font-family: "Seenonim";
+
 }
 
 .categories-pointer:hover {
@@ -88,6 +90,7 @@
   display: inline-flex;
   align-items: center;
   transition: 0.3s; /* jarak antar badge */
+  font-family: "Seenonim";
 }
 
 .detail-card{
@@ -113,7 +116,7 @@
 }
 
 .title-text{
-  font-size: 24px;
+  font-size: 18px;
   font-weight:bold;
   color: #95183D;
 }
@@ -171,15 +174,21 @@
 
 /* Portal & car sebagai dekorasi di bawah card */
 .komponen-hiasan {
-  position: absolute;/* geser portal ke bawah card */
-  bottom:100px; /* atur jarak dari bawah container */
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  gap: 35rem;
   z-index: 2; /* lebih kecil dari card agar di bawah */
+}
+.img-portal{
+  width: 30rem;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.img-car{
+  width: 35rem;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 /* Card kompetisi tetap di atas portal */
@@ -216,10 +225,12 @@
   color: rgb(150, 47, 82);
   font-size: medium;
   font-weight: bold;
+  font-family: "Seenonim";
 }
 
 .pagination-number {
   color: rgb(150, 47, 82);
   font-size: medium;
   font-weight:500;
+  font-family: "Seenonim";
 }

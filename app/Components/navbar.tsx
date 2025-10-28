@@ -58,7 +58,7 @@ export default function Navbar() {
           x: -title.offsetWidth,
           duration: 20, // Slower = less GPU usage
           repeat: -1,
-          ease: "none", // Linear is more performant than ease
+          ease: "linear", // Linear is more performant than ease
         });
       }
     },
@@ -187,7 +187,7 @@ export default function Navbar() {
         <h1
           ref={titleRef}
           className="bottom-title"
-          style={{ position: "absolute", whiteSpace: "nowrap" }}
+          style={{ position: "absolute"}}
         >
           WELCOME TO UC CHAMPION 2026
         </h1>
