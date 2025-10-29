@@ -83,8 +83,42 @@
   min-width: 8rem;
 }
 
+.categories-card.active {
+  --button-left-gradient: #E0EEE9;
+  --button-right-gradient: #61C0D6;
+  --button-left-border: #fff0b8;
+  --button-right-border: #f2b028;
+  background-image: linear-gradient(
+      90deg,
+      var(--button-left-gradient),
+      var(--button-right-gradient)
+    ),
+    radial-gradient(
+      circle at top left,
+      var(--button-left-border),
+      var(--button-right-border)
+    );
+  color: white;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+
 .categories-card:hover {
-  opacity: 0.8;
+  --button-left-gradient: #E0EEE9;
+  --button-right-gradient: #61C0D6;
+  --button-left-border: #f2b028;
+  --button-right-border: #fff0b8;
+  background-image: linear-gradient(
+      90deg,
+      var(--button-left-gradient),
+      var(--button-right-gradient)
+    ),
+    radial-gradient(
+      circle at top left,
+      var(--button-left-border),
+      var(--button-right-border)
+    );
 }
 
 .competition-detail-container {
@@ -194,7 +228,7 @@
 .stacked-images {
   position: relative;
   width: 100%;
-  margin-top: 12rem; /* jarak setelah portal */
+  margin-top: 12rem; 
 }
 
 .stacked-images img {
@@ -205,13 +239,6 @@
   z-index: 1;
   bottom: 0;
   left: 0;
-}
-
-.img2 {
-  z-index: 3;
-  bottom: 0;
-  right: 0;
-  opacity: 0.9;
 }
 
 .pagination-arrow {
@@ -232,4 +259,20 @@
   color: rgb(150, 47, 82);
   font-size: medium;
   font-weight:500;
+}
+
+.cloud_left{
+  position: absolute;
+  top: 13rem;
+  left: -15rem;
+  width: 45rem;
+  height: auto;
+}
+
+.cloud_right{
+  position: absolute;
+  top: 13rem;
+  right: -15rem;
+  width: 45rem;
+  height: auto;
 }
