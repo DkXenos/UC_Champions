@@ -75,7 +75,7 @@ export default function CompetitionsPage() {
             decoding="async"
           />
 
-          <div className="search-container search-decor">
+          <div className="search-container">
             <input
               className="search-input"
               type="text"
@@ -102,7 +102,7 @@ export default function CompetitionsPage() {
             {paginatedCompetitions.map((comp) => (
               <div
                 key={comp.id}
-                className="competition-detail-card comp-detail-decor "
+                className="competition-detail-card"
               >
                 <div className="detail-card">
                   <Badge variant="secondary" className="categories-in-detail">{comp.category}</Badge>

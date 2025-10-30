@@ -1,57 +1,3 @@
-.comp-detail-decor {
-  border: solid transparent;
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-  --button-left-gradient: #FCF6E8;
-  --button-right-gradient: #EECB6B;
-  --button-left-border: #ed6b7a;
-  --button-right-border: #c980d4;
-  background-image: linear-gradient(
-      90deg,
-      var(--button-left-gradient),
-      var(--button-right-gradient)
-    ),
-    radial-gradient(
-      circle at top left,
-      var(--button-left-border),
-      var(--button-right-border)
-    );
-  background-origin: border-box;
-  background-clip: padding-box, border-box;
-  border-radius: 2rem;
-  font: bold;
-  color: white;
-}
-
-.search-decor {
-  border: 0.5rem solid transparent;
-
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-  --button-left-gradient: #FCF6E8;
-  --button-right-gradient: #EECB6B;
-  --button-left-border: #ed6b7a;
-  --button-right-border: #c980d4;
-  background-image: linear-gradient(
-      90deg,
-      var(--button-left-gradient),
-      var(--button-right-gradient)
-    ),
-    radial-gradient(
-      circle at top left,
-      var(--button-left-border),
-      var(--button-right-border)
-    );
-  background-origin: border-box;
-  background-clip: padding-box, border-box;
-  border-radius: 2rem;
-  font: bold;
-  color: rgb(0, 0, 0);
-  border-radius: 100rem;
-}
-
 .competition-container {
   background-image: url('/Asset/Competitionpage/competition_bg.svg');
   background-size: "cover";
@@ -73,9 +19,14 @@
 }
 
 .search-input {
+  background-image: url("/Asset/Competitionpage/search_bar.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
   background-color: transparent;
-  width: 40rem;   
+  width: 45rem;   
   height: 5rem;  
+  color: rgb(150, 47, 82);
   border: none;
   display: inline-flex;
   align-items: left;
@@ -83,7 +34,6 @@
   text-align: left;
   padding-left: 5rem;
   transition: 0.3s;
-  font-family: "Seenonim";
 }
 
 .search-input:focus {
@@ -96,21 +46,39 @@
   position: relative;
   z-index: 3;
   display: flex;
-  flex-wrap: wrap; /* biar kalau banyak badge bisa turun ke baris bawah */
-  justify-content: center; /* horizontal center */
-  align-items: center; /* vertical center */
-  max-width: 70%;
-  margin: 0 auto; /* biar kontainer juga di tengah halaman */
+  flex-wrap: wrap; 
+  justify-content: center; 
+  align-items: center; 
+  max-width: 80%;
+  margin-top: 1rem;
+  gap:1rem;
 }
- 
-.categories-pointer {
-  background-image: url("/Asset/Competitionpage/categories_card.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  background-color: transparent;
-  width: 10rem;   /* semua badge sama lebar */
-  height: 4rem;  /* semua badge sama tinggi */
+
+.categories-card {
+  border: 4px solid transparent;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  --button-left-gradient: #ed6b7a;
+  --button-right-gradient: #c980d4;
+  --button-left-border: #f2b028;
+  --button-right-border: #fff0b8;
+  background-image: linear-gradient(
+      90deg,
+      var(--button-left-gradient),
+      var(--button-right-gradient)
+    ),
+    radial-gradient(
+      circle at top left,
+      var(--button-left-border),
+      var(--button-right-border)
+    );
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  transition: --button-left-gradient 300ms, --button-right-gradient 300ms;
+  border-radius: 15rem;
+  font: bold;
   color: white;
   min-width: 8rem;
 }
@@ -165,33 +133,59 @@
 }
 
 .competition-detail-card {
-  background-image: url("/Asset/Competitionpage/competition_card.svg");
-  background-repeat: no-repeat;
-  background-position: left;
-  background-size: contain;
-  background-color: transparent;
-  height: 15rem; 
-  width: 30rem;  /* semua badge sama tinggi */
+  width: 25rem;
+  height: 12rem;
+  border: 4px solid transparent;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  --button-left-gradient: #FCF6E8;
+  --button-right-gradient: #EECB6B;
+  --button-left-border: #ed6b7a;
+  --button-right-border: #c980d4;
+  background-image: linear-gradient(
+      90deg,
+      var(--button-left-gradient),
+      var(--button-right-gradient)
+    ),
+    radial-gradient(
+      circle at top left,
+      var(--button-left-border),
+      var(--button-right-border)
+    );
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  transition: --button-left-gradient 300ms, --button-right-gradient 300ms;
+  border-radius: 1.5rem;
+  font: bold;
   color: white;
-  border: none;
-  display: inline-flex;
-  align-items: center;
-  transition: 0.3s; /* jarak antar badge */
-  font-family: "Seenonim";
 }
 
-.detail-card{
-  margin-left: 2rem;
-}
-
-.categories-pointer-detail {
-  background-image: url("/Asset/Competitionpage/categories_card.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  background-color: transparent;
-  width: 12rem;   /* semua badge sama lebar */
-  height: 4.5rem;  /* semua badge sama tinggi */
+.categories-in-detail {
+  border: 4px solid transparent;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  --button-left-gradient: #ed6b7a;
+  --button-right-gradient: #c980d4;
+  --button-left-border: #f2b028;
+  --button-right-border: #fff0b8;
+  background-image: linear-gradient(
+      90deg,
+      var(--button-left-gradient),
+      var(--button-right-gradient)
+    ),
+    radial-gradient(
+      circle at top left,
+      var(--button-left-border),
+      var(--button-right-border)
+    );
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  transition: --button-left-gradient 300ms, --button-right-gradient 300ms;
+  border-radius: 5rem;
   color: white;
 }
 
@@ -220,7 +214,6 @@
   height: auto;
   bottom: 0;
   left: 0;
-  z-index: 1;
 }
 
 .img-car{
@@ -283,5 +276,3 @@
   width: 45rem;
   height: auto;
 }
-
-
