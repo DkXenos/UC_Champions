@@ -76,6 +76,9 @@ export default function CompetitionsPage() {
           />
 
           <div className="search-container">
+            <img src="Asset/Competitionpage/cloud_left1.svg" alt="" className="cloud_left" />
+            <img src="Asset/Competitionpage/cloud_right2.svg" alt="" className="cloud_right" />
+ 
             <input
               className="search-input"
               type="text"
@@ -125,7 +128,7 @@ export default function CompetitionsPage() {
             ))}
           </div>
 
-          <div className="mt-12">
+          <div className="pagination">
             <Pagination>
               <PaginationContent>
                 <PaginationItem>
@@ -164,9 +167,6 @@ export default function CompetitionsPage() {
           <div className="stacked-images">
             <img src="Asset/Homepage/startline.svg" alt="" className="img1" loading="lazy" decoding="async" /> 
           </div>
-
-          <img src="Asset/Competitionpage/cloud_left.svg" alt="" className="cloud_left" />
-          <img src="Asset/Competitionpage/cloud_right.svg" alt="" className="cloud_right" />
 
         </div>
 

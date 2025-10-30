@@ -59,6 +59,11 @@ export default function About() {
 
       <div className="about-container">
 
+          <div className="about-title-container">
+
+          <img src="Asset/Aboutpage/cloud_left1.svg" alt="" className="cloud_left1"/>
+          <img src="Asset/Aboutpage/cloud_left2.svg" alt="" className="cloud_left2"/>
+          
           <img
             src="Asset/Aboutpage/about_title.svg"
             alt="about-title"
@@ -66,7 +71,15 @@ export default function About() {
             loading="lazy"
             decoding="async"
           />
-    
+
+          </div>
+          
+          <div className="about-description-container">
+
+          <img src="Asset/Aboutpage/cloud_right1.svg" alt="" className="cloud_right1"/>
+          <img src="Asset/Aboutpage/cloud_right2.svg" alt="" className="cloud_right2"/>
+          
+
           <img
             src="Asset/Aboutpage/about_description.svg"
             alt="about-description"
@@ -74,9 +87,16 @@ export default function About() {
             loading="lazy"
             decoding="async"
           />
+
+          </div>
+    
+          
+
           
           <div className="partners-container">
 
+            <img src="Asset/Aboutpage/star_left.svg" alt="" className="star_left"/>
+            <img src="Asset/Aboutpage/cake_right.svg" alt="" className="cake_right"/>
               
              <img 
               src="Asset/Aboutpage/partners_title.svg" 
@@ -91,55 +111,27 @@ export default function About() {
 
             <div className="partners-rectangle-container">
 
-              <div className="partners-rectangle">
-              <img 
-                src="Asset/Aboutpage/rectangle.svg" 
-                alt="partners rectangle" 
-                className="partners_rectangle"
-                loading="lazy"
-                decoding="async"
-              />
+            <div className="partners-rectangle">
               <div className="partners-rectangle-overlay">
-                <span className="partners-overlay-text"> </span>
+                <span className="partners-overlay-text"></span>
               </div>
             </div>
 
             <div className="partners-rectangle">
-              <img 
-                src="Asset/Aboutpage/rectangle.svg" 
-                alt="partners rectangle" 
-                className="partners_rectangle"
-                loading="lazy"
-                decoding="async"
-              />
               <div className="partners-rectangle-overlay">
-                <span className="partners-overlay-text"> </span>
+                <span className="partners-overlay-text"></span>
               </div>
             </div>
 
             <div className="partners-rectangle">
-              <img 
-                src="Asset/Aboutpage/rectangle.svg" 
-                alt="partners rectangle" 
-                className="partners_rectangle"
-                loading="lazy"
-                decoding="async"
-              />
               <div className="partners-rectangle-overlay">
-                <span className="partners-overlay-text"> </span>
+                <span className="partners-overlay-text"></span>
               </div>
             </div>
 
             <div className="partners-rectangle">
-              <img 
-                src="Asset/Aboutpage/rectangle.svg" 
-                alt="partners rectangle" 
-                className="partners_rectangle"
-                loading="lazy"
-                decoding="async"
-              />
               <div className="partners-rectangle-overlay">
-                <span className="partners-overlay-text"> </span>
+                <span className="partners-overlay-text"></span>
               </div>
             </div>
 
@@ -147,6 +139,9 @@ export default function About() {
           </div>
 
           <div className="sponsor-container">
+
+            <img src="Asset/Aboutpage/mochi_left.svg" alt="" className="mochi_left"/>
+            <img src="Asset/Aboutpage/mochi_right.svg" alt="" className="mochi_right"/>
 
             <img 
             src="Asset/Aboutpage/sponsor_title.svg" 
@@ -159,52 +154,24 @@ export default function About() {
             <div className="sponsor-rectangle-container">
 
               <div className="sponsor-rectangle">
-              <img 
-                src="Asset/Aboutpage/rectangle.svg" 
-                alt="partners rectangle" 
-                className="partners_rectangle"
-                loading="lazy"
-                decoding="async"
-              />
               <div className="partners-rectangle-overlay">
                 <span className="partners-overlay-text"> </span>
               </div>
             </div>
 
             <div className="sponsor-rectangle">
-              <img 
-                src="Asset/Aboutpage/rectangle.svg" 
-                alt="partners rectangle" 
-                className="partners_rectangle"
-                loading="lazy"
-                decoding="async"
-              />
               <div className="partners-rectangle-overlay">
                 <span className="partners-overlay-text"> </span>
               </div>
             </div>
 
             <div className="sponsor-rectangle">
-              <img 
-                src="Asset/Aboutpage/rectangle.svg" 
-                alt="partners rectangle" 
-                className="partners_rectangle"
-                loading="lazy"
-                decoding="async"
-              />
               <div className="partners-rectangle-overlay">
                 <span className="partners-overlay-text"> </span>
               </div>
             </div>
 
             <div className="sponsor-rectangle">
-              <img 
-                src="Asset/Aboutpage/rectangle.svg" 
-                alt="partners rectangle" 
-                className="partners_rectangle"
-                loading="lazy"
-                decoding="async"
-              />
               <div className="partners-rectangle-overlay">
                 <span className="partners-overlay-text"> </span>
               </div>
@@ -213,14 +180,12 @@ export default function About() {
           </div>
           </div>
 
-          <img src="/Asset/Aboutpage/mochi1.svg" alt="" className="mochi1"/>
-          <img src="/Asset/Aboutpage/mochi2.svg" alt="" className="mochi2"/>
-          <img src="/Asset/Aboutpage/mochi3.svg" alt="" className="mochi3"/>
 
-          <img src="/Asset/Aboutpage/cloud_left1.svg" alt="" className="cloud_left1" />
-          <img src="/Asset/Aboutpage/cloud_left2.svg" alt="" className="cloud_left2" />
-          <img src="/Asset/Aboutpage/cloud_right1.svg" alt="" className="cloud_right1" />
-          <img src="/Asset/Aboutpage/cloud_right2.svg" alt="" className="cloud_right2" />
+            {/* <img src="/Asset/Aboutpage/cloud_left1.svg" alt="" className="cloud_left1" />
+            <img src="/Asset/Aboutpage/cloud_left2.svg" alt="" className="cloud_left2" />
+            <img src="/Asset/Aboutpage/cloud_right1.svg" alt="" className="cloud_right1" />
+            <img src="/Asset/Aboutpage/cloud_right2.svg" alt="" className="cloud_right2" /> */}
+          <img src="/Asset/Aboutpage/cookie.svg" alt="" className="cookie" />
       
       </div>   
       </div>       
