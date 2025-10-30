@@ -53,6 +53,12 @@
 }
 
 .competition-container {
+  background-image: url('/Asset/Competitionpage/competition_bg.svg');
+  background-size: "cover";
+  background-position: "center";
+  background-repeat: "no-repeat";
+
+  position: relative;
   z-index: 0;
   display: flex;
   justify-content: center;
@@ -61,14 +67,14 @@
 }
 
 .img-title{
-    width: 75rem;
+    width: 80rem;
     height: auto;
-    margin-top: 5rem;
+    margin-top: 4rem;
 }
 
 .search-input {
   background-color: transparent;
-  width: 20rem;   
+  width: 40rem;   
   height: 5rem;  
   border: none;
   display: inline-flex;
@@ -86,15 +92,15 @@
   outline: none;
 }
 
-.categories-content {
+.categories-container {
+  position: relative;
+  z-index: 3;
   display: flex;
   flex-wrap: wrap; /* biar kalau banyak badge bisa turun ke baris bawah */
   justify-content: center; /* horizontal center */
   align-items: center; /* vertical center */
   max-width: 70%;
   margin: 0 auto; /* biar kontainer juga di tengah halaman */
-  z-index: 100;
-  position: relative;
 }
  
 .categories-pointer {
@@ -106,30 +112,60 @@
   width: 10rem;   /* semua badge sama lebar */
   height: 4rem;  /* semua badge sama tinggi */
   color: white;
-  border: none;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  transition: 0.3s;
-  margin: 0.2rem; /* jarak antar badge */
-  font-family: "Seenonim";
-
+  min-width: 8rem;
 }
 
-.categories-pointer:hover {
-  opacity: 0.8;
+.categories-card.active {
+  --button-left-gradient: #E0EEE9;
+  --button-right-gradient: #61C0D6;
+  --button-left-border: #fff0b8;
+  --button-right-border: #f2b028;
+  background-image: linear-gradient(
+      90deg,
+      var(--button-left-gradient),
+      var(--button-right-gradient)
+    ),
+    radial-gradient(
+      circle at top left,
+      var(--button-left-border),
+      var(--button-right-border)
+    );
+  color: white;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+
+.categories-card:hover {
+  --button-left-gradient: #E0EEE9;
+  --button-right-gradient: #61C0D6;
+  --button-left-border: #f2b028;
+  --button-right-border: #fff0b8;
+  background-image: linear-gradient(
+      90deg,
+      var(--button-left-gradient),
+      var(--button-right-gradient)
+    ),
+    radial-gradient(
+      circle at top left,
+      var(--button-left-border),
+      var(--button-right-border)
+    );
 }
 
 .competition-detail-container {
+  position: relative;
+  z-index: 3;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem; 
   margin-top: 3rem;
+
 }
 
 .competition-detail-card {
+  background-image: url("/Asset/Competitionpage/competition_card.svg");
   background-repeat: no-repeat;
   background-position: left;
   background-size: contain;
@@ -137,11 +173,11 @@
   height: 15rem; 
   width: 30rem;  /* semua badge sama tinggi */
   color: white;
+  border: none;
   display: inline-flex;
   align-items: center;
   transition: 0.3s; /* jarak antar badge */
   font-family: "Seenonim";
-  border: 0.5rem solid transparent;
 }
 
 .detail-card{
@@ -157,103 +193,49 @@
   width: 12rem;   /* semua badge sama lebar */
   height: 4.5rem;  /* semua badge sama tinggi */
   color: white;
-  border: none;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  transition: 0.3s;
-  margin: 0.2rem; /* jarak antar badge */
 }
 
 .title-text{
   font-size: 18px;
-  font-weight:bold;
+  font-weight:500;
   color: #95183D;
+  margin-top: 1rem;
 }
 
 .deadline-text{
+  font-weight: 500;
   color: #95183D;
-  margin-bottom: 2rem;
+  margin-bottom: 1.8rem;
 }
 
 .detail-text{
-  font-weight: bold;
+  font-weight: 300;
   color: #E36F8F;
 }
 
-/* .stacked-images {
-  position: relative; 
-  width: 100%; 
-  height: auto; 
-}
-
-.stacked-images img {
-  position: absolute;
-}
-
-.img1 {
-  z-index:1; 
-  top: 100px;
-}
-
-.img2 {
-  z-index: 4; 
-  opacity: 0.8; 
-}
-
-.img3 {
-  z-index: 3;
-  left: 0;
-  top:-380px;
-}
-
-.img4 {
-  z-index: 2;
-  right: 0;
-  top: -100px;
-} */
-
-
-.competition-container {
-  position: relative; /* penting agar anak absolut bisa ditempatkan di dalam container */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-/* Portal & car sebagai dekorasi di bawah card */
-.komponen-hiasan {
-  z-index: 2; /* lebih kecil dari card agar di bawah */
-}
 .img-portal{
+  position: absolute;
+  z-index: 2;
   width: 30rem;
   height: auto;
-  position: absolute;
   bottom: 0;
   left: 0;
   z-index: 1;
 }
+
 .img-car{
+  position: absolute;
+  z-index: 2;
   width: 35rem;
   height: auto;
-  position: absolute;
   bottom: 0;
   right: 0;
 }
 
-/* Card kompetisi tetap di atas portal */
-.competition-detail-container {
-  position: relative;
-  z-index: 3; /* pastikan card lebih tinggi dari portal */
-}
-
-/* Footer bertumpuk paling bawah */
 .stacked-images {
   position: relative;
   width: 100%;
-  margin-top: 12rem; /* jarak setelah portal */
+  margin-top: 12rem; 
 }
 
 .stacked-images img {
@@ -264,13 +246,6 @@
   z-index: 1;
   bottom: 0;
   left: 0;
-}
-
-.img2 {
-  z-index: 3;
-  bottom: 0;
-  right: 0;
-  opacity: 0.9;
 }
 
 .pagination-arrow {
@@ -281,10 +256,32 @@
 }
 
 .pagination-number {
+  --button-left-gradient: #FFF2E2;
+  --button-right-gradient: #FFD169;
+  background-image: linear-gradient(
+      90deg,
+      var(--button-left-gradient),
+      var(--button-right-gradient)
+    );
   color: rgb(150, 47, 82);
   font-size: medium;
   font-weight:500;
-  font-family: "Seenonim";
+}
+
+.cloud_left{
+  position: absolute;
+  top: 13rem;
+  left: -15rem;
+  width: 45rem;
+  height: auto;
+}
+
+.cloud_right{
+  position: absolute;
+  top: 13rem;
+  right: -15rem;
+  width: 45rem;
+  height: auto;
 }
 
 

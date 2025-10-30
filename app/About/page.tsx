@@ -8,7 +8,7 @@ import "./styles.css";
 
 export default function About() {
   
-  const TEMP_LOGO_PATH = 'Asset/Logo/LOGO.webp';
+  const TEMP_LOGO_PATH = 'Asset/Logo/ .webp';
   
   const partnerLogos = [
     {
@@ -50,7 +50,7 @@ export default function About() {
       <div
         className="about-background"
         style={{
-          backgroundImage: `url('Asset/Aboutpage/about_backgrounds.svg')`,
+          backgroundImage: `url('Asset/Aboutpage/about_backgroundss.svg')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
@@ -77,13 +77,15 @@ export default function About() {
           
           <div className="partners-container">
 
-            <img 
-            src="Asset/Aboutpage/partners_title.svg" 
-            alt="partner-title" 
-            className="partners-title"
-            loading="lazy"
-            decoding="async"
-            />
+              
+             <img 
+              src="Asset/Aboutpage/partners_title.svg" 
+              alt="partner-title" 
+              className="partners-title"
+              loading="lazy"
+              decoding="async"
+              />
+            
 
             {/* data media partner kak.. */}
 
@@ -98,7 +100,7 @@ export default function About() {
                 decoding="async"
               />
               <div className="partners-rectangle-overlay">
-                <span className="partners-overlay-text">LOGO</span>
+                <span className="partners-overlay-text"> </span>
               </div>
             </div>
 
@@ -111,7 +113,7 @@ export default function About() {
                 decoding="async"
               />
               <div className="partners-rectangle-overlay">
-                <span className="partners-overlay-text">LOGO</span>
+                <span className="partners-overlay-text"> </span>
               </div>
             </div>
 
@@ -124,7 +126,7 @@ export default function About() {
                 decoding="async"
               />
               <div className="partners-rectangle-overlay">
-                <span className="partners-overlay-text">LOGO</span>
+                <span className="partners-overlay-text"> </span>
               </div>
             </div>
 
@@ -137,7 +139,7 @@ export default function About() {
                 decoding="async"
               />
               <div className="partners-rectangle-overlay">
-                <span className="partners-overlay-text">LOGO</span>
+                <span className="partners-overlay-text"> </span>
               </div>
             </div>
 
@@ -154,11 +156,9 @@ export default function About() {
             decoding="async"
             />
 
-            {/* data sponsor kak.. */}
+            <div className="sponsor-rectangle-container">
 
-            <div className="partners-rectangle-container">
-
-              <div className="partners-rectangle">
+              <div className="sponsor-rectangle">
               <img 
                 src="Asset/Aboutpage/rectangle.svg" 
                 alt="partners rectangle" 
@@ -167,11 +167,11 @@ export default function About() {
                 decoding="async"
               />
               <div className="partners-rectangle-overlay">
-                <span className="partners-overlay-text">LOGO</span>
+                <span className="partners-overlay-text"> </span>
               </div>
             </div>
 
-            <div className="partners-rectangle">
+            <div className="sponsor-rectangle">
               <img 
                 src="Asset/Aboutpage/rectangle.svg" 
                 alt="partners rectangle" 
@@ -180,11 +180,11 @@ export default function About() {
                 decoding="async"
               />
               <div className="partners-rectangle-overlay">
-                <span className="partners-overlay-text">LOGO</span>
+                <span className="partners-overlay-text"> </span>
               </div>
             </div>
 
-            <div className="partners-rectangle">
+            <div className="sponsor-rectangle">
               <img 
                 src="Asset/Aboutpage/rectangle.svg" 
                 alt="partners rectangle" 
@@ -193,11 +193,11 @@ export default function About() {
                 decoding="async"
               />
               <div className="partners-rectangle-overlay">
-                <span className="partners-overlay-text">LOGO</span>
+                <span className="partners-overlay-text"> </span>
               </div>
             </div>
 
-            <div className="partners-rectangle">
+            <div className="sponsor-rectangle">
               <img 
                 src="Asset/Aboutpage/rectangle.svg" 
                 alt="partners rectangle" 
@@ -206,13 +206,23 @@ export default function About() {
                 decoding="async"
               />
               <div className="partners-rectangle-overlay">
-                <span className="partners-overlay-text">LOGO</span>
+                <span className="partners-overlay-text"> </span>
               </div>
             </div>
 
           </div>
           </div>
-        </div>   
+
+          <img src="/Asset/Aboutpage/mochi1.svg" alt="" className="mochi1"/>
+          <img src="/Asset/Aboutpage/mochi2.svg" alt="" className="mochi2"/>
+          <img src="/Asset/Aboutpage/mochi3.svg" alt="" className="mochi3"/>
+
+          <img src="/Asset/Aboutpage/cloud_left1.svg" alt="" className="cloud_left1" />
+          <img src="/Asset/Aboutpage/cloud_left2.svg" alt="" className="cloud_left2" />
+          <img src="/Asset/Aboutpage/cloud_right1.svg" alt="" className="cloud_right1" />
+          <img src="/Asset/Aboutpage/cloud_right2.svg" alt="" className="cloud_right2" />
+      
+      </div>   
       </div>       
     </>
   );

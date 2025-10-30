@@ -56,57 +56,47 @@ export default function CompetitionsPage() {
 
   return (
     <>
-    <main className="competitions-page"
+    <main className="competition-page">
+
+        <div className="competition-container" 
         style={{
           backgroundImage: `url('Asset/Competitionpage/competition_bg.svg')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
-    }}>
+        }}
+        >
 
-      <section>
-
-        <div className="competition-container">
            <img
+            className="img-title"
             src="Asset/Competitionpage/title_competition.svg"
             alt="main-title"
-            className="img-title"
             loading="lazy"
             decoding="async"
-        />
+          />
 
           <div className="search-container search-decor">
             <input
+              className="search-input"
               type="text"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               placeholder="SEARCH HERE"
-              className="search-input"
             />
           </div>
 
-          <div className="categories-card">
-
-            <div className="categories-content">
-              {categories.map((category) => (
-                <Badge
-                key={category}
-                variant={selectedCategory === category ? "default" : "secondary"}
-                onClick={() => setSelectedCategory(category)}
-                className="categories-pointer"
-                style={{
-                  backgroundImage:
-                    selectedCategory === category
-                      ? "url('/Asset/Competitionpage/categories_card_hover.svg')"
-                      : "url('/Asset/Competitionpage/categories_card.svg')",
-                }}
+          <div className="categories-container">
+            {categories.map((category) => (
+              <Badge
+              key={category}
+              variant={selectedCategory === category ? "default" : "secondary"}
+              onClick={() => setSelectedCategory(category)}
+              className={`categories-card ${selectedCategory === category ? "active" : ""}`}
               >
-                {category}
+              {category}
               </Badge>
-              ))}
-            </div>
+            ))}
           </div>
-
 
           <div className="competition-detail-container">
             {paginatedCompetitions.map((comp) => (
@@ -115,7 +105,7 @@ export default function CompetitionsPage() {
                 className="competition-detail-card comp-detail-decor "
               >
                 <div className="detail-card">
-                  <Badge variant="secondary" className="categories-pointer-detail">{comp.category}</Badge>
+                  <Badge variant="secondary" className="categories-in-detail">{comp.category}</Badge>
                   <h3 className="title-text">
                     {comp.title}
                   </h3>
@@ -167,28 +157,19 @@ export default function CompetitionsPage() {
             </Pagination>
           </div>
 
-          {/* <div className="stacked-images">
+          <img src="Asset/Competitionpage/portal.svg" alt="portal" className="img-portal" loading="lazy" decoding="async" />
+          <img src="Asset/Competitionpage/car.svg" alt="car" className="img-car" loading="lazy" decoding="async" />
+         
 
-            <img src="Asset/Competitionpage/portal.svg" alt="" className="img3" />
-            <img src="Asset/Competitionpage/car.svg" alt="" className="img4"/>
+          <div className="stacked-images">
+            <img src="Asset/Homepage/startline.svg" alt="" className="img1" loading="lazy" decoding="async" /> 
+          </div>
 
-            <img src="Asset/Homepage/startline.svg" alt="" className="img1" />
-            <img src="Asset/Competitionpage/footer2.svg" alt="" className="img2" />    
+          <img src="Asset/Competitionpage/cloud_left.svg" alt="" className="cloud_left" />
+          <img src="Asset/Competitionpage/cloud_right.svg" alt="" className="cloud_right" />
 
-           
-            
-          </div> */}
-
-<div className="komponen-hiasan">
-  <img src="Asset/Competitionpage/portal.svg" alt="portal" className="img-portal" loading="lazy" decoding="async" />
-  <img src="Asset/Competitionpage/car.svg" alt="car" className="img-car" loading="lazy" decoding="async" />
-</div>
-
-<div className="stacked-images">
-  <img src="Asset/Homepage/startline.svg" alt="" className="img1" loading="lazy" decoding="async" /> 
-</div>
         </div>
-      </section>
+
     </main>
     </>
   );
