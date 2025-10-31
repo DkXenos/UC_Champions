@@ -60,54 +60,40 @@ export default function About() {
       <div className="about-container">
 
           <div className="about-title-container">
-
-          <img src="Asset/Aboutpage/cloud_left1.svg" alt="" className="cloud_left1"/>
-          <img src="Asset/Aboutpage/cloud_left2.svg" alt="" className="cloud_left2"/>
-          
-          <img
-            src="Asset/Aboutpage/about_title.svg"
-            alt="about-title"
-            className="about-title"
-            loading="lazy"
-            decoding="async"
-          />
-
+            <img src="Asset/Aboutpage/cloud_left1.svg" alt="" className="cloud_left1"/>
+            <img src="Asset/Aboutpage/cloud_left2.svg" alt="" className="cloud_left2"/>
+            <img
+              src="Asset/Aboutpage/about_title.svg"
+              alt="about-title"
+              className="about-title"
+              loading="lazy"
+              decoding="async"
+            />
           </div>
           
           <div className="about-description-container">
-
-          <img src="Asset/Aboutpage/cloud_right1.svg" alt="" className="cloud_right1"/>
-          <img src="Asset/Aboutpage/cloud_right2.svg" alt="" className="cloud_right2"/>
-          
-
-          <img
-            src="Asset/Aboutpage/about_description.svg"
-            alt="about-description"
-            className="about-description"
-            loading="lazy"
-            decoding="async"
-          />
-
+            <img src="Asset/Aboutpage/cloud_right1.svg" alt="" className="cloud_right1"/>
+            <img src="Asset/Aboutpage/cloud_right2.svg" alt="" className="cloud_right2"/>
+            <img
+              src="Asset/Aboutpage/about_description.svg"
+              alt="about-description"
+              className="about-description"
+              loading="lazy"
+              decoding="async"
+            />
           </div>
     
-          
-
-          
           <div className="partners-container">
 
             <img src="Asset/Aboutpage/star_left.svg" alt="" className="star_left"/>
             <img src="Asset/Aboutpage/cake_right.svg" alt="" className="cake_right"/>
-              
-             <img 
+            <img 
               src="Asset/Aboutpage/partners_title.svg" 
               alt="partner-title" 
               className="partners-title"
               loading="lazy"
               decoding="async"
               />
-            
-
-            {/* data media partner kak.. */}
 
             <div className="partners-rectangle-container">
 
@@ -180,14 +166,10 @@ export default function About() {
           </div>
           </div>
 
-
-            {/* <img src="/Asset/Aboutpage/cloud_left1.svg" alt="" className="cloud_left1" />
-            <img src="/Asset/Aboutpage/cloud_left2.svg" alt="" className="cloud_left2" />
-            <img src="/Asset/Aboutpage/cloud_right1.svg" alt="" className="cloud_right1" />
-            <img src="/Asset/Aboutpage/cloud_right2.svg" alt="" className="cloud_right2" /> */}
-          <img src="/Asset/Aboutpage/cookie.svg" alt="" className="cookie" />
+          
       
       </div>   
+        <img src="/Asset/Aboutpage/mochi_bottom.svg" alt="" className="mochi-bottom" />
       </div>       
     </>
   );
