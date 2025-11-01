@@ -59,12 +59,12 @@ export default function CompetitionsPage() {
     <main className="competition-page">
 
         <div className="competition-container" 
-        style={{
-          backgroundImage: `url('Asset/Competitionpage/competition_bg.svg')`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-        }}
+        // style={{
+        //   backgroundImage: `url('Asset/Competitionpage/competition_bg.svg')`,
+        //   backgroundSize: "cover",
+        //   backgroundPosition: "center",
+        //   backgroundRepeat: "no-repeat",
+        // }}
         >
 
            <img
@@ -162,6 +162,7 @@ export default function CompetitionsPage() {
 
           <img src="Asset/Competitionpage/portal.svg" alt="portal" className="img-portal" loading="lazy" decoding="async" />
           <img src="Asset/Competitionpage/car.svg" alt="car" className="img-car" loading="lazy" decoding="async" />
+          <img src="Asset/Competitionpage/portal-car.svg" alt="portal-car" className="portal-car" loading="lazy" decoding="async" />
          
 
           <div className="stacked-images">
