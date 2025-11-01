@@ -15,7 +15,7 @@ export default function Home() {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <img
+        {/* <img
           src="Asset/Homepage/leftcloudup.svg"
           alt="left cloud up"
           className="leftcloud"
@@ -28,7 +28,7 @@ export default function Home() {
           className="rightcloud"
           loading="lazy"
           decoding="async"
-        />
+        /> */}
         <div className="homepage-container ">
           <img
             src="Asset/Homepage/maintitle.svg"
