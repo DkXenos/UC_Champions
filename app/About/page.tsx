@@ -8,7 +8,7 @@ import "./styles.css";
 
 export default function About() {
   
-  const TEMP_LOGO_PATH = 'Asset/Logo/ .webp';
+  const TEMP_LOGO_PATH = '/Asset/Logo/LOGO.webp';
   
   const partnerLogos = [
     {
@@ -95,32 +95,18 @@ export default function About() {
               decoding="async"
               />
 
-            <div className="partners-rectangle-container">
-
-            <div className="partners-rectangle">
-              <div className="partners-rectangle-overlay">
-                <span className="partners-overlay-text"></span>
-              </div>
-            </div>
-
-            <div className="partners-rectangle">
-              <div className="partners-rectangle-overlay">
-                <span className="partners-overlay-text"></span>
-              </div>
-            </div>
-
-            <div className="partners-rectangle">
-              <div className="partners-rectangle-overlay">
-                <span className="partners-overlay-text"></span>
-              </div>
-            </div>
-
-            <div className="partners-rectangle">
-              <div className="partners-rectangle-overlay">
-                <span className="partners-overlay-text"></span>
-              </div>
-            </div>
-
+            <div className="partner-loop-with-borders">
+              <LogoLoop
+                logos={partnerLogos}
+                speed={40}
+                direction="left"
+                logoHeight={120}
+                gap={40}
+                pauseOnHover={true}
+                fadeOut={false}
+                scaleOnHover={false}
+                className="partner-logo-loop"
+              />
             </div>
           </div>
 
@@ -137,33 +123,19 @@ export default function About() {
             decoding="async"
             />
 
-            <div className="sponsor-rectangle-container">
-
-              <div className="sponsor-rectangle">
-              <div className="partners-rectangle-overlay">
-                <span className="partners-overlay-text"> </span>
-              </div>
+            <div className="sponsor-loop-with-borders">
+              <LogoLoop
+                logos={partnerLogos}
+                speed={40}
+                direction="right"
+                logoHeight={120}
+                gap={40}
+                pauseOnHover={true}
+                fadeOut={false}
+                scaleOnHover={false}
+                className="sponsor-logo-loop"
+              />
             </div>
-
-            <div className="sponsor-rectangle">
-              <div className="partners-rectangle-overlay">
-                <span className="partners-overlay-text"> </span>
-              </div>
-            </div>
-
-            <div className="sponsor-rectangle">
-              <div className="partners-rectangle-overlay">
-                <span className="partners-overlay-text"> </span>
-              </div>
-            </div>
-
-            <div className="sponsor-rectangle">
-              <div className="partners-rectangle-overlay">
-                <span className="partners-overlay-text"> </span>
-              </div>
-            </div>
-
-          </div>
           </div>
 
           

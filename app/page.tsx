@@ -22,7 +22,7 @@ export default function Home() {
           loading="lazy"
           decoding="async"
         />
-        <img
+        <img`
           src="Asset/Homepage/rightcloudup.svg"
           alt="right cloud up"
           className="rightcloud"

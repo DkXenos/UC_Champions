@@ -796,6 +796,15 @@
   width: 80%;
 }
 
+.sponsor-loop-with-borders img {
+  height: 100px;
+  object-fit: contain;
+}
+.partner-loop-with-borders img {
+  width: auto ;
+  height: 150px;
+}
+
 .partners-container{
     z-index: 2;
     background: radial-gradient(ellipse,rgba(248, 231, 194, 0.5) 0%,rgba(238, 202, 105, 0.5) 100% );
@@ -4568,4 +4577,59 @@
   width: 100%;
   bottom: 0;
 }
+}
+
+/* Logo Loop with Borders */
+.sponsor-loop-with-borders {
+  width: 100%;
+  margin-top: 2rem;
+  padding: 0 2rem;
+}
+.partner-loop-with-borders {
+  width: 100%;
+  margin-top: 2rem;
+  padding: 0 2rem;
+}
+.sponsor-loop-with-borders img {
+  border: 6px solid transparent;
+  padding: 2rem;
+  border-radius: 2rem;
+  background-image: linear-gradient(90deg, #ffffff, #ffffff),
+    radial-gradient(circle at top left, #f2b028, #fff0b8);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  transition: transform 300ms;
+  width: auto ;
+  height: 150px;
+  object-fit: contain;
+}
+.partner-loop-with-borders img {
+  border: 6px solid transparent;
+  padding: 1.5rem;
+  border-radius: 2rem;
+  background-image: linear-gradient(90deg, #ffffff, #ffffff),
+    radial-gradient(circle at top left, #f2b028, #fff0b8);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  transition: transform 300ms;
+  width: auto ;
+  height: 200px;
+  object-fit: contain;
+}
+
+/* .logo-loop-with-borders img:hover {
+  transform: scale(1.01);
+} */
+
+/* Prevent logo overflow */
+.partner-loop-with-borders,
+.sponsor-loop-with-borders {
+  overflow-x: hidden !important;
+  max-width: 100vw;
+}
+
+.partners-container,
+.sponsor-container {
+  overflow-x: hidden !important;
+  max-width: 100%;
 }
