@@ -51,7 +51,7 @@ export default function Home() {
             <iframe
               width="560"
               height="315"
-              src="https://www.youtube.com/embed/TXo3j1jmKlQ?si=fnflcHY8HbpbesEO"
+              src="https://www.youtube.com/embed/cvoRaD5Zamo"
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
