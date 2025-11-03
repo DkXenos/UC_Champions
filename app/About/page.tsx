@@ -49,7 +49,7 @@ export default function About() {
       <div
         className="about-background"
         style={{
-          backgroundImage: `url('/Asset/Aboutpage/about_backgroundss.svg')`,
+          backgroundImage: `url('/Asset/Aboutpage/mainbgabout.png')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
@@ -88,7 +88,7 @@ export default function About() {
               className="cloud_right2"
             />
             <img
-              src="/Asset/Aboutpage/about_description.svg"
+              src="/Asset/Aboutpage/aboutdesc.png"
               alt="about-description"
               className="about-description"
               loading="lazy"
@@ -137,7 +137,7 @@ export default function About() {
               className="mochi_left"
             />
             <img
-              src="/Asset/Aboutpage/mochi_right.svg"
+              src="/Asset/Aboutpage/kananmochi.png"
               alt=""
               className="mochi_right"
             />
