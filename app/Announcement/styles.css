@@ -48,17 +48,18 @@
 
 @media (max-width: 3840px) and (max-height: 2160px) {
   .announcement {
-    padding-top: 50rem;
-    background-size: 100% auto;
-
+    will-change: auto;
+    min-height: 100vh;
+    background-size: contain;
+    background-position: top center;
   }
+
   .top-section {
     display: flex;
     justify-content: end;
     align-items: center;
     flex-direction: column;
-    min-width:100%;
-    padding-top: -30rem;
+    min-width: 100%;
   }
 
   .title-bg {
@@ -104,53 +105,64 @@
     flex-direction: column;
     width: 100%;
   }
-  .winner-card{
-    width:60rem;
-    height:30rem;
+
+  .winner-card {
+    width: 60rem;
+    height: 30rem;
   }
-  .winner-cards{
+
+  .winner-cards {
     max-width: 80%;
   }
-  .pagination{
-    margin-top:2rem;
-    margin-bottom:2rem;
+
+  .pagination {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     font-size: 5rem;
   }
-  .buttom-decor{
-    width:100%;
-    height:auto;
-    margin-top:-5rem;
+
+  .buttom-decor {
+    width: 100%;
+    height: auto;
+    margin-top: -5rem;
   }
-  .card-layout{
-    gap:-2rem;
+
+  .card-layout {
+    gap: -2rem;
   }
-  .end-date{
-    font-size:2rem;
+
+  .end-date {
+    font-size: 2rem;
   }
-  .comp-title{
-    font-size:3rem;
+
+  .comp-title {
+    font-size: 3rem;
   }
-  .button-section{
+
+  .button-section {
     padding-top: 1rem;
     padding-bottom: 0.5rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
-  .button-decor{
-    font-size:3rem;
-    width:100%;
-    align-items:center;
+
+  .button-decor {
+    font-size: 3rem;
+    width: 100%;
+    align-items: center;
   }
-  .card{
+
+  .card {
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin-bottom: 2rem;
   }
-  .footerdecor{
-    width:100%;
-    height:auto;
-    margin-top:-10rem;
+
+  .footerdecor {
+    width: 100%;
+    height: auto;
+    margin-top: -10rem;
   }
 }
 

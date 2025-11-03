@@ -137,7 +137,7 @@ export default function AnnouncementsPage() {
         className="announcement"
         style={{
           backgroundImage: `url('Asset/Announcement/mainbg.svg')`,
-          backgroundSize: "cover",
+          backgroundSize: "100% auto",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
         }}
