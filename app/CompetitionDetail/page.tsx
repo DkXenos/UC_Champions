@@ -159,15 +159,12 @@ function CompetitionDetailContent() {
 
           {/* Title Section with Background */}
           <div className="title-section">
-            <div
-              className="title-bg-wrapper"
-              style={{
-                backgroundImage: `url('Asset/CompetitionDetail/titlebg.svg')`,
-                backgroundSize: "contain",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-              }}
-            >
+            <div className="title-bg-wrapper">
+              <img 
+                src="Asset/CompetitionDetail/titlebg.svg" 
+                alt="title background" 
+                className="title-bg-image"
+              />
               <div className="title-content">
                 <Badge variant="secondary" className="mb-4 badge-decor">
                   {competition.category}
@@ -185,15 +182,12 @@ function CompetitionDetailContent() {
           {/* info section test */}
           <div className="info-section">
             {/* About Section */}
-            <div
-              className="about-wrapper"
-              style={{
-                backgroundImage: `url('Asset/CompetitionDetail/aboutbg.svg')`,
-                backgroundSize: "contain",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-              }}
-            >
+            <div className="about-wrapper">
+              <img 
+                src="Asset/CompetitionDetail/aboutbg.svg" 
+                alt="about background" 
+                className="about-bg-image"
+              />
               <div className="about-content">
                 <h2 className="section-title">About This Competition</h2>
                 <p className="about-text">{competition.description}</p>
@@ -201,15 +195,12 @@ function CompetitionDetailContent() {
             </div>
 
             {/* Quick Info Section */}
-            <div
-              className="info-wrapper"
-              style={{
-                backgroundImage: `url('Asset/CompetitionDetail/infobg.svg')`,
-                backgroundSize: "contain",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-              }}
-            >
+            <div className="info-wrapper">
+              <img 
+                src="Asset/CompetitionDetail/infobg.svg" 
+                alt="info background" 
+                className="info-bg-image"
+              />
               <div className="info-content">
                 <h3 className="section-title">Quick Information</h3>
                 <div className="info-item">
@@ -276,33 +267,39 @@ function CompetitionDetailContent() {
           </div>
 
           {/* Secondary Board - Timeline and Prizes Only */}
-          <div
-            className="secondary-section"
-            style={{
-              backgroundImage: `url('Asset/CompetitionDetail/secondaryboard.svg')`,
-              backgroundSize: "contain",
-              backgroundPosition: "center",
-              backgroundRepeat: "no-repeat",
-            }}
-          >
+          <div className="secondary-section">
+            <img 
+              src="Asset/CompetitionDetail/secondaryboard.svg" 
+              alt="secondary board background" 
+              className="secondary-bg-image"
+            />
             <div className="secondary-content">
               {/* Timeline */}
               <div className="secondary-block">
-                <img
-                  src="Asset/CompetitionDetail/timelinebglast.svg"
-                  alt="timelinebg"
-                  className="timelinebg"
-                />
-                <h2 className="timeline-title">Timeline</h2>
-                <div className="timeline-list">
-                  {competition.timeline.map((item, index) => (
-                    <div key={index} className="timeline-item">
-                      <div className="timeline-details">
-                        <div className="timeline-event">{item.event}</div>
-                        <div className="timeline-date">{item.date}</div>
+                <div className="timeline-content">
+                  <img
+                    src="Asset/CompetitionDetail/timelinebglast.svg"
+                    alt="timelinebg"
+                    className="timelinebg"
+                  />
+                  <h2 className="timeline-title">Timeline</h2>
+                  <div className="timeline-list">
+                    {competition.timeline.map((item, index) => (
+                      <div key={index} className="timeline-item">
+                        <div className="timeline-details">
+                          <div className="timeline-event">{item.event}</div>
+                          <div className="timeline-date">{item.date}</div>
+                        </div>
                       </div>
-                    </div>
-                  ))}
+                    ))}
+                  </div>
+                </div>
+                <div className="cp-info">
+                  <img
+                    src="Asset/CompetitionDetail/cpbgnew.png"
+                    alt="contact person background"
+                    className="cpbg"
+                  />
                 </div>
               </div>
 
@@ -326,15 +323,12 @@ function CompetitionDetailContent() {
           </div>
 
           {/* Requirements Section - Separate with requirementborder background */}
-          <div
-            className="requirement-section"
-            style={{
-              backgroundImage: `url('Asset/CompetitionDetail/requirementborder.svg')`,
-              backgroundSize: "contain",
-              backgroundPosition: "center",
-              backgroundRepeat: "no-repeat",
-            }}
-          >
+          <div className="requirement-section">
+            <img 
+              src="Asset/CompetitionDetail/requirementborder.svg" 
+              alt="requirement border background" 
+              className="requirement-bg-image"
+            />
             <div className="requirement-content">
               <h2 className="section-title">Requirements</h2>
               <ul className="requirements-list">

@@ -15,20 +15,20 @@ export default function Home() {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <img
+        {/* <img
           src="Asset/Homepage/leftcloudup.svg"
           alt="left cloud up"
           className="leftcloud"
           loading="lazy"
           decoding="async"
         />
-        <img
+        <img`
           src="Asset/Homepage/rightcloudup.svg"
           alt="right cloud up"
           className="rightcloud"
           loading="lazy"
           decoding="async"
-        />
+        /> */}
         <div className="homepage-container ">
           <img
             src="Asset/Homepage/maintitle.svg"
@@ -51,7 +51,7 @@ export default function Home() {
             <iframe
               width="560"
               height="315"
-              src="https://www.youtube.com/embed/TXo3j1jmKlQ?si=fnflcHY8HbpbesEO"
+              src="https://www.youtube.com/embed/cvoRaD5Zamo"
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

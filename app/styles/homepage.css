@@ -1456,6 +1456,7 @@
   }
 }
 @media (max-width: 1024px) and (max-height: 768px) and (orientation: landscape) {
+  
   .homepage-container {
     display: flex;
     justify-content: center;
@@ -1551,12 +1552,286 @@
   }
 }
 @media (max-width: 1024px) and (max-height: 600px) {
+  .homepage-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .leftcloud {
+    position: absolute;
+    left: 0;
+    height: 10rem;
+    width: auto;
+    z-index: 5;
+  }
+  .rightcloud {
+    position: absolute;
+    right: 0;
+    height: 10rem;
+    width: auto;
+    z-index: 5;
+  }
+
+  .img-title {
+    width: 75rem;
+    height: auto;
+    margin-top: 5rem;
+  }
+  .button-decor {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+  .infobutton {
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    font-family: "Friend";
+    font-size: 1.5rem;
+  }
+  .videobg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .videoframe {
+    position: absolute;
+    z-index: 8;
+    width: 50rem;
+    height: auto;
+    margin-bottom: 20rem;
+  }
+  .video {
+    margin-top: 5rem;
+    margin-bottom: 19rem;
+    position: relative;
+    z-index: 10;
+    width: 43rem;
+    height: 23rem;
+  }
+  .bottomline {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    width: 100%;
+    height: auto;
+  }
+  .startline{
+    width: 100%;
+    height: auto;
+  }
+  .leftdecor {
+    position: absolute;
+    left: 0;
+    height: 20rem;
+    width: auto;
+    z-index: 9;
+  }
+  .rightdecor {
+    position: absolute;
+    right: 0;
+    height: 25rem;
+    width: auto;
+    z-index: 9;
+  }
+  .icedecor {
+    position: absolute;
+    position: absolute;
+    right: 0;
+    height: 35rem;
+    width: auto;
+    z-index: 8;
+  }
 }
 @media (max-width: 956px) and (max-height: 440px) and (orientation: landscape) {
+   .homepage-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .leftcloud {
+    position: absolute;
+    left: 0;
+    height: 10rem;
+    width: auto;
+    z-index: 5;
+  }
+  .rightcloud {
+    position: absolute;
+    right: 0;
+    height: 10rem;
+    width: auto;
+    z-index: 5;
+  }
+
+  .img-title {
+    width: 75rem;
+    height: auto;
+    margin-top: 5rem;
+  }
+  .button-decor {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+  .infobutton {
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    font-family: "Friend";
+    font-size: 1.5rem;
+  }
+  .videobg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .videoframe {
+    position: absolute;
+    z-index: 8;
+    width: 50rem;
+    height: auto;
+    margin-bottom: 20rem;
+  }
+  .video {
+    margin-top: 5rem;
+    margin-bottom: 19rem;
+    position: relative;
+    z-index: 10;
+    width: 40rem;
+    height: 23rem;
+  }
+  .bottomline {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    width: 100%;
+    height: auto;
+  }
+  .startline{
+    width: 100%;
+    height: auto;
+  }
+  .leftdecor {
+    position: absolute;
+    left: 0;
+    height: 20rem;
+    width: auto;
+    z-index: 9;
+  }
+  .rightdecor {
+    position: absolute;
+    right: 0;
+    height: 25rem;
+    width: auto;
+    z-index: 9;
+  }
+  .icedecor {
+    position: absolute;
+    position: absolute;
+    right: 0;
+    height: 30rem;
+    width: auto;
+    z-index: 8;
+  }
 }
 @media (max-width: 932px) and (max-height: 430px) {
 }
 @media (max-width: 912px) and (max-height: 1368px) and (orientation: portrait) {
+  .homepage {
+    background-image: url("/Asset/Homepage/mobilebg.svg") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+  }
+
+  .homepage-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .img-title {
+    width: 60rem;
+    height: auto;
+    margin-top: 5rem;
+  }
+  .infobutton {
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    font-family: "Friend";
+    font-size: 1.5rem;
+  }
+  .videobg {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+  }
+  .videoframe {
+    position: absolute;
+    z-index: 8;
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+    width: 45rem;
+    height: auto;
+  }
+  .video {
+    margin-top: 5.5rem;
+    margin-bottom: 25rem;
+    position: relative;
+    z-index: 10;
+    width: 35rem;
+    height: 19rem;
+  }
+  .bottomline {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+  }
+  .leftdecor {
+    position: absolute;
+    left: -2rem;
+    height: 22rem;
+    width: auto;
+    z-index: 9;
+  }
+  .rightdecor {
+    position: absolute;
+    right: 0;
+    height: 25rem;
+    width: auto;
+    z-index: 9;
+  }
+  .icedecor {
+    position: absolute;
+    position: absolute;
+    right: 0rem;
+    height: 38rem;
+    width: auto;
+    z-index: 7;
+  }
+  .leftcloud {
+    position: absolute;
+    left: 0;
+    height: 5rem;
+    width: auto;
+    z-index: 5;
+  }
+  .rightcloud {
+    position: absolute;
+    right: 0;
+    height: 5rem;
+    width: auto;
+    z-index: 5;
+    display: none;
+  }
 }
 @media (max-width: 853px) and (max-height: 1280px) and (orientation: portrait) {
 }
@@ -1745,8 +2020,292 @@
 @media (max-width: 740px) and (max-height: 360px) and (orientation: landscape) {
 }
 @media (max-width: 720px) and (max-height: 540px) and (orientation: landscape) {
+  .homepage {
+    background-image: url("/Asset/Homepage/mobilebg.svg") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+  }
+
+  .homepage-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .img-title {
+    width: 60rem;
+    height: auto;
+    margin-top: 5rem;
+  }
+  .infobutton {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    font-family: "Friend";
+    font-size: 1rem;
+  }
+  .videobg {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+  }
+  .videoframe {
+    position: absolute;
+    z-index: 8;
+    margin-top: 2rem;
+    margin-right: 0.5rem;
+    width: 25rem;
+    height: auto;
+  }
+  .video {
+    margin-top: 5rem;
+    margin-bottom: 17rem;
+    position: relative;
+    z-index: 10;
+    width: 20rem;
+    height: auto;
+  }
+  .bottomline {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+  }
+  .leftdecor {
+    position: absolute;
+    left: -2rem;
+    height: 13rem;
+    width: auto;
+    z-index: 9;
+  }
+  .rightdecor {
+    position: absolute;
+    right: 0;
+    height: 15rem;
+    width: auto;
+    z-index: 9;
+  }
+  .icedecor {
+    position: absolute;
+    position: absolute;
+    right: 0rem;
+    height: 22rem;
+    width: auto;
+    z-index: 7;
+  }
+  .leftcloud {
+    position: absolute;
+    left: 0;
+    height: 5rem;
+    width: auto;
+    z-index: 5;
+  }
+  .rightcloud {
+    position: absolute;
+    right: 0;
+    height: 5rem;
+    width: auto;
+    z-index: 5;
+    display: none;
+  }
+   .button-decor {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+  }
+}
+@media (max-width: 667px) and (max-height: 375px) and (orientation: landscape) {
+  .homepage {
+    background-image: url("/Asset/Homepage/mobilebg.svg") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+  }
+
+  .homepage-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .img-title {
+    width: 60rem;
+    height: auto;
+    margin-top: 5rem;
+  }
+  .infobutton {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    font-family: "Friend";
+    font-size: 1rem;
+  }
+  .videobg {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+  }
+  .videoframe {
+    position: absolute;
+    z-index: 8;
+    margin-top: 2rem;
+    margin-right: 0.5rem;
+    width: 25rem;
+    height: auto;
+  }
+  .video {
+    margin-top: 5rem;
+    margin-bottom: 17rem;
+    position: relative;
+    z-index: 10;
+    width: 20rem;
+    height: auto;
+  }
+  .bottomline {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+  }
+  .leftdecor {
+    position: absolute;
+    left: -2rem;
+    height: 13rem;
+    width: auto;
+    z-index: 9;
+  }
+  .rightdecor {
+    position: absolute;
+    right: 0;
+    height: 15rem;
+    width: auto;
+    z-index: 9;
+  }
+  .icedecor {
+    position: absolute;
+    position: absolute;
+    right: 0rem;
+    height: 22rem;
+    width: auto;
+    z-index: 7;
+  }
+  .leftcloud {
+    position: absolute;
+    left: 0;
+    height: 5rem;
+    width: auto;
+    z-index: 5;
+  }
+  .rightcloud {
+    position: absolute;
+    right: 0;
+    height: 5rem;
+    width: auto;
+    z-index: 5;
+    display: none;
+  }
+   .button-decor {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+  }
 }
 @media (max-width: 540px) and (max-height: 720px) and (orientation: portrait) {
+  .homepage {
+    background-image: url("/Asset/Homepage/mobilebg.svg") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+  }
+
+  .homepage-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .img-title {
+    width: 60rem;
+    height: auto;
+    margin-top: 5rem;
+  }
+  .infobutton {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    font-family: "Friend";
+    font-size: 1rem;
+  }
+  .videobg {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+  }
+  .videoframe {
+    position: absolute;
+    z-index: 8;
+    margin-top: 2rem;
+    margin-right: 0.5rem;
+    width: 25rem;
+    height: auto;
+  }
+  .video {
+    margin-top: 5rem;
+    margin-bottom: 17rem;
+    position: relative;
+    z-index: 10;
+    width: 20rem;
+    height: auto;
+  }
+  .bottomline {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+  }
+  .leftdecor {
+    position: absolute;
+    left: -2rem;
+    height: 13rem;
+    width: auto;
+    z-index: 9;
+  }
+  .rightdecor {
+    position: absolute;
+    right: 0;
+    height: 15rem;
+    width: auto;
+    z-index: 9;
+  }
+  .icedecor {
+    position: absolute;
+    position: absolute;
+    right: 0rem;
+    height: 22rem;
+    width: auto;
+    z-index: 7;
+  }
+  .leftcloud {
+    position: absolute;
+    left: 0;
+    height: 5rem;
+    width: auto;
+    z-index: 5;
+  }
+  .rightcloud {
+    position: absolute;
+    right: 0;
+    height: 5rem;
+    width: auto;
+    z-index: 5;
+    display: none;
+  }
+   .button-decor {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+  }
 }
 @media (max-width: 459px) and (max-height: 841px) and (orientation: portrait) {
 }
@@ -2427,4 +2986,85 @@
   }
 }
 @media (max-width: 344px) and (max-height: 882px) and (orientation: portrait) {
+  .homepage-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .img-title {
+    width: 60rem;
+    height: auto;
+    margin-top: 5rem;
+  }
+  .infobutton {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    font-family: "Friend";
+    font-size: 1rem;
+  }
+  .videobg {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+  }
+  .videoframe {
+    position: absolute;
+    z-index: 8;
+    margin-top: 2rem;
+    margin-right: 0.5rem;
+    width: 25rem;
+    height: auto;
+  }
+  .video {
+    margin-top: 4.3rem;
+    margin-bottom: 17rem;
+    position: relative;
+    z-index: 10;
+    width: 18rem;
+    height: auto;
+  }
+  .bottomline {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+  }
+  .leftdecor {
+    position: absolute;
+    left: -2rem;
+    height: 12rem;
+    width: auto;
+    z-index: 9;
+  }
+  .rightdecor {
+    position: absolute;
+    right: 0;
+    height: 14rem;
+    width: auto;
+    z-index: 9;
+  }
+  .icedecor {
+    position: absolute;
+    position: absolute;
+    right: 0rem;
+    height: 17rem;
+    width: auto;
+    z-index: 7;
+  }
+  .leftcloud {
+    position: absolute;
+    left: 0;
+    height: 5rem;
+    width: auto;
+    z-index: 5;
+  }
+  .rightcloud {
+    position: absolute;
+    right: 0;
+    height: 5rem;
+    width: auto;
+    z-index: 5;
+    display: none;
+  }
 }

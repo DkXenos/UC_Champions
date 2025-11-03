@@ -1,15 +1,14 @@
 "use client";
 
 import Link from "next/link";
-import CircularGallery from '../../components/CircularGallery'
-import RollingGallery from '../../components/RollingGallery'
-import LogoLoop from '../../components/LogoLoop'
+import CircularGallery from "../../components/CircularGallery";
+import RollingGallery from "../../components/RollingGallery";
+import LogoLoop from "../../components/LogoLoop";
 import "./styles.css";
 
 export default function About() {
-  
-  const TEMP_LOGO_PATH = 'Asset/Logo/ .webp';
-  
+  const TEMP_LOGO_PATH = "/Asset/Logo/LOGO.webp";
+
   const partnerLogos = [
     {
       src: TEMP_LOGO_PATH,
@@ -42,7 +41,7 @@ export default function About() {
     {
       src: TEMP_LOGO_PATH,
       alt: "Partner 8",
-    }
+    },
   ];
 
   return (
@@ -50,180 +49,128 @@ export default function About() {
       <div
         className="about-background"
         style={{
-          backgroundImage: `url('Asset/Aboutpage/about_backgroundss.svg')`,
+          backgroundImage: `url('/Asset/Aboutpage/mainbgabout.png')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
         }}
       >
+        <div className="about-container">
+          <div className="about-title-container">
+            <img
+              src="/Asset/Aboutpage/cloud_left1.svg"
+              alt=""
+              className="cloud_left1"
+            />
+            <img
+              src="/Asset/Aboutpage/cloud_left2.svg"
+              alt=""
+              className="cloud_left2"
+            />
+            <img
+              src="/Asset/Aboutpage/about_title.svg"
+              alt="about-title"
+              className="about-title"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
 
-      <div className="about-container">
+          <div className="about-description-container">
+            <img
+              src="/Asset/Aboutpage/cloud_right1.svg"
+              alt=""
+              className="cloud_right1"
+            />
+            <img
+              src="/Asset/Aboutpage/cloud_right2.svg"
+              alt=""
+              className="cloud_right2"
+            />
+            <img
+              src="/Asset/Aboutpage/aboutdesc.png"
+              alt="about-description"
+              className="about-description"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
 
-          <img
-            src="Asset/Aboutpage/about_title.svg"
-            alt="about-title"
-            className="about-title"
-            loading="lazy"
-            decoding="async"
-          />
-    
-          <img
-            src="Asset/Aboutpage/about_description.svg"
-            alt="about-description"
-            className="about-description"
-            loading="lazy"
-            decoding="async"
-          />
-          
           <div className="partners-container">
-
-              
-             <img 
-              src="Asset/Aboutpage/partners_title.svg" 
-              alt="partner-title" 
+            <img
+              src="/Asset/Aboutpage/star_left.svg"
+              alt=""
+              className="star_left"
+            />
+            <img
+              src="/Asset/Aboutpage/cake_right.svg"
+              alt=""
+              className="cake_right"
+            />
+            <img
+              src="/Asset/Aboutpage/partners_title.svg"
+              alt="partner-title"
               className="partners-title"
               loading="lazy"
               decoding="async"
+            />
+
+            <div className="partner-loop-with-borders">
+              <LogoLoop
+                logos={partnerLogos}
+                speed={40}
+                direction="left"
+                logoHeight={120}
+                gap={40}
+                pauseOnHover={true}
+                fadeOut={false}
+                scaleOnHover={false}
+                className="partner-logo-loop"
               />
-            
-
-            {/* data media partner kak.. */}
-
-            <div className="partners-rectangle-container">
-
-              <div className="partners-rectangle">
-              <img 
-                src="Asset/Aboutpage/rectangle.svg" 
-                alt="partners rectangle" 
-                className="partners_rectangle"
-                loading="lazy"
-                decoding="async"
-              />
-              <div className="partners-rectangle-overlay">
-                <span className="partners-overlay-text"> </span>
-              </div>
-            </div>
-
-            <div className="partners-rectangle">
-              <img 
-                src="Asset/Aboutpage/rectangle.svg" 
-                alt="partners rectangle" 
-                className="partners_rectangle"
-                loading="lazy"
-                decoding="async"
-              />
-              <div className="partners-rectangle-overlay">
-                <span className="partners-overlay-text"> </span>
-              </div>
-            </div>
-
-            <div className="partners-rectangle">
-              <img 
-                src="Asset/Aboutpage/rectangle.svg" 
-                alt="partners rectangle" 
-                className="partners_rectangle"
-                loading="lazy"
-                decoding="async"
-              />
-              <div className="partners-rectangle-overlay">
-                <span className="partners-overlay-text"> </span>
-              </div>
-            </div>
-
-            <div className="partners-rectangle">
-              <img 
-                src="Asset/Aboutpage/rectangle.svg" 
-                alt="partners rectangle" 
-                className="partners_rectangle"
-                loading="lazy"
-                decoding="async"
-              />
-              <div className="partners-rectangle-overlay">
-                <span className="partners-overlay-text"> </span>
-              </div>
-            </div>
-
             </div>
           </div>
 
           <div className="sponsor-container">
-
-            <img 
-            src="Asset/Aboutpage/sponsor_title.svg" 
-            alt="partner-title" 
-            className="sponsor-title"
-            loading="lazy"
-            decoding="async"
+            <img
+              src="/Asset/Aboutpage/mochi_left.svg"
+              alt=""
+              className="mochi_left"
+            />
+            <img
+              src="/Asset/Aboutpage/kananmochi.png"
+              alt=""
+              className="mochi_right"
             />
 
-            <div className="sponsor-rectangle-container">
+            <img
+              src="/Asset/Aboutpage/sponsor_title.svg"
+              alt="partner-title"
+              className="sponsor-title"
+              loading="lazy"
+              decoding="async"
+            />
 
-              <div className="sponsor-rectangle">
-              <img 
-                src="Asset/Aboutpage/rectangle.svg" 
-                alt="partners rectangle" 
-                className="partners_rectangle"
-                loading="lazy"
-                decoding="async"
+            <div className="sponsor-loop-with-borders">
+              <LogoLoop
+                logos={partnerLogos}
+                speed={40}
+                direction="right"
+                logoHeight={120}
+                gap={40}
+                pauseOnHover={true}
+                fadeOut={false}
+                scaleOnHover={false}
+                className="sponsor-logo-loop"
               />
-              <div className="partners-rectangle-overlay">
-                <span className="partners-overlay-text"> </span>
-              </div>
             </div>
-
-            <div className="sponsor-rectangle">
-              <img 
-                src="Asset/Aboutpage/rectangle.svg" 
-                alt="partners rectangle" 
-                className="partners_rectangle"
-                loading="lazy"
-                decoding="async"
-              />
-              <div className="partners-rectangle-overlay">
-                <span className="partners-overlay-text"> </span>
-              </div>
-            </div>
-
-            <div className="sponsor-rectangle">
-              <img 
-                src="Asset/Aboutpage/rectangle.svg" 
-                alt="partners rectangle" 
-                className="partners_rectangle"
-                loading="lazy"
-                decoding="async"
-              />
-              <div className="partners-rectangle-overlay">
-                <span className="partners-overlay-text"> </span>
-              </div>
-            </div>
-
-            <div className="sponsor-rectangle">
-              <img 
-                src="Asset/Aboutpage/rectangle.svg" 
-                alt="partners rectangle" 
-                className="partners_rectangle"
-                loading="lazy"
-                decoding="async"
-              />
-              <div className="partners-rectangle-overlay">
-                <span className="partners-overlay-text"> </span>
-              </div>
-            </div>
-
           </div>
-          </div>
-
-          <img src="/Asset/Aboutpage/mochi1.svg" alt="" className="mochi1"/>
-          <img src="/Asset/Aboutpage/mochi2.svg" alt="" className="mochi2"/>
-          <img src="/Asset/Aboutpage/mochi3.svg" alt="" className="mochi3"/>
-
-          <img src="/Asset/Aboutpage/cloud_left1.svg" alt="" className="cloud_left1" />
-          <img src="/Asset/Aboutpage/cloud_left2.svg" alt="" className="cloud_left2" />
-          <img src="/Asset/Aboutpage/cloud_right1.svg" alt="" className="cloud_right1" />
-          <img src="/Asset/Aboutpage/cloud_right2.svg" alt="" className="cloud_right2" />
-      
-      </div>   
-      </div>       
+          <img
+            src="/Asset/Aboutpage/mochi_bottom.svg"
+            alt=""
+            className="mochi-bottom"
+          />
+        </div>
+      </div>
     </>
   );
 }
