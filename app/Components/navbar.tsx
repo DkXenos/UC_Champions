@@ -77,7 +77,7 @@ export default function Navbar() {
       <div className="navbar">
         <div className="navbar-container">
           <div className="navbar-logo">
-            <img src="Asset/Logo/LOGO.webp" alt="logo" />
+            <img src="/Asset/Logo/LOGO.webp" alt="logo" />
           </div>
           {/* Desktop Navigation */}
           <ul className="nav main-nav-list">
@@ -180,7 +180,7 @@ export default function Navbar() {
         className="containerbottom"
       >
         <img
-          src="Asset/navbar/navbarbottom.svg"
+          src="/Asset/navbar/navbarbottom.svg"
           alt="navbabottom"
           className="navbar-bottom"
         />
@@ -193,7 +193,7 @@ export default function Navbar() {
       </div>
       <div>
         <img
-          src="Asset/navbar/navbarbottomdecor.svg"
+          src="/Asset/navbar/navbarbottomdecor.svg"
           alt="navbabottom"
           className="navbar-bottom-decor"
         />

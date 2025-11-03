@@ -5616,7 +5616,7 @@
 }
 
 .mochi-bottom{
-  display: none;
+  display: block;
   position: absolute;
   z-index: 0;
   width: 100%;

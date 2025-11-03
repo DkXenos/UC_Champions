@@ -50,7 +50,7 @@ export default function About() {
       <div
         className="about-background"
         style={{
-          backgroundImage: `url('Asset/Aboutpage/about_backgroundss.svg')`,
+          backgroundImage: `url('/Asset/Aboutpage/about_backgroundss.svg')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
@@ -60,10 +60,10 @@ export default function About() {
       <div className="about-container">
 
           <div className="about-title-container">
-            <img src="Asset/Aboutpage/cloud_left1.svg" alt="" className="cloud_left1"/>
-            <img src="Asset/Aboutpage/cloud_left2.svg" alt="" className="cloud_left2"/>
+            <img src="/Asset/Aboutpage/cloud_left1.svg" alt="" className="cloud_left1"/>
+            <img src="/Asset/Aboutpage/cloud_left2.svg" alt="" className="cloud_left2"/>
             <img
-              src="Asset/Aboutpage/about_title.svg"
+              src="/Asset/Aboutpage/about_title.svg"
               alt="about-title"
               className="about-title"
               loading="lazy"
@@ -72,10 +72,10 @@ export default function About() {
           </div>
           
           <div className="about-description-container">
-            <img src="Asset/Aboutpage/cloud_right1.svg" alt="" className="cloud_right1"/>
-            <img src="Asset/Aboutpage/cloud_right2.svg" alt="" className="cloud_right2"/>
+            <img src="/Asset/Aboutpage/cloud_right1.svg" alt="" className="cloud_right1"/>
+            <img src="/Asset/Aboutpage/cloud_right2.svg" alt="" className="cloud_right2"/>
             <img
-              src="Asset/Aboutpage/about_description.svg"
+              src="/Asset/Aboutpage/about_description.svg"
               alt="about-description"
               className="about-description"
               loading="lazy"
@@ -85,10 +85,10 @@ export default function About() {
     
           <div className="partners-container">
 
-            <img src="Asset/Aboutpage/star_left.svg" alt="" className="star_left"/>
-            <img src="Asset/Aboutpage/cake_right.svg" alt="" className="cake_right"/>
+            <img src="/Asset/Aboutpage/star_left.svg" alt="" className="star_left"/>
+            <img src="/Asset/Aboutpage/cake_right.svg" alt="" className="cake_right"/>
             <img 
-              src="Asset/Aboutpage/partners_title.svg" 
+              src="/Asset/Aboutpage/partners_title.svg" 
               alt="partner-title" 
               className="partners-title"
               loading="lazy"
@@ -112,11 +112,11 @@ export default function About() {
 
           <div className="sponsor-container">
 
-            <img src="Asset/Aboutpage/mochi_left.svg" alt="" className="mochi_left"/>
-            <img src="Asset/Aboutpage/mochi_right.svg" alt="" className="mochi_right"/>
+            <img src="/Asset/Aboutpage/mochi_left.svg" alt="" className="mochi_left"/>
+            <img src="/Asset/Aboutpage/mochi_right.svg" alt="" className="mochi_right"/>
 
             <img 
-            src="Asset/Aboutpage/sponsor_title.svg" 
+            src="/Asset/Aboutpage/sponsor_title.svg" 
             alt="partner-title" 
             className="sponsor-title"
             loading="lazy"
@@ -136,12 +136,13 @@ export default function About() {
                 className="sponsor-logo-loop"
               />
             </div>
+
           </div>
+        <img src="/Asset/Aboutpage/mochi_bottom.svg" alt="" className="mochi-bottom" />
 
           
       
       </div>   
-        <img src="/Asset/Aboutpage/mochi_bottom.svg" alt="" className="mochi-bottom" />
       </div>       
     </>
   );
