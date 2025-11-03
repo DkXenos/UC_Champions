@@ -238,92 +238,44 @@ export default function AnnouncementsPage() {
         </section>
 
         {isModalOpen && selectedCompetition && (
-          <div className="fixed inset-0 bg-black/50 bg-opacity-50 z-50 flex justify-center items-center p-4">
-            <div className="bg-white rounded-lg shadow-xl p-8 max-w-2xl w-full max-h-[90vh] overflow-y-auto">
-              <h2 className="text-2xl font-bold mb-6 text-gray-900 text-center">
-                Pemenang - {selectedCompetition.title}
-              </h2>
+  <div className="modal-overlay" onClick={handleCloseModal}>
+    <div
+      className="modal-card"
+      onClick={(e) => e.stopPropagation()}
+    >
+      <h2 className="font-extrabold text-[#e9709f] text-2xl uppercase pixel-font">
+        WINNERS
+      </h2>
+      <p className="text-[#d56b82] font-semibold text-sm mt-1">
+        ENDED: {selectedCompetition.date}
+      </p>
 
-              <div className="space-y-6">
-                {/* 1st Place */}
-                <div className="bg-gradient-to-r from-yellow-50 to-yellow-100 p-4 rounded-lg border-2 border-yellow-400">
-                  <div className="flex items-center mb-2">
-                    <span className="text-3xl mr-3">🥇</span>
-                    <h3 className="text-xl font-bold text-gray-900">1st Place</h3>
-                  </div>
-                  <div className="ml-11 space-y-1 text-gray-700">
-                    <p>
-                      <span className="font-semibold">Nama:</span> {selectedCompetition.firstPlace.name}
-                    </p>
-                    {selectedCompetition.firstPlace.team && (
-                      <p>
-                        <span className="font-semibold">Tim:</span> {selectedCompetition.firstPlace.team}
-                      </p>
-                    )}
-                    {selectedCompetition.firstPlace.project && (
-                      <p>
-                        <span className="font-semibold">Projek:</span> {selectedCompetition.firstPlace.project}
-                      </p>
-                    )}
-                  </div>
-                </div>
+      <div className="flex justify-center gap-5 mt-5">
+        <div className="flex flex-col items-center">
+          <p className="font-bold text-[#a64764] text-xs mb-1">PIDIDI<br />PUDING</p>
+          <img src="Asset/Medals/3rd.svg" alt="3rd" className="w-14" />
+        </div>
+        <div className="flex flex-col items-center">
+          <p className="font-bold text-[#a64764] text-xs mb-1">AVIOTHIIC</p>
+          <img src="Asset/Medals/1st.svg" alt="1st" className="w-16" />
+        </div>
+        <div className="flex flex-col items-center">
+          <p className="font-bold text-[#a64764] text-xs mb-1">PIDIDI<br />PIDADA</p>
+          <img src="Asset/Medals/2nd.svg" alt="2nd" className="w-14" />
+        </div>
+      </div>
 
-                {/* 2nd Place */}
-                <div className="bg-gradient-to-r from-gray-50 to-gray-100 p-4 rounded-lg border-2 border-gray-400">
-                  <div className="flex items-center mb-2">
-                    <span className="text-3xl mr-3">🥈</span>
-                    <h3 className="text-xl font-bold text-gray-900">2nd Place</h3>
-                  </div>
-                  <div className="ml-11 space-y-1 text-gray-700">
-                    <p>
-                      <span className="font-semibold">Nama:</span> {selectedCompetition.secondPlace.name}
-                    </p>
-                    {selectedCompetition.secondPlace.team && (
-                      <p>
-                        <span className="font-semibold">Tim:</span> {selectedCompetition.secondPlace.team}
-                      </p>
-                    )}
-                    {selectedCompetition.secondPlace.project && (
-                      <p>
-                        <span className="font-semibold">Projek:</span> {selectedCompetition.secondPlace.project}
-                      </p>
-                    )}
-                  </div>
-                </div>
+      <button
+        onClick={handleCloseModal}
+        className="mt-6 bg-[#f5b5ca] text-white font-semibold py-1 px-6 rounded-full hover:bg-[#f39ab7] transition"
+      >
+        CLOSE
+      </button>
+    </div>
+  </div>
+)}
 
-                {/* 3rd Place */}
-                <div className="bg-gradient-to-r from-orange-50 to-orange-100 p-4 rounded-lg border-2 border-orange-400">
-                  <div className="flex items-center mb-2">
-                    <span className="text-3xl mr-3">🥉</span>
-                    <h3 className="text-xl font-bold text-gray-900">3rd Place</h3>
-                  </div>
-                  <div className="ml-11 space-y-1 text-gray-700">
-                    <p>
-                      <span className="font-semibold">Nama:</span> {selectedCompetition.thirdPlace.name}
-                    </p>
-                    {selectedCompetition.thirdPlace.team && (
-                      <p>
-                        <span className="font-semibold">Tim:</span> {selectedCompetition.thirdPlace.team}
-                      </p>
-                    )}
-                    {selectedCompetition.thirdPlace.project && (
-                      <p>
-                        <span className="font-semibold">Projek:</span> {selectedCompetition.thirdPlace.project}
-                      </p>
-                    )}
-                  </div>
-                </div>
-              </div>
 
-              <button
-                onClick={handleCloseModal}
-                className="mt-6 w-full bg-gray-200 text-gray-800 font-semibold px-4 py-2 rounded-lg hover:bg-gray-300 transition"
-              >
-                Tutup
-              </button>
-            </div>
-          </div>
-        )}
       </div>
     </>
     // <main className="bg-gray-50 min-h-screen">
