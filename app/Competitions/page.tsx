@@ -113,7 +113,7 @@ export default function CompetitionsPage() {
                     {comp.title}
                   </h3>
                   <p className="deadline-text">
-                    DEADLINE: {comp.deadline}
+                    JENIS: {comp.deadline}
                   </p>
                   <div>
                     <Link

@@ -22,37 +22,37 @@ export type CompetitionDetail = {
 export const competitionDetails: CompetitionDetail[] = [
   {
     id: "1",
-    title: "Programming Contest",
-    category: "Teknologi",
+    title: "BOUNCEBACK",
+    category: "Dance",
     deadline: "5 Nov 2025",
-    ukm: "Tabletop",
-    description: "Join our annual programming contest where you'll solve challenging algorithmic problems and showcase your coding skills. This competition is designed for students who are passionate about programming and want to test their problem-solving abilities.",
+    ukm: "BIG DANCE CREW",
+    description: "BOUNCEBACK merupakan lomba tahunan yang telah berjalan selama tiga tahun dari UKM Dance Universitas Ciputra, yaitu Big Dance Crew (BDC). Lomba ini berfokus pada kompetisi tari dengan dua genre utama, yaitu Modern Dance dan K-Pop Dance, serta terdiri dari tiga kategori lomba: K-Pop Solo/Duo, K-Pop Group, dan Modern Group Dance. Setiap kategori dirancang untuk menjadi wadah bagi para penari berbakat dalam menampilkan kemampuan, kreativitas, dan karakter mereka di atas panggung. Melalui acara ini, BDC bertujuan untuk mengembangkan bakat para penari, mengasah keterampilan mereka, dan menumbuhkan rasa percaya diri dengan energi serta semangat yang positif.",
     requirements: [
-      "Must be a registered university student",
-      "Basic knowledge of programming languages (Python, Java, C++, or JavaScript)",
-      "Laptop with development environment set up",
-      "Valid student ID"
+      "Coming Soon!",
+      "Coming Soon!",
+      "Coming Soon!",
+      "Coming Soon!"
     ],
     prizes: [
-      "1st Place: Rp 5,000,000 + Certificate + Trophy",
-      "2nd Place: Rp 3,000,000 + Certificate + Trophy",
-      "3rd Place: Rp 1,500,000 + Certificate + Trophy",
-      "All participants receive participation certificates"
+      "1st Place: Coming Soon!",
+      "2nd Place: Coming Soon!",
+      "3rd Place: Coming Soon!",
+      "All participants: Coming Soon!"
     ],
     timeline: [
-      { date: "2 Okt 2025", event: "Registration Opens" },
-      { date: "1 Nov 2025", event: "Registration Closes" },
-      { date: "14 Nov 2025", event: "Technical Briefing" },
-      { date: "15 Nov 2025", event: "Competition Day" },
-      { date: "15 Nov 2025", event: "Award Ceremony" }
+      { date: "Coming Soon!", event: "Coming Soon!" },
+      { date: "Coming Soon!", event: "Coming Soon!" },
+      { date: "Coming Soon!", event: "Coming Soon!" },
+      { date: "Coming Soon!", event: "Coming Soon!" },
+      { date: "Coming Soon!", event: "Coming Soon!" }
     ],
     contactInfo: {
       email: "programming@uchampions.ac.id",
       phone: "+62 812 3456 7890"
     },
     registrationFee: "Free",
-    maxParticipants: "100 participants",
-    location: "Computer Lab Building A, Floor 3"
+    maxParticipants: "Coming Soon!",
+    location: "Coming Soon!"
   },
   {
     id: "2",
@@ -62,10 +62,10 @@ export const competitionDetails: CompetitionDetail[] = [
     ukm: "Tabletop",
     description: "Showcase your creativity and design thinking skills in our UI/UX Design Challenge. Design innovative user interfaces and experiences for real-world problems.",
     requirements: [
-      "Portfolio of previous design work",
-      "Knowledge of design tools (Figma, Sketch, Adobe XD)",
-      "Understanding of user-centered design principles",
-      "Laptop with design software installed"
+      "Coming Soon!",
+      "Coming Soon!",
+      "Coming Soon!",
+      "Coming Soon!"
     ],
     prizes: [
       "1st Place: Rp 4,000,000 + Internship Opportunity",
