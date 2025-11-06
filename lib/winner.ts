@@ -5,6 +5,7 @@ export interface Winner {
 }
 
 export interface FinishedCompetition {
+  date: ReactNode;
   id: string;
   title: string;
   category: string;
