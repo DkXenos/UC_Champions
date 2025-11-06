@@ -246,9 +246,9 @@ export default function AnnouncementsPage() {
       <h2 className="font-extrabold text-[#e9709f] text-2xl uppercase pixel-font">
         WINNERS
       </h2>
-      <p className="text-[#d56b82] font-semibold text-sm mt-1">
+      {/* <p className="text-[#d56b82] font-semibold text-sm mt-1">
         ENDED: {selectedCompetition.date}
-      </p>
+      </p> */}
 
       <div className="flex justify-center gap-5 mt-5">
         <div className="flex flex-col items-center">

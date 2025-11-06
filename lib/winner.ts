@@ -5,7 +5,6 @@ export interface Winner {
 }
 
 export interface FinishedCompetition {
-  date: ReactNode;
   id: string;
   title: string;
   category: string;
@@ -78,7 +77,7 @@ export const finishedCompetitions: FinishedCompetition[] = [
   },
   {
     id: "finished-5",
-    title: "LOMBA POSETER INTERNASIONAL",
+    title: "LOMBA POSTER INTERNASIONAL",
     category: "Creative",
     endDate: "NOT ANNOUNCED",
     firstPlace: {
