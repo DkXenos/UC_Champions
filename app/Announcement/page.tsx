@@ -137,7 +137,7 @@ export default function AnnouncementsPage() {
         className="announcement"
         style={{
           backgroundImage: `url('Asset/Announcement/mainbg.svg')`,
-          backgroundSize: "100% auto",
+          backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
         }}
@@ -154,128 +154,174 @@ export default function AnnouncementsPage() {
             alt=""
             className="track-img"
           />
-          <img
+           <img
             src="Asset/Announcement/ban-kanan.png"
             alt=""
             className="bankanan"
           />
-          <img
+           <img
             src="Asset/Announcement/ban-kiri.png"
             alt=""
             className="bankiri"
           />
-
+          
         </div>
         <div className="bottom-section">
           <img src="Asset/Announcement/bgsearchbar.svg" alt="" className="search-bg" />
         </div>
-        <section className="py-16 cards">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 winner-cards">
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 card-layout">
-              {currentItems.map((comp) => (
-                <div
-                  key={comp.id}
-                  className="rounded-lg shadow-md overflow-hidden flex flex-col winner-card"
-                >
-                  <div className="p-6 flex-grow card">
-                    <span className="button-decor">
-                      {comp.category}
-                    </span>
-                    <h3 className="comp-title mt-4 text-xl font-semibold">
-                      {comp.title}
-                    </h3>
-                    <p className="mt-2 text-sm end-date">
-                      Berakhir pada: {comp.endDate}
-                    </p>
-                  </div>
-                  <div className="button-section">
-                    <button
-                      onClick={() => handleOpenModal(comp)}
-                      className="winner-button button-decor"
-                    >
-                      SEE WINNERS
-                    </button>
-                  </div>
+        <section className="py-16">
+         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+           
+
+           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+             {currentItems.map((comp) => (
+               <div
+                 key={comp.id}
+                 className="rounded-lg shadow-md overflow-hidden flex flex-col winner-card"
+               >
+                 <div className="p-6 flex-grow">
+                   <span className="button-decor">
+                     {comp.category}
+                   </span>
+                   <h3 className="mt-4 text-xl font-semibold">
+                     {comp.title}
+                   </h3>
+                   <p className="mt-2 text-sm">
+                     Berakhir pada: {comp.endDate}
+                   </p>
+                 </div>
+                 <div className="button-section">
+                   <button
+                     onClick={() => handleOpenModal(comp)}
+                     className="winner-button button-decor"
+                   >
+                     Lihat Pemenang
+                   </button>
+                 </div>
+               </div>
+             ))}
+           </div>
+
+           {/* Pagination */}
+           {totalPages > 1 && (
+             <div className="mt-12">
+               <Pagination>
+                 <PaginationContent>
+                   <PaginationItem>
+                     <PaginationPrevious
+                       onClick={() => handlePageChange(Math.max(1, currentPage - 1))}
+                       style={{
+                         cursor: currentPage === 1 ? "not-allowed" : "pointer",
+                         opacity: currentPage === 1 ? 0.5 : 1,
+                       }}
+                     />
+                   </PaginationItem>
+
+                   {renderPaginationItems()}
+
+                   <PaginationItem>
+                     <PaginationNext
+                       onClick={() => handlePageChange(Math.min(totalPages, currentPage + 1))}
+                       style={{
+                         cursor: currentPage === totalPages ? "not-allowed" : "pointer",
+                         opacity: currentPage === totalPages ? 0.5 : 1,
+                       }}
+                     />
+                   </PaginationItem>
+                 </PaginationContent>
+               </Pagination>
+             </div>
+           )}
+         </div>
+       </section>
+
+       {isModalOpen && selectedCompetition && (
+        <div className="fixed inset-0 bg-black/50 bg-opacity-50 z-50 flex justify-center items-center p-4">
+          <div className="bg-white rounded-lg shadow-xl p-8 max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+            <h2 className="text-2xl font-bold mb-6 text-gray-900 text-center">
+              Pemenang - {selectedCompetition.title}
+            </h2>
+
+            <div className="space-y-6">
+              {/* 1st Place */}
+              <div className="bg-gradient-to-r from-yellow-50 to-yellow-100 p-4 rounded-lg border-2 border-yellow-400">
+                <div className="flex items-center mb-2">
+                  <span className="text-3xl mr-3">🥇</span>
+                  <h3 className="text-xl font-bold text-gray-900">1st Place</h3>
                 </div>
-              ))}
+                <div className="ml-11 space-y-1 text-gray-700">
+                  <p>
+                    <span className="font-semibold">Nama:</span> {selectedCompetition.firstPlace.name}
+                  </p>
+                  {selectedCompetition.firstPlace.team && (
+                    <p>
+                      <span className="font-semibold">Tim:</span> {selectedCompetition.firstPlace.team}
+                    </p>
+                  )}
+                  {selectedCompetition.firstPlace.project && (
+                    <p>
+                      <span className="font-semibold">Projek:</span> {selectedCompetition.firstPlace.project}
+                    </p>
+                  )}
+                </div>
+              </div>
+
+              {/* 2nd Place */}
+              <div className="bg-gradient-to-r from-gray-50 to-gray-100 p-4 rounded-lg border-2 border-gray-400">
+                <div className="flex items-center mb-2">
+                  <span className="text-3xl mr-3">🥈</span>
+                  <h3 className="text-xl font-bold text-gray-900">2nd Place</h3>
+                </div>
+                <div className="ml-11 space-y-1 text-gray-700">
+                  <p>
+                    <span className="font-semibold">Nama:</span> {selectedCompetition.secondPlace.name}
+                  </p>
+                  {selectedCompetition.secondPlace.team && (
+                    <p>
+                      <span className="font-semibold">Tim:</span> {selectedCompetition.secondPlace.team}
+                    </p>
+                  )}
+                  {selectedCompetition.secondPlace.project && (
+                    <p>
+                      <span className="font-semibold">Projek:</span> {selectedCompetition.secondPlace.project}
+                    </p>
+                  )}
+                </div>
+              </div>
+
+              {/* 3rd Place */}
+              <div className="bg-gradient-to-r from-orange-50 to-orange-100 p-4 rounded-lg border-2 border-orange-400">
+                <div className="flex items-center mb-2">
+                  <span className="text-3xl mr-3">🥉</span>
+                  <h3 className="text-xl font-bold text-gray-900">3rd Place</h3>
+                </div>
+                <div className="ml-11 space-y-1 text-gray-700">
+                  <p>
+                    <span className="font-semibold">Nama:</span> {selectedCompetition.thirdPlace.name}
+                  </p>
+                  {selectedCompetition.thirdPlace.team && (
+                    <p>
+                      <span className="font-semibold">Tim:</span> {selectedCompetition.thirdPlace.team}
+                    </p>
+                  )}
+                  {selectedCompetition.thirdPlace.project && (
+                    <p>
+                      <span className="font-semibold">Projek:</span> {selectedCompetition.thirdPlace.project}
+                    </p>
+                  )}
+                </div>
+              </div>
             </div>
 
-            {/* Pagination */}
-            {totalPages > 1 && (
-              <div className="pagination">
-                <Pagination>
-                  <PaginationContent>
-                    <PaginationItem>
-                      <PaginationPrevious
-                        onClick={() => handlePageChange(Math.max(1, currentPage - 1))}
-                        style={{
-                          cursor: currentPage === 1 ? "not-allowed" : "pointer",
-                          opacity: currentPage === 1 ? 0.5 : 1,
-                        }}
-                      />
-                    </PaginationItem>
-
-                    {renderPaginationItems()}
-
-                    <PaginationItem>
-                      <PaginationNext
-                        onClick={() => handlePageChange(Math.min(totalPages, currentPage + 1))}
-                        style={{
-                          cursor: currentPage === totalPages ? "not-allowed" : "pointer",
-                          opacity: currentPage === totalPages ? 0.5 : 1,
-                        }}
-                      />
-                    </PaginationItem>
-                  </PaginationContent>
-                </Pagination>
-              </div>
-            )}
+            <button
+              onClick={handleCloseModal}
+              className="mt-6 w-full bg-gray-200 text-gray-800 font-semibold px-4 py-2 rounded-lg hover:bg-gray-300 transition"
+            >
+              Tutup
+            </button>
           </div>
-
-          <div className="bottom-decor">
-            <img src="Asset/Announcement/buttom-decor.svg" alt="" className="buttom-decor" />
-          </div>
-        </section>
-
-        {isModalOpen && selectedCompetition && (
-  <div className="modal-overlay" onClick={handleCloseModal}>
-    <div
-      className="modal-card"
-      onClick={(e) => e.stopPropagation()}
-    >
-      <h2 className="font-extrabold text-[#e9709f] text-2xl uppercase pixel-font">
-        WINNERS
-      </h2>
-      {/* <p className="text-[#d56b82] font-semibold text-sm mt-1">
-        ENDED: {selectedCompetition.date}
-      </p> */}
-
-      <div className="flex justify-center gap-5 mt-5">
-        <div className="flex flex-col items-center">
-          <p className="font-bold text-[#a64764] text-xs mb-1">PIDIDI<br />PUDING</p>
-          <img src="Asset/Medals/3rd.svg" alt="3rd" className="w-14" />
         </div>
-        <div className="flex flex-col items-center">
-          <p className="font-bold text-[#a64764] text-xs mb-1">AVIOTHIIC</p>
-          <img src="Asset/Medals/1st.svg" alt="1st" className="w-16" />
-        </div>
-        <div className="flex flex-col items-center">
-          <p className="font-bold text-[#a64764] text-xs mb-1">PIDIDI<br />PIDADA</p>
-          <img src="Asset/Medals/2nd.svg" alt="2nd" className="w-14" />
-        </div>
-      </div>
-
-      <button
-        onClick={handleCloseModal}
-        className="mt-6 bg-[#f5b5ca] text-white font-semibold py-1 px-6 rounded-full hover:bg-[#f39ab7] transition"
-      >
-        CLOSE
-      </button>
-    </div>
-  </div>
-)}
-
-
+      )}
       </div>
     </>
     // <main className="bg-gray-50 min-h-screen">
