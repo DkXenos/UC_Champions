@@ -136,16 +136,16 @@ export default function AnnouncementsPage() {
       <div
         className="announcement"
         style={{
-          backgroundImage: `url('Asset/Announcement/mainbg.svg')`,
+          backgroundImage: `url('Asset/Announcement/main-bg.png')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
         }}
       >
         <div className="top-section">
-          <img src="Asset/Announcement/title.svg" alt="" className="title-bg" />
+          <img src="Asset/Announcement/title.png" alt="" className="title-bg" />
           <img
-            src="Asset/Announcement/section-juara.svg"
+            src="Asset/Announcement/section-juara.png"
             alt=""
             className="juara-img"
           />
