@@ -164,8 +164,9 @@ export default function AnnouncementsPage() {
             alt=""
             className="bankiri"
           />
-
+        
         </div>
+        
         <div className="bottom-section">
           <img src="Asset/Announcement/bgsearchbar.svg" alt="" className="search-bg" />
         </div>

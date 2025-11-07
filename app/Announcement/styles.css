@@ -170,6 +170,7 @@
     will-change: auto;
     background-size: contain;
     background-position: top center;
+    padding-top: 50rem;
   }
 
   .top-section {
@@ -181,7 +182,7 @@
   }
 
   .title-bg {
-    padding-top: 9rem;
+    margin-top: -40rem;
     width: 150rem;
     height: auto;
   }
@@ -226,9 +227,13 @@
     width: 100%;
   }
 
+  .winner-button {
+    width: 100%;
+  }
+
   .winner-card {
     width: 40rem;
-    height: 20rem;
+    height: 25rem;
   }
 
   .winner-cards {
@@ -252,7 +257,7 @@
   }
 
   .end-date {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .comp-title {
@@ -260,7 +265,7 @@
   }
 
   .button-section {
-    padding-bottom: 0.5rem;
+    padding-bottom: 1rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
@@ -278,7 +283,7 @@
     margin-bottom: 2rem;
   }
 
-  .comp-title{
+  .comp-title {
     font-size: 2rem;
   }
 
@@ -289,13 +294,529 @@
   }
 }
 
-@media (max-width: 2560px) and (max-height: 1600px) {}
+@media (max-width: 2560px) and (max-height: 1600px) {
+  .announcement {
+    will-change: auto;
+    background-size: contain;
+    background-position: top center;
+    padding-top: 50rem;
+  }
 
-@media (max-width: 2560px) and (max-height: 1140px) {}
+  .top-section {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    min-width: 100%;
+  }
 
-@media (max-width: 1920px) and (max-height: 1080px) {}
+  .title-bg {
+    margin-top: -40rem;
+    width: 150rem;
+    height: auto;
+  }
 
-@media (max-width: 1900px) and (max-height: 1920px) {}
+  .juara-img {
+    width: 110rem;
+    height: auto;
+    position: relative;
+    margin-bottom: -1rem;
+    z-index: 100;
+  }
+
+  .track-img {
+    width: 100%;
+    margin-top: -3rem;
+    height: auto;
+    position: relative;
+    z-index: 98;
+  }
+
+  .bankanan {
+    position: absolute;
+    right: 0;
+    width: 30rem;
+    height: auto;
+    z-index: 101;
+  }
+
+  .bankiri {
+    position: absolute;
+    left: 0;
+    width: 30rem;
+    height: auto;
+    z-index: 101;
+  }
+
+  .bottom-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .winner-button {
+    width: 100%;
+  }
+
+  .winner-card {
+    width: 40rem;
+    height: 25rem;
+  }
+
+  .winner-cards {
+    max-width: 80%;
+  }
+
+  .pagination {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 5rem;
+  }
+
+  .buttom-decor {
+    width: 100%;
+    height: auto;
+    margin-top: -5rem;
+  }
+
+  .card-layout {
+    gap: -2rem;
+  }
+
+  .end-date {
+    font-size: 1.5rem;
+  }
+
+  .comp-title {
+    font-size: 3rem;
+  }
+
+  .button-section {
+    padding-bottom: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .button-decor {
+    font-size: 2rem;
+    width: 100%;
+    align-items: center;
+  }
+
+  .card {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+
+  .comp-title {
+    font-size: 2rem;
+  }
+
+  .footerdecor {
+    width: 100%;
+    height: auto;
+    margin-top: -10rem;
+  }
+}
+
+@media (max-width: 2560px) and (max-height: 1140px) {
+  .announcement {
+    will-change: auto;
+    background-size: contain;
+    background-position: top center;
+    padding-top: 50rem;
+  }
+
+  .top-section {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    min-width: 100%;
+  }
+
+  .title-bg {
+    margin-top: -40rem;
+    width: 150rem;
+    height: auto;
+  }
+
+  .juara-img {
+    width: 110rem;
+    height: auto;
+    position: relative;
+    margin-bottom: -1rem;
+    z-index: 100;
+  }
+
+  .track-img {
+    width: 100%;
+    margin-top: -3rem;
+    height: auto;
+    position: relative;
+    z-index: 98;
+  }
+
+  .bankanan {
+    position: absolute;
+    right: 0;
+    width: 30rem;
+    height: auto;
+    z-index: 101;
+  }
+
+  .bankiri {
+    position: absolute;
+    left: 0;
+    width: 30rem;
+    height: auto;
+    z-index: 101;
+  }
+
+  .bottom-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .winner-button {
+    width: 100%;
+  }
+
+  .winner-card {
+    width: 45rem;
+    height: 25rem;
+  }
+
+  .winner-cards {
+    max-width: 90%;
+  }
+
+  .pagination {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 5rem;
+  }
+
+  .buttom-decor {
+    width: 100%;
+    height: auto;
+    margin-top: -5rem;
+  }
+
+  .card-layout {
+    gap: -2rem;
+  }
+
+  .end-date {
+    font-size: 0.8rem;
+  }
+
+  .comp-title {
+    font-size: 1rem;
+  }
+
+  .button-section {
+    margin-top: -4rem;
+    padding-bottom: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .button-decor {
+    font-size: 1rem;
+    width: 100%;
+    align-items: center;
+  }
+
+  .card {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+
+  .comp-title {
+    font-size: 1.5rem;
+  }
+
+  .footerdecor {
+    width: 100%;
+    height: auto;
+    margin-top: -10rem
+  }
+}
+
+@media (max-width: 1920px) and (max-height: 1080px) {
+  .announcement {
+    will-change: auto;
+    background-size: contain;
+    background-position: top center;
+    margin-top: -3rem;
+    max-width: 100%;
+    height: auto;
+
+  }
+
+  .top-section {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    min-width: 100%;
+    margin-top: -60rem;
+  }
+
+  .title-bg {
+    margin-top: -60rem;
+    width: 75%;
+    height: auto;
+  }
+
+  .juara-img {
+    width: 70rem;
+    height: auto;
+    position: relative;
+    margin-bottom: -1rem;
+    z-index: 100;
+  }
+
+  .track-img {
+    width: 100%;
+    margin-top: -3rem;
+    height: auto;
+    position: relative;
+    z-index: 98;
+  }
+
+  .bankanan {
+    position: absolute;
+    right: 0;
+    width: 20rem;
+    height: auto;
+    z-index: 101;
+  }
+
+  .bankiri {
+    position: absolute;
+    left: 0;
+    width: 20rem;
+    height: auto;
+    z-index: 101;
+  }
+
+  .bottom-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .winner-button {
+    width: 100%;
+  }
+
+  .winner-card {
+    width: 100%;
+    height: 15rem;
+  }
+
+  .winner-cards {
+    max-width: 90%;
+  }
+
+  .pagination {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 5rem;
+  }
+
+  .buttom-decor {
+    width: 100%;
+    height: auto;
+    margin-top: -5rem;
+  }
+
+  .card-layout {
+    gap: -2rem;
+  }
+
+  .end-date {
+    font-size: 0.8rem;
+  }
+
+  .comp-title {
+    font-size: 1rem;
+  }
+
+  .button-section {
+    margin-top: -4rem;
+    padding-bottom: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .button-decor {
+    font-size: 1rem;
+    width: 100%;
+    align-items: center;
+  }
+
+  .card {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+
+  .comp-title {
+    font-size: 1.5rem;
+  }
+
+  .footerdecor {
+    width: 100%;
+    height: auto;
+    margin-top: -10rem
+  }
+}
+
+@media (max-width: 1900px) and (max-height: 1920px) {
+  .announcement {
+    will-change: auto;
+    background-size: contain;
+    background-position: top center;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .top-section {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    min-width: 100%;
+  }
+
+  .title-bg {
+    width: 75%;
+    margin-top:40rem;
+    height: auto;
+  }
+
+  .juara-img {
+    width: 70rem;
+    height: auto;
+    position: relative;
+    margin-bottom: -1rem;
+    z-index: 100;
+  }
+
+  .track-img {
+    width: 100%;
+    margin-top: -3rem;
+    height: auto;
+    position: relative;
+    z-index: 98;
+  }
+
+  .bankanan {
+    position: absolute;
+    right: 0;
+    width: 20rem;
+    height: auto;
+    z-index: 101;
+  }
+
+  .bankiri {
+    position: absolute;
+    left: 0;
+    width: 20rem;
+    height: auto;
+    z-index: 101;
+  }
+
+  .bottom-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .winner-button {
+    width: 100%;
+  }
+
+  .winner-card {
+    width: 100%;
+    height: 15rem;
+  }
+
+  .winner-cards {
+    max-width: 90%;
+  }
+
+  .pagination {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 5rem;
+  }
+
+  .buttom-decor {
+    width: 100%;
+    height: auto;
+    margin-top: -5rem;
+  }
+
+  .card-layout {
+    gap: -2rem;
+  }
+
+  .end-date {
+    font-size: 0.8rem;
+  }
+
+  .comp-title {
+    font-size: 1rem;
+  }
+
+  .button-section {
+    margin-top: -4rem;
+    padding-bottom: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .button-decor {
+    font-size: 1rem;
+    width: 100%;
+    align-items: center;
+  }
+
+  .card {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+
+  .comp-title {
+    font-size: 1.5rem;
+  }
+
+  .footerdecor {
+    width: 100%;
+    height: auto;
+    margin-top: -10rem
+  }
+}
 
 @media (max-width: 1900px) and (max-height: 1200px) {}
 
@@ -304,6 +825,26 @@
 @media (max-width: 1538px) and (max-height: 2048px) {}
 
 @media (max-width: 1512px) and (max-height: 982px) {
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /* biar gak ada scroll horizontal */
+  }
+
+  .announcement {
+    width: 100vw;
+    min-height: 100vh;
+    background-size: cover;
+    /* biar bener-bener nutup full */
+    background-position: top center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+  }
+
   .top-section {
     display: flex;
     justify-content: end;
@@ -368,9 +909,93 @@
     width: 100%;
 
   }
+
+  .winner-card {
+    width: 23rem;
+    height: 15rem;
+  }
+
+  .winner-cards {
+    max-width: 80%;
+  }
 }
 
-@media (max-width: 1366px) and (max-height: 1024px) {}
+@media (max-width: 1366px) and (max-height: 1024px) {
+  .announcement {
+    will-change: auto;
+    background-size: contain;
+    background-position: top center;
+    max-width: 100%;
+    height: auto;
+    margin-top: -25rem;
+  }
+
+  .top-section {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    min-width: 100%;
+  }
+
+  .title-bg {
+    width: 75%;
+    height: auto;
+    margin-top: -20rem;
+  }
+
+
+  .juara-img {
+    width: 52rem;
+    margin-bottom: -4rem;
+  }
+
+  .bankanan,
+  .bankiri {
+    width: 14rem;
+  }
+
+  .winner-card {
+    width: 21rem;
+    height: 13rem;
+  }
+
+  .winner-cards {
+    max-width: 85%;
+  }
+  .card-layout {
+    gap: -2rem;
+  }
+
+  .end-date {
+    font-size: 0.8rem;
+  }
+
+  .comp-title {
+    font-size: 1rem;
+  }
+
+  .button-section {
+    margin-top: -4rem;
+    padding-bottom: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .button-decor {
+    font-size: 1rem;
+    width: 100%;
+    align-items: center;
+  }
+
+  .card {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+
+}
 
 @media (max-width: 1366px) and (max-height: 768px) {}
 

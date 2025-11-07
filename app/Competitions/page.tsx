@@ -56,9 +56,9 @@ export default function CompetitionsPage() {
 
   return (
     <>
-    <main className="competition-page">
+      <main className="competition-page">
 
-        <div className="competition-container" 
+        <div className="competition-container"
         // style={{
         //   backgroundImage: `url('Asset/Competitionpage/competition_bg.svg')`,
         //   backgroundSize: "cover",
@@ -67,7 +67,7 @@ export default function CompetitionsPage() {
         // }}
         >
 
-           <img
+          <img
             className="img-title"
             src="Asset/Competitionpage/title_competition.svg"
             alt="main-title"
@@ -78,7 +78,7 @@ export default function CompetitionsPage() {
           <div className="search-container">
             <img src="Asset/Competitionpage/cloud_left1.svg" alt="" className="cloud_left" />
             <img src="Asset/Competitionpage/cloud_right2.svg" alt="" className="cloud_right" />
- 
+
             <input
               className="search-input"
               type="text"
@@ -91,12 +91,12 @@ export default function CompetitionsPage() {
           <div className="categories-container">
             {categories.map((category) => (
               <Badge
-              key={category}
-              variant={selectedCategory === category ? "default" : "secondary"}
-              onClick={() => setSelectedCategory(category)}
-              className={`categories-card ${selectedCategory === category ? "active" : ""}`}
+                key={category}
+                variant={selectedCategory === category ? "default" : "secondary"}
+                onClick={() => setSelectedCategory(category)}
+                className={`categories-card ${selectedCategory === category ? "active" : ""}`}
               >
-              {category}
+                {category}
               </Badge>
             ))}
           </div>
@@ -163,15 +163,15 @@ export default function CompetitionsPage() {
           <img src="Asset/Competitionpage/portal.svg" alt="portal" className="img-portal" loading="lazy" decoding="async" />
           <img src="Asset/Competitionpage/car.svg" alt="car" className="img-car" loading="lazy" decoding="async" />
           <img src="Asset/Competitionpage/portal-car.svg" alt="portal-car" className="portal-car" loading="lazy" decoding="async" />
-         
+
 
           <div className="stacked-images">
-            <img src="Asset/Homepage/startline.svg" alt="" className="img1" loading="lazy" decoding="async" /> 
+            <img src="Asset/Homepage/startline.svg" alt="" className="img1" loading="lazy" decoding="async" />
           </div>
 
         </div>
 
-    </main>
+      </main>
     </>
   );
 }
