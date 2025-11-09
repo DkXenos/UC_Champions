@@ -195,7 +195,7 @@ export default function AnnouncementsPage() {
             className="track-img"
           />
           <img
-            src="Asset/Announcement/ban-kanan.png"
+            src="Asset/Announcement/bankanan.png"
             alt=""
             className="bankanan"
           />
@@ -244,9 +244,9 @@ export default function AnnouncementsPage() {
                   className="rounded-lg shadow-md overflow-hidden flex flex-col winner-card"
                 >
                   <div className="p-6 flex-grow">
-                    <span className="button-decor">{comp.category}</span>
-                    <h3 className="mt-4 text-xl font-semibold">{comp.title}</h3>
-                    <p className="mt-2 text-sm">
+                    <span className="button-decor category-name">{comp.category}</span>
+                    <h3 className="mt-4 text-xl font-semibold competition-title">{comp.title}</h3>
+                    <p className="mt-2 text-sm end-date">
                       Berakhir pada: {comp.endDate}
                     </p>
                   </div>
@@ -255,7 +255,7 @@ export default function AnnouncementsPage() {
                       onClick={() => handleOpenModal(comp)}
                       className="winner-button button-decor"
                     >
-                      Lihat Pemenang
+                      LIHAT PEMENANG
                     </button>
                   </div>
                 </div>

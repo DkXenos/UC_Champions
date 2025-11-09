@@ -18,7 +18,7 @@ export const finishedCompetitions: FinishedCompetition[] = [
   {
     id: "finished-1",
     title: "BOUNCEBACK",
-    category: "Dance",
+    category: "DANCE",
     endDate: "NOT ANNOUNCED",
     firstPlace: {
       name: "NOT ANNOUNCED",
@@ -33,7 +33,7 @@ export const finishedCompetitions: FinishedCompetition[] = [
   {
     id: "finished-2",
     title: "REKAM CERITA",
-    category: "Creative",
+    category: "CREATIVE",
     endDate: "NOT ANNOUNCED",
     firstPlace: {
       name: "NOT ANNOUNCED",
@@ -48,7 +48,7 @@ export const finishedCompetitions: FinishedCompetition[] = [
   {
     id: "finished-3",
     title: "NEOSANTARA FEST",
-    category: "Budaya",
+    category: "BUDAYA",
     endDate: "NOT ANNOUNCED",
     firstPlace: {
       name: "NOT ANNOUNCED",
@@ -63,7 +63,7 @@ export const finishedCompetitions: FinishedCompetition[] = [
   {
     id: "finished-4",
     title: "UCHSDC",
-    category: "Debate",
+    category: "DEBATE",
     endDate: "NOT ANNOUNCED",
     firstPlace: {
       name: "NOT ANNOUNCED",
@@ -78,7 +78,7 @@ export const finishedCompetitions: FinishedCompetition[] = [
   {
     id: "finished-5",
     title: "LOMBA POSTER INTERNASIONAL",
-    category: "Creative",
+    category: "CREATIVE",
     endDate: "NOT ANNOUNCED",
     firstPlace: {
       name: "NOT ANNOUNCED",
@@ -93,7 +93,7 @@ export const finishedCompetitions: FinishedCompetition[] = [
   {
     id: "finished-6",
     title: "KICKSTART CREATIVITY",
-    category: "Creative",
+    category: "CREATIVE",
     endDate: "NOT ANNOUNCED",
     firstPlace: {
       name: "NOT ANNOUNCED",
@@ -108,7 +108,7 @@ export const finishedCompetitions: FinishedCompetition[] = [
   {
     id: "finished-7",
     title: "STORIES OF GRACE",
-    category: "Creative",
+    category: "CREATIVE",
     endDate: "NOT ANNOUNCED",
     firstPlace: {
       name: "NOT ANNOUNCED",
@@ -123,7 +123,7 @@ export const finishedCompetitions: FinishedCompetition[] = [
   {
     id: "finished-8",
     title: "UC VORTEX ARENA 2026",
-    category: "Esports",
+    category: "ESPORTS",
     endDate: "NOT ANNOUNCED",
     firstPlace: {
       name: "NOT ANNOUNCED",
