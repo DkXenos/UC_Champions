@@ -54,74 +54,74 @@ export const competitionDetails: CompetitionDetail[] = [
     maxParticipants: "Coming Soon!",
     location: "Coming Soon!"
   },
-  {
-    id: "2",
-    title: "UI/UX Design Challenge",
-    category: "Desain",
-    deadline: "25 Nov 2025",
-    ukm: "Tabletop",
-    description: "Showcase your creativity and design thinking skills in our UI/UX Design Challenge. Design innovative user interfaces and experiences for real-world problems.",
-    requirements: [
-      "Coming Soon!",
-      "Coming Soon!",
-      "Coming Soon!",
-      "Coming Soon!"
-    ],
-    prizes: [
-      "1st Place: Rp 4,000,000 + Internship Opportunity",
-      "2nd Place: Rp 2,500,000 + Design Software License",
-      "3rd Place: Rp 1,000,000 + Online Course Access",
-      "Best Innovation Award: Rp 500,000"
-    ],
-    timeline: [
-      { date: "5 Okt 2025", event: "Registration Opens" },
-      { date: "20 Nov 2025", event: "Registration Closes" },
-      { date: "22 Nov 2025", event: "Design Brief Release" },
-      { date: "25 Nov 2025", event: "Submission Deadline" },
-      { date: "27 Nov 2025", event: "Results Announcement" }
-    ],
-    contactInfo: {
-      email: "design@uchampions.ac.id",
-      phone: "+62 812 3456 7891"
-    },
-    registrationFee: "Rp 25,000",
-    maxParticipants: "50 teams (max 3 members per team)",
-    location: "Design Studio, Creative Arts Building"
-  },
-  {
-    id: "3",
-    title: "UC VORTEX ARENA",
-    category: "Esport",
-    deadline: "25 Okt 2025",
-    ukm: "ESPORTS",
-    description: "Showcase your creativity and design thinking skills in our UI/UX Design Challenge. Design innovative user interfaces and experiences for real-world problems.",
-    requirements: [
-      "Portfolio of previous design work",
-      "Knowledge of design tools (Figma, Sketch, Adobe XD)",
-      "Understanding of user-centered design principles",
-      "Laptop with design software installed"
-    ],
-    prizes: [
-      "1st Place: Rp 4,000,000 + Internship Opportunity",
-      "2nd Place: Rp 2,500,000 + Design Software License",
-      "3rd Place: Rp 1,000,000 + Online Course Access",
-      "Best Innovation Award: Rp 500,000"
-    ],
-    timeline: [
-      { date: "15 Sep 2025", event: "Registration Opens" },
-      { date: "20 Okt 2025", event: "Registration Closes" },
-      { date: "22 Okt 2025", event: "Business Brief Release" },
-      { date: "25 Okt 2025", event: "Submission Deadline" },
-      { date: "30 Okt 2025", event: "Results Announcement" }
-    ],
-    contactInfo: {
-      email: "design@uchampions.ac.id",
-      phone: "+62 812 3456 7891"
-    },
-    registrationFee: "Rp 25,000",
-    maxParticipants: "50 teams (max 3 members per team)",
-    location: "Design Studio, Creative Arts Building"
-  },
+  // {
+  //   id: "2",
+  //   title: "UI/UX Design Challenge",
+  //   category: "Desain",
+  //   deadline: "25 Nov 2025",
+  //   ukm: "Tabletop",
+  //   description: "Showcase your creativity and design thinking skills in our UI/UX Design Challenge. Design innovative user interfaces and experiences for real-world problems.",
+  //   requirements: [
+  //     "Coming Soon!",
+  //     "Coming Soon!",
+  //     "Coming Soon!",
+  //     "Coming Soon!"
+  //   ],
+  //   prizes: [
+  //     "1st Place: Rp 4,000,000 + Internship Opportunity",
+  //     "2nd Place: Rp 2,500,000 + Design Software License",
+  //     "3rd Place: Rp 1,000,000 + Online Course Access",
+  //     "Best Innovation Award: Rp 500,000"
+  //   ],
+  //   timeline: [
+  //     { date: "5 Okt 2025", event: "Registration Opens" },
+  //     { date: "20 Nov 2025", event: "Registration Closes" },
+  //     { date: "22 Nov 2025", event: "Design Brief Release" },
+  //     { date: "25 Nov 2025", event: "Submission Deadline" },
+  //     { date: "27 Nov 2025", event: "Results Announcement" }
+  //   ],
+  //   contactInfo: {
+  //     email: "design@uchampions.ac.id",
+  //     phone: "+62 812 3456 7891"
+  //   },
+  //   registrationFee: "Rp 25,000",
+  //   maxParticipants: "50 teams (max 3 members per team)",
+  //   location: "Design Studio, Creative Arts Building"
+  // },
+  // {
+  //   id: "3",
+  //   title: "UC VORTEX ARENA",
+  //   category: "Esport",
+  //   deadline: "25 Okt 2025",
+  //   ukm: "ESPORTS",
+  //   description: "Showcase your creativity and design thinking skills in our UI/UX Design Challenge. Design innovative user interfaces and experiences for real-world problems.",
+  //   requirements: [
+  //     "Portfolio of previous design work",
+  //     "Knowledge of design tools (Figma, Sketch, Adobe XD)",
+  //     "Understanding of user-centered design principles",
+  //     "Laptop with design software installed"
+  //   ],
+  //   prizes: [
+  //     "1st Place: Rp 4,000,000 + Internship Opportunity",
+  //     "2nd Place: Rp 2,500,000 + Design Software License",
+  //     "3rd Place: Rp 1,000,000 + Online Course Access",
+  //     "Best Innovation Award: Rp 500,000"
+  //   ],
+  //   timeline: [
+  //     { date: "15 Sep 2025", event: "Registration Opens" },
+  //     { date: "20 Okt 2025", event: "Registration Closes" },
+  //     { date: "22 Okt 2025", event: "Business Brief Release" },
+  //     { date: "25 Okt 2025", event: "Submission Deadline" },
+  //     { date: "30 Okt 2025", event: "Results Announcement" }
+  //   ],
+  //   contactInfo: {
+  //     email: "design@uchampions.ac.id",
+  //     phone: "+62 812 3456 7891"
+  //   },
+  //   registrationFee: "Rp 25,000",
+  //   maxParticipants: "50 teams (max 3 members per team)",
+  //   location: "Design Studio, Creative Arts Building"
+  // },
   
 ];
 

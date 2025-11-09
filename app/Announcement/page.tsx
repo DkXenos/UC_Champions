@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./styles.css";
 import {
   finishedCompetitions,
@@ -16,19 +16,43 @@ import {
   PaginationPrevious,
   PaginationEllipsis,
 } from "@/components/ui/pagination";
+import { Badge } from "@/components/ui/badge";
 
 export default function AnnouncementsPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedCompetition, setSelectedCompetition] =
     useState<FinishedCompetition | null>(null);
   const [currentPage, setCurrentPage] = useState(1);
+  const [searchTerm, setSearchTerm] = useState("");
+  const [selectedCategory, setSelectedCategory] = useState("All");
   const itemsPerPage = 6;
 
+  // Get unique categories
+  const categories = [
+    "All",
+    ...Array.from(new Set(finishedCompetitions.map((comp) => comp.category))),
+  ];
+
+  // Filter competitions based on search and category
+  const filteredCompetitions = finishedCompetitions
+    .filter(
+      (comp) =>
+        selectedCategory === "All" || comp.category === selectedCategory
+    )
+    .filter((comp) =>
+      comp.title.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+
+  // Reset to page 1 when filters change
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [searchTerm, selectedCategory]);
+
   // Calculate pagination
-  const totalPages = Math.ceil(finishedCompetitions.length / itemsPerPage);
+  const totalPages = Math.ceil(filteredCompetitions.length / itemsPerPage);
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
-  const currentItems = finishedCompetitions.slice(startIndex, endIndex);
+  const currentItems = filteredCompetitions.slice(startIndex, endIndex);
 
   const handleOpenModal = (competition: FinishedCompetition) => {
     setSelectedCompetition(competition);
@@ -55,7 +79,11 @@ export default function AnnouncementsPage() {
         items.push(
           <PaginationItem key={i}>
             <PaginationLink
-              onClick={() => handlePageChange(i)}
+              href="#"
+              onClick={(e) => {
+                e.preventDefault();
+                handlePageChange(i);
+              }}
               isActive={currentPage === i}
               style={{ cursor: "pointer" }}
             >
@@ -69,7 +97,11 @@ export default function AnnouncementsPage() {
       items.push(
         <PaginationItem key={1}>
           <PaginationLink
-            onClick={() => handlePageChange(1)}
+            href="#"
+            onClick={(e) => {
+              e.preventDefault();
+              handlePageChange(1);
+            }}
             isActive={currentPage === 1}
             style={{ cursor: "pointer" }}
           >
@@ -78,7 +110,7 @@ export default function AnnouncementsPage() {
         </PaginationItem>
       );
 
-      // Show ellipsis if current page is far from start
+            // Show ellipsis if needed before current page
       if (currentPage > 3) {
         items.push(
           <PaginationItem key="ellipsis-start">
@@ -88,14 +120,18 @@ export default function AnnouncementsPage() {
       }
 
       // Show pages around current page
-      const startPage = Math.max(2, currentPage - 1);
-      const endPage = Math.min(totalPages - 1, currentPage + 1);
-
-      for (let i = startPage; i <= endPage; i++) {
+      const start = Math.max(2, currentPage - 1);
+      const end = Math.min(totalPages - 1, currentPage + 1);
+      
+      for (let i = start; i <= end; i++) {
         items.push(
           <PaginationItem key={i}>
             <PaginationLink
-              onClick={() => handlePageChange(i)}
+              href="#"
+              onClick={(e) => {
+                e.preventDefault();
+                handlePageChange(i);
+              }}
               isActive={currentPage === i}
               style={{ cursor: "pointer" }}
             >
@@ -105,7 +141,7 @@ export default function AnnouncementsPage() {
         );
       }
 
-      // Show ellipsis if current page is far from end
+      // Show ellipsis if needed after current page
       if (currentPage < totalPages - 2) {
         items.push(
           <PaginationItem key="ellipsis-end">
@@ -118,7 +154,11 @@ export default function AnnouncementsPage() {
       items.push(
         <PaginationItem key={totalPages}>
           <PaginationLink
-            onClick={() => handlePageChange(totalPages)}
+            href="#"
+            onClick={(e) => {
+              e.preventDefault();
+              handlePageChange(totalPages);
+            }}
             isActive={currentPage === totalPages}
             style={{ cursor: "pointer" }}
           >
@@ -166,11 +206,34 @@ export default function AnnouncementsPage() {
           />
         </div>
         <div className="bottom-section">
+          <div className="search-container"> 
+            <input
+              className="search-input"
+              type="text"
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              placeholder="SEARCH HERE"
+            />
+          </div>
+
           <img
             src="Asset/Announcement/bgsearchbar.svg"
             alt=""
             className="search-bg"
           />
+
+          <div className="categories-container">
+            {categories.map((category) => (
+              <Badge
+                key={category}
+                variant={selectedCategory === category ? "default" : "secondary"}
+                onClick={() => setSelectedCategory(category)}
+                className={`categories-card ${selectedCategory === category ? "active" : ""}`}
+              >
+                {category}
+              </Badge>
+            ))}
+          </div>
         </div>
         <section className="py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -206,12 +269,15 @@ export default function AnnouncementsPage() {
                   <PaginationContent>
                     <PaginationItem>
                       <PaginationPrevious
-                        onClick={() =>
-                          handlePageChange(Math.max(1, currentPage - 1))
-                        }
+                        href="#"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          handlePageChange(Math.max(1, currentPage - 1));
+                        }}
                         style={{
                           cursor: currentPage === 1 ? "not-allowed" : "pointer",
                           opacity: currentPage === 1 ? 0.5 : 1,
+                          pointerEvents: currentPage === 1 ? "none" : "auto",
                         }}
                       />
                     </PaginationItem>
@@ -220,17 +286,21 @@ export default function AnnouncementsPage() {
 
                     <PaginationItem>
                       <PaginationNext
-                        onClick={() =>
+                        href="#"
+                        onClick={(e) => {
+                          e.preventDefault();
                           handlePageChange(
                             Math.min(totalPages, currentPage + 1)
-                          )
-                        }
+                          );
+                        }}
                         style={{
                           cursor:
                             currentPage === totalPages
                               ? "not-allowed"
                               : "pointer",
                           opacity: currentPage === totalPages ? 0.5 : 1,
+                          pointerEvents:
+                            currentPage === totalPages ? "none" : "auto",
                         }}
                       />
                     </PaginationItem>
@@ -239,6 +309,11 @@ export default function AnnouncementsPage() {
               </div>
             )}
           </div>
+          <img
+            src="Asset/Announcement/bottom-decor.png"
+            alt=""
+            className="bottomdecor"
+          />
         </section>
 
         {isModalOpen && selectedCompetition && (
