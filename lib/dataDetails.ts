@@ -24,7 +24,7 @@ export const competitionDetails: CompetitionDetail[] = [
     id: "1",
     title: "BOUNCEBACK",
     category: "Dance",
-    deadline: "5 Nov 2025",
+    deadline: "15 Nov 2025",
     ukm: "BIG DANCE CREW",
     description: "BOUNCEBACK merupakan lomba tahunan yang telah berjalan selama tiga tahun dari UKM Dance Universitas Ciputra, yaitu Big Dance Crew (BDC). Lomba ini berfokus pada kompetisi tari dengan dua genre utama, yaitu Modern Dance dan K-Pop Dance, serta terdiri dari tiga kategori lomba: K-Pop Solo/Duo, K-Pop Group, dan Modern Group Dance. Setiap kategori dirancang untuk menjadi wadah bagi para penari berbakat dalam menampilkan kemampuan, kreativitas, dan karakter mereka di atas panggung. Melalui acara ini, BDC bertujuan untuk mengembangkan bakat para penari, mengasah keterampilan mereka, dan menumbuhkan rasa percaya diri dengan energi serta semangat yang positif.",
     requirements: [

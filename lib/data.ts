@@ -11,56 +11,56 @@ export const featuredCompetitions: Competition[] = [
     id: "1",
     title: "BOUNCEBACK", //ini judul kompetisi
     category: "DANCE", //kek buat di badge yg filtering gitu jadi bisa jadi kek ukm or kategori e
-    deadline: "Offline", //ini deadline kompetisi kapan terakhir daftar
+    deadline: "OFFLINE", //ini deadline kompetisi kapan terakhir daftar
     ukm: "BIG DANCE CREW", //ukm e apa
   },
   {
     id: "2",
     title: "REKAM CERITA",
     category: "CREATIVE",
-    deadline: "Online",
+    deadline: "ONLINE",
     ukm: "Balawarta", 
   },
   {
     id: "3",
     title: "NEOSANTARA FEST",
     category: "BUDAYA",
-    deadline: "Online",
+    deadline: "ONLINE",
     ukm: "Teater X Tari", 
   },
   {
     id: "4",
     title: "UCHSDC",
     category: "DEBATE",
-    deadline: "Hybrid",
+    deadline: "HYBRID",
     ukm: "UCDC", 
   },
   {
     id: "5",
-    title: "LOMBA POSETER INTERNASIONAL",
+    title: "LOMBA POSTER INTERNASIONAL",
     category: "CREATIVE",
-    deadline: "Online",
+    deadline: "ONLINE",
     ukm: "UCBC", 
   },
   {
     id: "6",
     title: "KICKSTART CREATIVITY",
     category: "CREATIVE",
-    deadline: "Online",
+    deadline: "ONLINE",
     ukm: "Taekwondo", 
   },
   {
     id: "7",
     title: "STORIES OF GRACE",
     category: "CREATIVE",
-    deadline: "Online",
+    deadline: "ONLINE",
     ukm: "PMK", 
   },
   {
     id: "8",
     title: "UC VORTEX ARENA 2026",
     category: "ESPORTS",
-    deadline: "Online",
+    deadline: "ONLINE",
     ukm: "E-Sports", 
   },
 ];

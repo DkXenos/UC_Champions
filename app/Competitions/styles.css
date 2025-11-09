@@ -200,9 +200,10 @@
 }
 
 .deadline-text{
-  font-weight: 500;
+  font-weight: bold;
   color: #95183D;
   margin-bottom: 1.8rem;
+  font-family: "Friend";
 }
 
 .detail-text{
