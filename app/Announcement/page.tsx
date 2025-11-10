@@ -235,18 +235,18 @@ export default function AnnouncementsPage() {
             ))}
           </div>
         </div>
-        <section className="py-16">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <section className="winner-section">
+          <div className="winner-container">
+            <div className="winner-grid">
               {currentItems.map((comp) => (
                 <div
                   key={comp.id}
-                  className="rounded-lg shadow-md overflow-hidden flex flex-col winner-card"
+                  className="winner-card"
                 >
-                  <div className="p-6 flex-grow">
+                  <div className="winner-content">
                     <span className="button-decor category-name">{comp.category}</span>
-                    <h3 className="mt-4 text-xl font-semibold competition-title">{comp.title}</h3>
-                    <p className="mt-2 text-sm end-date">
+                    <h3 className="competition-title">{comp.title}</h3>
+                    <p className="end-date">
                       Berakhir pada: {comp.endDate}
                     </p>
                   </div>
@@ -264,7 +264,7 @@ export default function AnnouncementsPage() {
 
             {/* Pagination */}
             {totalPages > 1 && (
-              <div className="mt-12">
+              <div className="pagination-wrapper">
                 <Pagination>
                   <PaginationContent>
                     <PaginationItem>
