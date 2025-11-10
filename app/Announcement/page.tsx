@@ -176,7 +176,7 @@ export default function AnnouncementsPage() {
       <div
         className="announcement"
         style={{
-          backgroundImage: `url('Asset/Announcement/main-bg.png')`,
+          backgroundImage: `url('/Asset/Announcement/main-bg.png')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
