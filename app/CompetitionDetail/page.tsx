@@ -173,7 +173,7 @@ function CompetitionDetailContent() {
                 <div className="competition-meta">
                   <span>Deadline: {competition.deadline}</span>
                   <span>Organized by: {competition.ukm}</span>
-                  <span>{competition.location}</span>
+                  {/* <span>{competition.location}</span> */}
                 </div>
               </div>
             </div>
