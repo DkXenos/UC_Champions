@@ -276,47 +276,46 @@ function CompetitionDetailContent() {
             <div className="secondary-content">
               {/* Timeline */}
               <div className="secondary-block">
-                <div className="timeline-content">
+                <div className="timeline-wrapper">
                   <img
                     src="Asset/CompetitionDetail/timelinebglast.svg"
                     alt="timelinebg"
                     className="timelinebg"
                   />
-                  <h2 className="timeline-title">Timeline</h2>
-                  <div className="timeline-list">
-                    {competition.timeline.map((item, index) => (
-                      <div key={index} className="timeline-item">
-                        <div className="timeline-details">
-                          <div className="timeline-event">{item.event}</div>
-                          <div className="timeline-date">{item.date}</div>
+                  <div className="timeline-content">
+                    <h2 className="timeline-title">Timeline</h2>
+                    <div className="timeline-list">
+                      {competition.timeline.map((item, index) => (
+                        <div key={index} className="timeline-item">
+                          <div className="timeline-details">
+                            <div className="timeline-event">{item.event}</div>
+                            <div className="timeline-date">{item.date}</div>
+                          </div>
                         </div>
-                      </div>
-                    ))}
+                      ))}
+                    </div>
                   </div>
                 </div>
-                {/* <div className="cp-info">
-                  <img
-                    src="Asset/CompetitionDetail/cpbgnew.png"
-                    alt="contact person background"
-                    className="cpbg"
-                  />
-                </div> */}
               </div>
 
               {/* Prizes */}
               <div className="secondary-block">
-                <img
-                  src="Asset/CompetitionDetail/prizebg.svg"
-                  alt="timelinebg"
-                  className="prizebg"
-                />
-                <h2 className="timeline-title">Prizes</h2>
-                <div className="prizes-list">
-                  {competition.prizes.map((prize, index) => (
-                    <div key={index} className="prize-item">
-                      {prize}
+                <div className="prizes-wrapper">
+                  <img
+                    src="Asset/CompetitionDetail/prizebg.svg"
+                    alt="prizebg"
+                    className="prizebg"
+                  />
+                  <div className="prizes-content">
+                    <h2 className="timeline-title">Prizes</h2>
+                    <div className="prizes-list">
+                      {competition.prizes.map((prize, index) => (
+                        <div key={index} className="prize-item">
+                          {prize}
+                        </div>
+                      ))}
                     </div>
-                  ))}
+                  </div>
                 </div>
               </div>
             </div>
