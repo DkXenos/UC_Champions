@@ -1,178 +1,288 @@
 /* Countdown Section - Default: 3840x2160 (4K) */
 @media (max-width: 3840px) and (max-height: 2160px) {
+  /* Countdown Section */
   .countdown-section {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 3rem;
-  }
-
-  .countdown-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
+    margin-top: 2rem;
+    z-index: 5;
   }
 
   .countdown-title {
-    font-family: "Seenonim";
+    text-align: center;
+    font-family: "Seenonim", sans-serif;
     color: #f8ead0;
-    font-size: 4rem;
+    font-size: 2.5rem;
+    margin-bottom: 0rem;
+    margin-top: 1rem;
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
   }
+
+  .countdown-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    }
 
   .countdown-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
+    max-width: 800px;
   }
 
   .countdown-item {
-    padding: 3rem;
-    border-radius: 2rem;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   .countdown-number {
-    font-family: "Seenonim";
-    color: #c3268f;
-    font-size: 5rem;
+    font-size: 3rem;
     font-weight: bold;
-    margin-bottom: 1rem;
+    font-family: "Seenonim", sans-serif;
+    margin-bottom: -1.5rem;
     text-shadow: 2px 2px 4px rgba(195, 38, 143, 0.4);
   }
 
   .countdown-label {
-    font-family: "Seenonim";
-    color: #95183d;
-    font-size: 2rem;
+    font-size: 1.2rem;
+    font-family: "Seenonim", sans-serif;
     text-shadow: 1px 1px 2px rgba(195, 38, 143, 0.3);
   }
 
   .countdown-expired {
     text-align: center;
+    padding: 3rem;
   }
 
   .expired-text {
-    font-family: "Seenonim";
-    font-size: 5rem;
+    font-size: 3rem;
+    font-weight: bold;
     color: #f8ead0;
     margin-bottom: 1rem;
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
   }
 
   .expired-subtext {
-    font-family: "Seenonim";
-    font-size: 2rem;
+    font-size: 1.2rem;
     color: #ca77bb;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
   }
 }
-
 @media (max-width: 2850px) and (max-height: 1800px) {
 }
-
 @media (max-width: 2560px) and (max-height: 1600px) {
 }
-
 @media (max-width: 2560px) and (max-height: 1140px) {
 }
-
 @media (max-width: 1920px) and (max-height: 1080px) {
 }
-
 @media (max-width: 1900px) and (max-height: 1920px) {
 }
-
 @media (max-width: 1900px) and (max-height: 1200px) {
 }
-
 @media (max-width: 1728px) and (max-height: 1117px) {
 }
-
 @media (max-width: 1538px) and (max-height: 2048px) {
 }
-
 @media (max-width: 1512px) and (max-height: 982px) {
-}
+  /* Countdown Section */
+  .countdown-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    z-index: 5;
+  }
 
+  .countdown-title {
+    text-align: center;
+    font-family: "Seenonim", sans-serif;
+    color: #f8ead0;
+    font-size: 2.5rem;
+    margin-bottom: 0rem;
+    margin-top: 1rem;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+  }
+
+  .countdown-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    }
+
+  .countdown-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    max-width: 800px;
+  }
+
+  .countdown-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .countdown-number {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: "Seenonim", sans-serif;
+    margin-bottom: -1.5rem;
+    text-shadow: 2px 2px 4px rgba(195, 38, 143, 0.4);
+  }
+
+  .countdown-label {
+    font-size: 1.2rem;
+    font-family: "Seenonim", sans-serif;
+    text-shadow: 1px 1px 2px rgba(195, 38, 143, 0.3);
+  }
+
+  .countdown-expired {
+    text-align: center;
+    padding: 3rem;
+  }
+
+  .expired-text {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #f8ead0;
+    margin-bottom: 1rem;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+  }
+
+  .expired-subtext {
+    font-size: 1.2rem;
+    color: #ca77bb;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  }
+}
 @media (max-width: 1366px) and (max-height: 1024px) {
 }
-
 @media (max-width: 1366px) and (max-height: 768px) {
 }
-
 @media (max-width: 1280px) and (max-height: 800px) {
 }
-
-@media (max-width: 1280px) and (max-height: 631px) {
-}
-
 @media (max-width: 1180px) and (max-height: 820px) {
 }
-
 @media (max-width: 1024px) and (max-height: 1366px) and (orientation: portrait) {
 }
-
 @media (max-width: 1024px) and (max-height: 768px) and (orientation: landscape) {
 }
-
 @media (max-width: 1024px) and (max-height: 600px) {
 }
-
 @media (max-width: 956px) and (max-height: 440px) and (orientation: landscape) {
 }
-
 @media (max-width: 932px) and (max-height: 430px) {
 }
-
 @media (max-width: 912px) and (max-height: 1368px) and (orientation: portrait) {
 }
-
 @media (max-width: 853px) and (max-height: 1280px) and (orientation: portrait) {
 }
-
 @media (max-width: 844px) and (max-height: 390px) {
 }
-
 @media (max-width: 820px) and (max-height: 1180px) {
 }
-
 @media (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
 }
-
 @media (max-width: 740px) and (max-height: 360px) and (orientation: landscape) {
 }
-
 @media (max-width: 720px) and (max-height: 540px) and (orientation: landscape) {
 }
-
 @media (max-width: 540px) and (max-height: 720px) and (orientation: portrait) {
 }
-
 @media (max-width: 459px) and (max-height: 841px) and (orientation: portrait) {
 }
-
 @media (max-width: 440px) and (max-height: 956px) and (orientation: portrait) {
-}
+  /* Countdown Section */
+  .countdown-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
 
+  .countdown-title {
+    font-size: 1.3rem;
+    margin-bottom: 0;
+    margin-top: 0.5rem;
+    text-align: center;
+  }
+
+  .countdown-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .countdown-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    max-width: 300px;
+  }
+
+  .countdown-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem;
+  }
+
+  .countdown-number {
+    font-size: 2rem;
+    margin-bottom: -1rem;
+  }
+
+  .countdown-label {
+    font-size: 0.9rem;
+  }
+
+  .countdown-expired {
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  .expired-text {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .expired-subtext {
+    font-size: 0.9rem;
+  }
+}
 @media (max-width: 430px) and (max-height: 932px) and (orientation: portrait) {
 }
-
 @media (max-width: 414px) and (max-height: 896px) and (orientation: portrait) {
 }
-
 @media (max-width: 393px) and (max-height: 873px) and (orientation: portrait) {
 }
-
 @media (max-width: 390px) and (max-height: 844px) and (orientation: portrait) {
 }
-
 @media (max-width: 375px) and (max-height: 667px) and (orientation: portrait) {
 }
-
 @media (max-width: 360px) and (max-height: 740px) and (orientation: portrait) {
 }
-
 @media (max-width: 344px) and (max-height: 882px) and (orientation: portrait) {
 }
