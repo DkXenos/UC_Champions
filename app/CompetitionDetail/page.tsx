@@ -160,16 +160,27 @@ function CompetitionDetailContent() {
           {/* Title Section with Background */}
           <div className="title-section">
             <div className="title-bg-wrapper">
-              <img 
-                src="Asset/CompetitionDetail/titlebg.svg" 
-                alt="title background" 
+              <img
+                src="Asset/CompetitionDetail/titlebg.svg"
+                alt="title background"
                 className="title-bg-image"
               />
+              <img
+                src="Asset/CompetitionDetail/titlemobile.svg"
+                alt="title background"
+                className="title-bg-image-mobile"
+              />
+
               <div className="title-content">
                 <Badge variant="secondary" className="mb-4 badge-decor">
                   {competition.category}
                 </Badge>
-                <h1 className="competition-title title-decor" data-text={competition.title}>{competition.title}</h1>
+                <h1
+                  className="competition-title title-decor"
+                  data-text={competition.title}
+                >
+                  {competition.title}
+                </h1>
                 <div className="competition-meta">
                   <span>Deadline: {competition.deadline}</span>
                   <span>Organized by: {competition.ukm}</span>
@@ -183,10 +194,15 @@ function CompetitionDetailContent() {
           <div className="info-section">
             {/* About Section */}
             <div className="about-wrapper">
-              <img 
-                src="Asset/CompetitionDetail/aboutbg.svg" 
-                alt="about background" 
+              <img
+                src="Asset/CompetitionDetail/aboutbg.svg"
+                alt="about background"
                 className="about-bg-image"
+              />
+              <img
+                src="Asset/CompetitionDetail/about-3.png"
+                alt="about background"
+                className="about-bg-image-mobile"
               />
               <div className="about-content">
                 <h2 className="section-title">About This Competition</h2>
@@ -196,9 +212,9 @@ function CompetitionDetailContent() {
 
             {/* Quick Info Section */}
             <div className="info-wrapper">
-              <img 
-                src="Asset/CompetitionDetail/infobg.svg" 
-                alt="info background" 
+              <img
+                src="Asset/CompetitionDetail/infobg.svg"
+                alt="info background"
                 className="info-bg-image"
               />
               <div className="info-content">
@@ -221,7 +237,17 @@ function CompetitionDetailContent() {
                 </div>
               </div>
             </div>
-            <img src="Asset/CompetitionDetail/minecart.png" alt="minecart" className="minecart" />
+            <img
+              src="Asset/CompetitionDetail/decor-kiri.png"
+              alt="minecart"
+              className="decor-kiri"
+            />
+
+            <img
+              src="Asset/CompetitionDetail/minecart.png"
+              alt="minecart"
+              className="minecart"
+            />
           </div>
 
           {/* Countdown Section */}
@@ -268,20 +294,25 @@ function CompetitionDetailContent() {
 
           {/* Secondary Board - Timeline and Prizes Only */}
           <div className="secondary-section">
-            <img 
-              src="Asset/CompetitionDetail/secondaryboard.svg" 
-              alt="secondary board background" 
+            <img
+              src="Asset/CompetitionDetail/secondaryboard.svg"
+              alt="secondary board background"
               className="secondary-bg-image"
+            />
+            <img
+              src="Asset/CompetitionDetail/secondarymobile-3.png"
+              alt="secondary board background"
+              className="secondary-bg-image-mobile"
             />
             <div className="secondary-content">
               {/* Timeline */}
               <div className="secondary-block">
+                <img
+                  src="Asset/CompetitionDetail/timelinebglast.svg"
+                  alt="timelinebg"
+                  className="timelinebg"
+                />
                 <div className="timeline-content">
-                  <img
-                    src="Asset/CompetitionDetail/timelinebglast.svg"
-                    alt="timelinebg"
-                    className="timelinebg"
-                  />
                   <h2 className="timeline-title">Timeline</h2>
                   <div className="timeline-list">
                     {competition.timeline.map((item, index) => (
@@ -310,8 +341,9 @@ function CompetitionDetailContent() {
                   alt="timelinebg"
                   className="prizebg"
                 />
-                <h2 className="timeline-title">Prizes</h2>
                 <div className="prizes-list">
+                  <h2 className="timeline-title">Prizes</h2>
+
                   {competition.prizes.map((prize, index) => (
                     <div key={index} className="prize-item">
                       {prize}
@@ -324,10 +356,15 @@ function CompetitionDetailContent() {
 
           {/* Requirements Section - Separate with requirementborder background */}
           <div className="requirement-section">
-            <img 
-              src="Asset/CompetitionDetail/requirementborder.svg" 
-              alt="requirement border background" 
+            <img
+              src="Asset/CompetitionDetail/requirementborder.svg"
+              alt="requirement border background"
               className="requirement-bg-image"
+            />
+            <img
+              src="Asset/CompetitionDetail/reqbg-2.png"
+              alt="requirement border background"
+              className="requirement-bg-image-mobile"
             />
             <div className="requirement-content">
               <h2 className="section-title">Requirements</h2>

@@ -24,14 +24,15 @@ export const competitionDetails: CompetitionDetail[] = [
     id: "1",
     title: "BOUNCEBACK",
     category: "Dance",
-    deadline: "25 Nov 2025",
+    deadline: "25 Jan 2026",
     ukm: "BIG DANCE CREW",
-    description: "BOUNCEBACK merupakan lomba tahunan yang telah berjalan selama tiga tahun dari UKM Dance Universitas Ciputra, yaitu Big Dance Crew (BDC). Lomba ini berfokus pada kompetisi tari dengan dua genre utama, yaitu Modern Dance dan K-Pop Dance, serta terdiri dari tiga kategori lomba: K-Pop Solo/Duo, K-Pop Group, dan Modern Group Dance. Setiap kategori dirancang untuk menjadi wadah bagi para penari berbakat dalam menampilkan kemampuan, kreativitas, dan karakter mereka di atas panggung. Melalui acara ini, BDC bertujuan untuk mengembangkan bakat para penari, mengasah keterampilan mereka, dan menumbuhkan rasa percaya diri dengan energi serta semangat yang positif.",
+    description: "Lomba Short Movie Kristen merupakan kompetisi film pendek berskala nasional yang diselenggarakan oleh UKM PMK Universitas Ciputra Surabaya yang bersifat individu maupun tim. Lomba ini bertujuan menjadi wadah bagi mahasiswa Kristen dari berbagai daerah di Indonesia untuk mengekspresikan penerapan nilai-nilai iman dengan ilmu pengetahuan melalui media visual yang kreatif dan kontekstual berdurasi 2-5 menit. Melalui karya-karya yang dibuat, peserta diharapkan mampu menyampaikan pesan rohani, kesaksian pribadi, atau refleksi kehidupan dari sudut pandang kekristenan yang berdampak bagi sesama.",
     requirements: [
-      "Coming Soon!",
-      "Coming Soon!",
-      "Coming Soon!",
-      "Coming Soon!"
+      "Mahasiswa aktif dari seluruh Indonesia (individu/tim maksimal 5 orang)",
+      "Karya harus sesuai dengan tema “Setiap Kisah adalah Kasih Karunia”, serta mencerminkan nilai iman, kasih, dan kesaksian hidup Kristen.",
+      "Durasi karya adalah 2–5 menit, berformat MP4/MOV 1080p rasio 16:9, menggunakan bahasa Indonesia (boleh bahasa daerah dengan subtitle Indonesia)",
+      "Wajib merupakan Karya orisinal",
+      "Karya tidak boleh mengandung unsur SARA, pornografi, atau kekerasan berlebihan",
     ],
     prizes: [
       "1st Place: Coming Soon!",
@@ -62,10 +63,11 @@ export const competitionDetails: CompetitionDetail[] = [
     ukm: "Tabletop",
     description: "Showcase your creativity and design thinking skills in our UI/UX Design Challenge. Design innovative user interfaces and experiences for real-world problems.",
     requirements: [
-      "Coming Soon!",
-      "Coming Soon!",
-      "Coming Soon!",
-      "Coming Soon!"
+      "Mahasiswa aktif dari seluruh Indonesia (individu/tim maksimal 5 orang)",
+      "Karya harus sesuai dengan tema “Setiap Kisah adalah Kasih Karunia”, serta mencerminkan nilai iman, kasih, dan kesaksian hidup Kristen.",
+      "Durasi karya adalah 2–5 menit, berformat MP4/MOV 1080p rasio 16:9, menggunakan bahasa Indonesia (boleh bahasa daerah dengan subtitle Indonesia)",
+      "Wajib merupakan Karya orisinal",
+      "Karya tidak boleh mengandung unsur SARA, pornografi, atau kekerasan berlebihan",
     ],
     prizes: [
       "1st Place: Rp 4,000,000 + Internship Opportunity",
