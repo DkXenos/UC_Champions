@@ -1,5 +1,5 @@
 .competition-container {
-  background-image: url('/Asset/Competitionpage/competition_bg.svg');
+  background-image: url('/Asset/Competitionpage/mainbg.webp');
   background-size: "cover";
   background-position: "center";
   background-repeat: "no-repeat";
@@ -312,7 +312,7 @@
 }
 @media (max-width: 1512px) and (max-height: 982px) {
 .competition-container {
-  background-image: url('/Asset/Competitionpage/competition_bg.svg');
+  background-image: url('/Asset/Competitionpage/mainbg.webp');
   background-size: "cover";
   background-position: "center";
   background-repeat: "no-repeat";
@@ -606,7 +606,7 @@
 }
 @media (max-width: 1512px) and (max-height: 1181px) {
 .competition-container {
-  background-image: url('/Asset/Competitionpage/competition_bg.svg');
+  background-image: url('/Asset/Competitionpage/mainbg.webp');
   background-size: "cover";
   background-position: "center";
   background-repeat: "no-repeat";
@@ -900,7 +900,7 @@
 }
 @media (max-width: 1368px) and (max-height: 912px) {
 .competition-container {
-  background-image: url('/Asset/Competitionpage/competition_bg.svg');
+  background-image: url('/Asset/Competitionpage/mainbg.webp');
   background-size: "cover";
   background-position: "center";
   background-repeat: "no-repeat";
@@ -1194,7 +1194,7 @@
 }
 @media (max-width: 1366px) and (max-height: 1024px) {
 .competition-container {
-  background-image: url('/Asset/Competitionpage/competition_bg.svg');
+  background-image: url('/Asset/Competitionpage/mainbg.webp');
   background-size: "cover";
   background-position: "center";
   background-repeat: "no-repeat";
@@ -1490,7 +1490,7 @@
 }
 @media (max-width: 1280px) and (max-height: 853px) {
 .competition-container {
-  background-image: url('/Asset/Competitionpage/competition_bg.svg');
+  background-image: url('/Asset/Competitionpage/mainbg.webp');
   background-size: "cover";
   background-position: "center";
   background-repeat: "no-repeat";
@@ -1784,7 +1784,7 @@
 }
 @media (max-width: 1280px) and (max-height: 800px) {
 .competition-container {
-  background-image: url('/Asset/Competitionpage/competition_bg.svg');
+  background-image: url('/Asset/Competitionpage/mainbg.webp');
   background-size: "cover";
   background-position: "center";
   background-repeat: "no-repeat";
@@ -2078,7 +2078,7 @@
 }
 @media (max-width: 1180px) and (max-height: 820px) {
 .competition-container {
-  background-image: url('/Asset/Competitionpage/competition_bg.svg');
+  background-image: url('/Asset/Competitionpage/mainbg.webp');
   background-size: "cover";
   background-position: "center";
   background-repeat: "no-repeat";
@@ -2372,7 +2372,7 @@
 }
 @media (max-width: 1024px) and (max-height: 1366px) and (orientation: portrait) {
 .competition-container {
-  background-image: url('/Asset/Competitionpage/competition_mobile_bg.svg');
+  background-image: url('/Asset/Competitionpage/mobilebg.webp');
   background-size: "cover";
   background-position: "center";
   background-repeat: "no-repeat";
@@ -2671,7 +2671,7 @@
 }
 @media (max-width: 1024px) and (max-height: 768px) and (orientation: landscape) {
 .competition-container {
-  background-image: url('/Asset/Competitionpage/competition_bg.svg');
+  background-image: url('/Asset/Competitionpage/mainbg.webp');
   background-size: "cover";
   background-position: "center";
   background-repeat: "no-repeat";
@@ -2965,7 +2965,7 @@
 }
 @media (max-width: 1024px) and (max-height: 600px) {
 .competition-container {
-  background-image: url('/Asset/Competitionpage/competition_bg.svg');
+  background-image: url('/Asset/Competitionpage/mainbg.webp');
   background-size: "cover";
   background-position: "center";
   background-repeat: "no-repeat";
@@ -3259,7 +3259,7 @@
 }
 @media (max-width: 956px) and (max-height: 440px) and (orientation: landscape) {
 .competition-container {
-  background-image: url('/Asset/Competitionpage/competition_bg.svg');
+  background-image: url('/Asset/Competitionpage/mainbg.webp');
   background-size: "cover";
   background-position: "center";
   background-repeat: "no-repeat";
@@ -3553,7 +3553,7 @@
 }
 @media (max-width: 932px) and (max-height: 430px) {
 .competition-container {
-  background-image: url('/Asset/Competitionpage/competition_bg.svg');
+  background-image: url('/Asset/Competitionpage/mainbg.webp');
   background-size: "cover";
   background-position: "center";
   background-repeat: "no-repeat";
@@ -3847,7 +3847,7 @@
 }
 @media (max-width: 915px) and (max-height: 412px) {
 .competition-container {
-  background-image: url('/Asset/Competitionpage/competition_bg.svg');
+  background-image: url('/Asset/Competitionpage/mainbg.webp');
   background-size: "cover";
   background-position: "center";
   background-repeat: "no-repeat";
@@ -4141,7 +4141,7 @@
 }
 @media (max-width: 912px) and (max-height: 1368px) and (orientation: portrait) {
 .competition-container {
-  background-image: url('/Asset/Competitionpage/competition_mobile_bg.svg');
+  background-image: url('/Asset/Competitionpage/mobilebg.webp');
   background-size: "cover";
   background-position: "center";
   background-repeat: "no-repeat";
@@ -4440,7 +4440,7 @@
 }
 @media (max-width: 882px) and (max-height: 344px) {
 .competition-container {
-  background-image: url('/Asset/Competitionpage/competition_bg.svg');
+  background-image: url('/Asset/Competitionpage/mainbg.webp');
   background-size: "cover";
   background-position: "center";
   background-repeat: "no-repeat";
@@ -4734,7 +4734,7 @@
 }
 @media (max-width: 853px) and (max-height: 1280px) and (orientation: portrait) {
 .competition-container {
-  background-image: url('/Asset/Competitionpage/competition_mobile_bg.svg');
+  background-image: url('/Asset/Competitionpage/mobilebg.webp');
   background-size: "cover";
   background-position: "center";
   background-repeat: "no-repeat";
@@ -5033,7 +5033,7 @@
 }
 @media (max-width: 844px) and (max-height: 390px) {
 .competition-container {
-  background-image: url('/Asset/Competitionpage/competition_bg.svg');
+  background-image: url('/Asset/Competitionpage/mainbg.webp');
   background-size: "cover";
   background-position: "center";
   background-repeat: "no-repeat";
@@ -5327,7 +5327,7 @@
 }
 @media (max-width: 820px) and (max-height: 1180px) {
 .competition-container {
-  background-image: url('/Asset/Competitionpage/competition_mobile_bg.svg');
+  background-image: url('/Asset/Competitionpage/mobilebg.webp');
   background-size: "cover";
   background-position: "center";
   background-repeat: "no-repeat";
@@ -5626,7 +5626,7 @@
 }
 @media (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
 .competition-container {
-  background-image: url('/Asset/Competitionpage/competition_mobile_bg.svg');
+  background-image: url('/Asset/Competitionpage/mobilebg.webp');
   background-size: "cover";
   background-position: "center";
   background-repeat: "no-repeat";
@@ -5927,7 +5927,7 @@
 }
 @media (max-width: 720px) and (max-height: 540px) and (orientation: landscape) {
 .competition-container {
-  background-image: url('/Asset/Competitionpage/competition_bg.svg');
+  background-image: url('/Asset/Competitionpage/mainbg.webp');
   background-size: "cover";
   background-position: "center";
   background-repeat: "no-repeat";
@@ -6221,7 +6221,7 @@
 }
 @media (max-width: 667px) and (max-height: 375px) {
 .competition-container {
-  background-image: url('/Asset/Competitionpage/competition_bg.svg');
+  background-image: url('/Asset/Competitionpage/mainbg.webp');
   background-size: "cover";
   background-position: "center";
   background-repeat: "no-repeat";
@@ -6515,7 +6515,7 @@
 }
 @media (max-width: 540px) and (max-height: 720px) and (orientation: portrait) {
 .competition-container {
-  background-image: url('/Asset/Competitionpage/competition_mobile_bg.svg');
+  background-image: url('/Asset/Competitionpage/mobilebg.webp');
   background-size: "cover";
   background-position: "center";
   background-repeat: "no-repeat";
@@ -6816,7 +6816,7 @@
 }
 @media (max-width: 440px) and (max-height: 956px) and (orientation: portrait) {
 .competition-container {
-  background-image: url('/Asset/Competitionpage/competition_mobile_bg.svg');
+  background-image: url('/Asset/Competitionpage/mobilebg.webp');
   background-size: "cover";
   background-position: "center";
   background-repeat: "no-repeat";
@@ -7119,7 +7119,7 @@
 }
 @media (max-width: 412px) and (max-height: 915px) and (orientation: portrait) {
 .competition-container {
-  background-image: url('/Asset/Competitionpage/competition_mobile_bg.svg');
+  background-image: url('/Asset/Competitionpage/mobilebg.webp');
   background-size: "cover";
   background-position: "center";
   background-repeat: "no-repeat";
@@ -7420,7 +7420,7 @@
 }
 @media (max-width: 390px) and (max-height: 844px) and (orientation: portrait) {
 .competition-container {
-  background-image: url('/Asset/Competitionpage/competition_mobile_bg.svg');
+  background-image: url('/Asset/Competitionpage/mobilebg.webp');
   background-size: "cover";
   background-position: "center";
   background-repeat: "no-repeat";
@@ -7719,7 +7719,7 @@
 }
 @media (max-width: 375px) and (max-height: 667px) and (orientation: portrait) {
 .competition-container {
-  background-image: url('/Asset/Competitionpage/competition_mobile_bg.svg');
+  background-image: url('/Asset/Competitionpage/mobilebg.webp');
   background-size: "cover";
   background-position: "center";
   background-repeat: "no-repeat";
@@ -8019,7 +8019,7 @@
 }
 @media (max-width: 344px) and (max-height: 882px) and (orientation: portrait) {
 .competition-container {
-  background-image: url('/Asset/Competitionpage/competition_mobile_bg.svg');
+  background-image: url('/Asset/Competitionpage/mobilebg.webp');
   background-size: "cover";
   background-position: "center";
   background-repeat: "no-repeat";

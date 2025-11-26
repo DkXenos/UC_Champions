@@ -49,7 +49,7 @@ export default function About() {
       <div
         className="about-background"
         style={{
-          backgroundImage: `url('/Asset/Aboutpage/mainbgabout.png')`,
+          backgroundImage: `url('/Asset/Aboutpage/mainbgabout.webp')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
