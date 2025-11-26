@@ -1,10 +1,10 @@
 "use client";
 
-import { useEffect, useState, useTransition } from "react";
+import { useEffect, useState, useTransition, Suspense } from "react";
 import { usePathname, useSearchParams } from "next/navigation";
 import "./PageLoader.css";
 
-export default function PageLoader() {
+function PageLoaderContent() {
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const [loading, setLoading] = useState(true);
@@ -58,5 +58,13 @@ export default function PageLoader() {
         <p className="loading-text">Loading...</p>
       </div>
     </div>
+  );
+}
+
+export default function PageLoader() {
+  return (
+    <Suspense fallback={null}>
+      <PageLoaderContent />
+    </Suspense>
   );
 }
