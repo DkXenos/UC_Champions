@@ -292,12 +292,12 @@ function CompetitionDetailContent() {
             )}
             {/* Register Button */}
             {competition.registrationLink && !isExpired && (
-              <div className="register-button-wrapper button-decor">
+              <div className="register-button-wrapper">
                 <a
                   href={competition.registrationLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="register-button "
+                  className="button-decor2"
                 >
                   Register Now
                 </a>
