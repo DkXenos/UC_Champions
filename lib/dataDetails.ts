@@ -17,6 +17,7 @@ export type CompetitionDetail = {
   maxParticipants: string;
   location: string;
   poster?: string;
+  registrationLink?: string;
 };
 
 export const competitionDetails: CompetitionDetail[] = [
@@ -55,7 +56,8 @@ export const competitionDetails: CompetitionDetail[] = [
     },
     registrationFee: "Rp 100,000",
     maxParticipants: "5 (Per Team)",
-    location: "Online Zoom"
+    location: "Online Zoom",
+    registrationLink: "https://forms.gle/ReUvEHU29yPwUMwWA"
   },
   {
     id: "2",
@@ -90,7 +92,8 @@ export const competitionDetails: CompetitionDetail[] = [
     },
     registrationFee: "Rp 25,000",
     maxParticipants: "50 teams (max 3 members per team)",
-    location: "Design Studio, Creative Arts Building"
+    location: "Design Studio, Creative Arts Building",
+    registrationLink: "https://example.com/register/uiux-challenge"
   },
   {
     id: "3",
@@ -124,7 +127,8 @@ export const competitionDetails: CompetitionDetail[] = [
     },
     registrationFee: "Rp 25,000",
     maxParticipants: "50 teams (max 3 members per team)",
-    location: "Design Studio, Creative Arts Building"
+    location: "Design Studio, Creative Arts Building",
+    registrationLink: "https://example.com/register/uc-vortex-arena"
   },
   
 ];

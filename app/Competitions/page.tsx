@@ -113,14 +113,14 @@ export default function CompetitionsPage() {
                     {comp.title}
                   </h3>
                   <p className="deadline-text">
-                    JENIS: {comp.deadline}
+                    STATUS: {comp.deadline}
                   </p>
                   <div>
                     <Link
                       href={`/CompetitionDetail?id=${comp.id}`}
                       className="detail-text"
                     >
-                      LIHAT DETAIL &rarr;
+                      MORE DETAIL &rarr;
                     </Link>
                   </div>
                 </div>

@@ -290,11 +290,19 @@ function CompetitionDetailContent() {
                 <h2 className="countdown-title">Registration Countdown</h2>
               </div>
             )}
-            {/* <img
-              src="Asset/CompetitionDetail/minecart.png"
-              alt="minecart"
-              className="minecart-mobile"
-            /> */}
+            {/* Register Button */}
+            {competition.registrationLink && !isExpired && (
+              <div className="register-button-wrapper button-decor">
+                <a
+                  href={competition.registrationLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="register-button "
+                >
+                  Register Now
+                </a>
+              </div>
+            )}
           </div>
 
           {/* Secondary Board - Timeline and Prizes Only */}
