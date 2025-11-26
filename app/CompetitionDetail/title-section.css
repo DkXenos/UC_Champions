@@ -270,7 +270,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2rem 1.5rem;
+    padding: 0rem 1.5rem;
     position: relative;
   }
 
@@ -282,7 +282,8 @@
     flex-direction: column;
     align-items: start;
     z-index: 1;
-    margin-left: -3rem;
+    margin-left: -0rem;
+    margin-top: 2rem;
   }
 
   .competition-title {
@@ -292,6 +293,7 @@
     justify-content: center;
     text-align: center;
     line-height: 1.2;
+    text-align: start;
   }
 
   .competition-meta {

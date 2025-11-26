@@ -1,3 +1,6 @@
+.minecart-mobile {
+  display: none;
+} 
 /* Countdown Section - Default: 3840x2160 (4K) */
 @media (max-width: 3840px) and (max-height: 2160px) {
   /* Countdown Section */
@@ -210,7 +213,15 @@
 @media (max-width: 459px) and (max-height: 841px) and (orientation: portrait) {
 }
 @media (max-width: 440px) and (max-height: 956px) and (orientation: portrait) {
-
+  /* .minecart-mobile{
+    display: block;
+    position: relative;
+    right: 0rem;
+    width: 20rem;
+    height: auto;
+    margin-right: -10rem;
+    margin-top: 10rem;
+  } */
   /* Countdown Section */
   .countdown-section {
     display: flex;

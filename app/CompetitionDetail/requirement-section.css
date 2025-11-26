@@ -237,7 +237,7 @@
     display: block;
     position: absolute;
     margin-top: 4rem;
-    margin-top: 5rem;
+    margin-top: 2rem;
   }
   .requirement-bg-image{
     display: none;
@@ -259,7 +259,7 @@
     padding: 1.5rem;
     position: relative;
     z-index: 1;
-    margin-top: 6rem;
+    margin-top: 2rem;
     margin-bottom: 2rem;
   }
 

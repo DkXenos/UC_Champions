@@ -290,6 +290,11 @@ function CompetitionDetailContent() {
                 <h2 className="countdown-title">Registration Countdown</h2>
               </div>
             )}
+            {/* <img
+              src="Asset/CompetitionDetail/minecart.png"
+              alt="minecart"
+              className="minecart-mobile"
+            /> */}
           </div>
 
           {/* Secondary Board - Timeline and Prizes Only */}
@@ -341,8 +346,13 @@ function CompetitionDetailContent() {
                   alt="timelinebg"
                   className="prizebg"
                 />
+                {/* <img
+                  src="Asset/CompetitionDetail/prizebgm.png"
+                  alt="timelinebg"
+                  className="prizebgm"
+                /> */}
                 <div className="prizes-list">
-                  <h2 className="timeline-title">Prizes</h2>
+                  <h2 className="prize-title">Prizes</h2>
 
                   {competition.prizes.map((prize, index) => (
                     <div key={index} className="prize-item">
