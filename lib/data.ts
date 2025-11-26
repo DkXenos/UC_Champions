@@ -9,58 +9,59 @@ export type Competition = {
 export const featuredCompetitions: Competition[] = [
   {
     id: "1",
-    title: "BOUNCEBACK", //ini judul kompetisi
-    category: "DANCE", //kek buat di badge yg filtering gitu jadi bisa jadi kek ukm or kategori e
-    deadline: "OFFLINE", //ini deadline kompetisi kapan terakhir daftar
-    ukm: "BIG DANCE CREW", //ukm e apa
+    title: "STORIES OF GRACE",
+    category: "CREATIVE",
+    deadline: "ONLINE",
+    ukm: "PMK",
   },
+
   {
     id: "2",
     title: "REKAM CERITA",
     category: "CREATIVE",
     deadline: "ONLINE",
-    ukm: "Balawarta", 
+    ukm: "Balawarta",
   },
   {
     id: "3",
     title: "NEOSANTARA FEST",
     category: "BUDAYA",
     deadline: "ONLINE",
-    ukm: "Teater X Tari", 
+    ukm: "Teater X Tari",
   },
   {
     id: "4",
     title: "UCHSDC",
     category: "DEBATE",
     deadline: "HYBRID",
-    ukm: "UCDC", 
+    ukm: "UCDC",
   },
   {
     id: "5",
     title: "LOMBA POSTER INTERNASIONAL",
     category: "CREATIVE",
     deadline: "ONLINE",
-    ukm: "UCBC", 
+    ukm: "UCBC",
   },
   {
     id: "6",
     title: "KICKSTART CREATIVITY",
     category: "CREATIVE",
     deadline: "ONLINE",
-    ukm: "Taekwondo", 
+    ukm: "Taekwondo",
   },
   {
     id: "7",
-    title: "STORIES OF GRACE",
-    category: "CREATIVE",
-    deadline: "ONLINE",
-    ukm: "PMK", 
+    title: "BOUNCEBACK", //ini judul kompetisi
+    category: "DANCE", //kek buat di badge yg filtering gitu jadi bisa jadi kek ukm or kategori e
+    deadline: "OFFLINE", //ini deadline kompetisi kapan terakhir daftar
+    ukm: "BIG DANCE CREW", //ukm e apa
   },
   {
     id: "8",
     title: "UC VORTEX ARENA 2026",
     category: "ESPORTS",
     deadline: "ONLINE",
-    ukm: "E-Sports", 
+    ukm: "E-Sports",
   },
 ];

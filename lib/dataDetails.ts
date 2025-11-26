@@ -22,10 +22,10 @@ export type CompetitionDetail = {
 export const competitionDetails: CompetitionDetail[] = [
   {
     id: "1",
-    title: "BOUNCEBACK",
-    category: "Dance",
-    deadline: "25 Jan 2026",
-    ukm: "BIG DANCE CREW",
+    title: "STORIES OF GRACE",
+    category: "SHORT MOVIE",
+    deadline: "22 Feb 2026",
+    ukm: "PMK",
     description: "Lomba Short Movie Kristen merupakan kompetisi film pendek berskala nasional yang diselenggarakan oleh UKM PMK Universitas Ciputra Surabaya yang bersifat individu maupun tim. Lomba ini bertujuan menjadi wadah bagi mahasiswa Kristen dari berbagai daerah di Indonesia untuk mengekspresikan penerapan nilai-nilai iman dengan ilmu pengetahuan melalui media visual yang kreatif dan kontekstual berdurasi 2-5 menit. Melalui karya-karya yang dibuat, peserta diharapkan mampu menyampaikan pesan rohani, kesaksian pribadi, atau refleksi kehidupan dari sudut pandang kekristenan yang berdampak bagi sesama.",
     requirements: [
       "Mahasiswa aktif dari seluruh Indonesia (individu/tim maksimal 5 orang)",
@@ -35,25 +35,27 @@ export const competitionDetails: CompetitionDetail[] = [
       "Karya tidak boleh mengandung unsur SARA, pornografi, atau kekerasan berlebihan",
     ],
     prizes: [
-      "1st Place: Coming Soon!",
-      "2nd Place: Coming Soon!",
-      "3rd Place: Coming Soon!",
-      "All participants: Coming Soon!"
+      "1st Place: Rp1.000.000 + Sertifikat Juara 1",
+      "2nd Place: Rp750.000 + Sertifikat Juara 2",
+      "3rd Place: Rp500.000 + Sertifikat Juara 3",
+      "Juara Favorit: Rp250.000 + Sertifikat Juara Favorit",
+      "Peserta Internal UC: KP Kompetisi + Sertifikat Online",
+      "Seluruh Peserta: Sertifikat Online",
     ],
     timeline: [
-      { date: "Coming Soon!", event: "Coming Soon!" },
-      { date: "Coming Soon!", event: "Coming Soon!" },
-      { date: "Coming Soon!", event: "Coming Soon!" },
-      { date: "Coming Soon!", event: "Coming Soon!" },
-      { date: "Coming Soon!", event: "Coming Soon!" }
+      { date: "19 November 2025 - 22 Februari 2026", event: "Pendaftaran" },
+      { date: "25 Februari 2026", event: "Pengumpulan Karya" },
+      { date: "2 Maret 2026", event: "Pengumuman Finalis" },
+      { date: "7 Maret 2026", event: "Pengumuman Akhir" },
+      { date: " ", event: " " }
     ],
     contactInfo: {
       email: "programming@uchampions.ac.id",
       phone: "+62 812 3456 7890"
     },
-    registrationFee: "Free",
-    maxParticipants: "Coming Soon!",
-    location: "Coming Soon!"
+    registrationFee: "Rp 100,000",
+    maxParticipants: "5 (Per Team)",
+    location: "Online Zoom"
   },
   {
     id: "2",
