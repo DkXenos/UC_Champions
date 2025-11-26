@@ -1,0 +1,122 @@
+/* Page Loader Overlay */
+.page-loader-overlay {
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(0deg, #ed6b7a 0%, #ed6b7a 50%, #c980d4 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  opacity: 1;
+  animation: none;
+}
+
+.page-loader-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* Logo Spinner Wrapper */
+.logo-spinner-wrapper {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Spinning Logo */
+.spinning-logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  animation: pulse 2s ease-in-out infinite;
+  z-index: 2;
+  position: relative;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+}
+
+/* Spinner Ring */
+.spinner-ring {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 4px solid transparent;
+  border-top-color: #f2b028;
+  border-right-color: #ffd083;
+  border-radius: 50%;
+  animation: spin 1.5s linear infinite;
+}
+
+.spinner-ring::before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  border: 4px solid transparent;
+  border-bottom-color: #ffd083;
+  border-left-color: #f2b028;
+  border-radius: 50%;
+  animation: spin 2s linear infinite reverse;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Loading Text */
+.loading-text {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-family: "Seenonim", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  animation: textPulse 1.5s ease-in-out infinite;
+}
+
+@keyframes textPulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .logo-spinner-wrapper {
+    width: 100px;
+    height: 100px;
+  }
+
+  .spinning-logo {
+    width: 65px;
+    height: 65px;
+  }
+
+  .loading-text {
+    font-size: 1.2rem;
+  }
+}
