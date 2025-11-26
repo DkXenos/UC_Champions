@@ -19,7 +19,7 @@ export const featuredCompetitions: Competition[] = [
     id: "2",
     title: "REKAM CERITA",
     category: "CREATIVE",
-    deadline: "CLOSED",
+    deadline: "CLO`SED",
     ukm: "Balawarta",
   },
   {
