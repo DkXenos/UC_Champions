@@ -1044,6 +1044,144 @@
     text-align: center;
   }
 }
+@media (max-width: 896px) and (max-height: 414px) and (orientation: landscape) {
+  .secondary-bg-image-mobile {
+    display: block;
+    position: absolute;
+    width: 28rem;
+    height: auto;
+    margin-top: 3rem;
+  }
+  .secondary-bg-image {
+    display: none;
+  }
+  /* Secondary Section - Stack Vertically */
+  .timeline-title {
+    font-size: 1.3rem;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .cpbg {
+    display: none;
+  }
+  .timelinebg,
+  .prizebg {
+    display: block;
+  }
+  .timelinebg {
+    width: 28rem;
+    height: auto;
+    margin-left: 2rem;
+    margin-top: 1rem;
+  }
+  .prizebg {
+    width: 28rem;
+    height: auto;
+    margin-left: 1.2rem;
+    margin-top: -0rem;
+  }
+
+  .secondary-section {
+    width: 100%;
+    margin: 1rem auto;
+    min-height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  .secondary-content {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+  }
+
+  .secondary-block {
+    padding: 1rem;
+    margin-left: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Timeline */
+  .prize-title{
+    font-size: 1.5rem;
+    margin-bottom: -0.5rem;
+  }
+  .timeline-content{
+    margin-left: 0rem;
+  }
+  .timeline-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: "Seenonim", sans-serif;
+    color: #81003c;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(129, 0, 60, 0.2);
+  }
+
+  .timeline-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .timeline-item {
+    display: flex;
+    width: 100%;
+  }
+
+  .timeline-details {
+    text-align: center;
+  }
+
+  .timeline-event {
+    font-weight: bold;
+    color: #81003c;
+    font-size: 0.85rem;
+    margin-bottom: 0.2rem;
+    font-family: "Seenonim";
+    text-shadow: 1px 1px 2px rgba(129, 0, 60, 0.15);
+  }
+
+  .timeline-date {
+    color: #ca77bb;
+    font-size: 0.75rem;
+    font-family: "Seenonim";
+    text-shadow: 1px 1px 2px rgba(202, 119, 187, 0.2);
+  }
+
+  /* Prizes */
+  .prizes-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    width: 64%;
+    margin-top: -1.5rem;
+    padding: 3rem;
+  }
+
+  .prize-item {
+    padding: 0.25rem;
+    border-radius: 0.5rem;
+    color: #81003c;
+    font-size: 0.85rem;
+    font-family: "Seenonim";
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(129, 0, 60, 0.15);
+    text-align: center;
+  }
+}
 @media (max-width: 882px) and (max-height: 344px) and (orientation: landscape) {
   .secondary-bg-image-mobile {
     display: block;
@@ -1185,6 +1323,142 @@
 @media (max-width: 853px) and (max-height: 1280px) and (orientation: portrait) {
 }
 @media (max-width: 844px) and (max-height: 390px) {
+    .secondary-bg-image-mobile {
+    display: block;
+    position: absolute;
+    width: 28rem;
+    height: auto;
+    margin-top: 3rem;
+  }
+  .secondary-bg-image {
+    display: none;
+  }
+  /* Secondary Section - Stack Vertically */
+  .timeline-title {
+    font-size: 1.3rem;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .cpbg {
+    display: none;
+  }
+  .timelinebg,
+  .prizebg {
+    display: block;
+  }
+  .timelinebg {
+    width: 28rem;
+    height: auto;
+    margin-left: 2rem;
+    margin-top: 1rem;
+  }
+  .prizebg {
+    width: 28rem;
+    height: auto;
+    margin-left: 1.2rem;
+    margin-top: -0rem;
+  }
+
+  .secondary-section {
+    width: 100%;
+    margin: 1rem auto;
+    min-height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  .secondary-content {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+  }
+
+  .secondary-block {
+    padding: 1rem;
+    margin-left: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Timeline */
+  .prize-title{
+    font-size: 1.5rem;
+    margin-bottom: -0.5rem;
+  }
+  .timeline-content{
+    margin-left: 0rem;
+  }
+  .timeline-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: "Seenonim", sans-serif;
+    color: #81003c;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(129, 0, 60, 0.2);
+  }
+
+  .timeline-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .timeline-item {
+    display: flex;
+    width: 100%;
+  }
+
+  .timeline-details {
+    text-align: center;
+  }
+
+  .timeline-event {
+    font-weight: bold;
+    color: #81003c;
+    font-size: 0.85rem;
+    margin-bottom: 0.2rem;
+    font-family: "Seenonim";
+    text-shadow: 1px 1px 2px rgba(129, 0, 60, 0.15);
+  }
+
+  .timeline-date {
+    color: #ca77bb;
+    font-size: 0.75rem;
+    font-family: "Seenonim";
+    text-shadow: 1px 1px 2px rgba(202, 119, 187, 0.2);
+  }
+
+  /* Prizes */
+  .prizes-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    width: 64%;
+    margin-top: -1.5rem;
+    padding: 2rem;
+  }
+
+  .prize-item {
+    padding: 0.25rem;
+    border-radius: 0.5rem;
+    color: #81003c;
+    font-size: 0.85rem;
+    font-family: "Seenonim";
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(129, 0, 60, 0.15);
+    text-align: center;
+  }
 }
 @media (max-width: 820px) and (max-height: 1180px) {
   .secondary-bg-image-mobile {
@@ -1748,7 +2022,7 @@
   /* Secondary Section - Stack Vertically */
   .timeline-title {
     font-size: 1.3rem;
-    margin-top: 4rem;
+    margin-top: 3rem;
     margin-bottom: 1rem;
     text-align: center;
   }
@@ -2139,6 +2413,138 @@
   }
 }
 @media (max-width: 375px) and (max-height: 667px) and (orientation: portrait) {
+  .secondary-bg-image-mobile {
+    display: block;
+    position: absolute;
+    width: 40rem;
+    height: auto;
+    margin-top: 3rem;
+  }
+  .secondary-bg-image {
+    display: none;
+  }
+  /* Secondary Section - Stack Vertically */
+  .timeline-title {
+    font-size: 1.3rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .cpbg {
+    display: none;
+  }
+  .timelinebg,
+  .prizebg {
+    display: block;
+  }
+  .timelinebg {
+    width: 23rem;
+    height: auto;
+    margin-left: 1rem;
+    margin-top: 2rem;
+  }
+  .prizebg {
+    width: 23rem;
+    height: auto;
+    margin-left: 1.2rem;
+    margin-top: -5rem;
+  }
+
+  .secondary-section {
+    width: 100%;
+    margin: 1rem auto;
+    min-height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  .secondary-content {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+  }
+
+  .secondary-block {
+    padding: 1rem;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  /* Timeline */
+  .prize-title{
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+  .timeline-content{
+    margin-left: 0rem;
+  }
+  .timeline-title {
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: "Seenonim", sans-serif;
+    color: #81003c;
+    margin-bottom: -0.5rem;
+    text-shadow: 2px 2px 4px rgba(129, 0, 60, 0.2);
+  }
+
+  .timeline-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .timeline-item {
+    display: flex;
+    width: 100%;
+  }
+
+  .timeline-details {
+    text-align: center;
+  }
+
+  .timeline-event {
+    font-weight: bold;
+    color: #81003c;
+    font-size: 0.65rem;
+    margin-bottom: 0.2rem;
+    font-family: "Seenonim";
+    text-shadow: 1px 1px 2px rgba(129, 0, 60, 0.15);
+  }
+
+  .timeline-date {
+    color: #ca77bb;
+    font-size: 0.5rem;
+    font-family: "Seenonim";
+    text-shadow: 1px 1px 2px rgba(202, 119, 187, 0.2);
+  }
+
+  /* Prizes */
+  .prizes-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    width: 100%;
+    margin-top: -2.5rem;
+    padding: 2rem;
+  }
+
+  .prize-item {
+    padding: 0.25rem;
+    border-radius: 0.5rem;
+    color: #81003c;
+    font-size: 0.6rem;
+    font-family: "Seenonim";
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(129, 0, 60, 0.15);
+    text-align: center;
+  }
 }
 @media (max-width: 360px) and (max-height: 740px) and (orientation: portrait) {
 }
