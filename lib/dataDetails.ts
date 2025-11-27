@@ -44,10 +44,10 @@ export const competitionDetails: CompetitionDetail[] = [
       "Seluruh Peserta: Sertifikat Online",
     ],
     timeline: [
-      { date: "19 November 2025 - 22 Februari 2026", event: "Pendaftaran" },
-      { date: "25 Februari 2026", event: "Pengumpulan Karya" },
-      { date: "2 Maret 2026", event: "Pengumuman Finalis" },
-      { date: "7 Maret 2026", event: "Pengumuman Akhir" },
+      { date: "19 Nov 2025 - 22 Feb 2026", event: "Pendaftaran" },
+      { date: "25 Feb 2026", event: "Pengumpulan Karya" },
+      { date: "2 Mar 2026", event: "Pengumuman Finalis" },
+      { date: "7 Mar 2026", event: "Pengumuman Akhir" },
       { date: " ", event: " " }
     ],
     contactInfo: {
