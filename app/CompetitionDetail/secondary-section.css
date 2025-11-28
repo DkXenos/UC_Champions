@@ -982,7 +982,7 @@
     margin-left: 0rem;
   }
   .timeline-title {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
     font-family: "Seenonim", sans-serif;
     color: #81003c;
@@ -1010,7 +1010,7 @@
   .timeline-event {
     font-weight: bold;
     color: #81003c;
-    font-size: 0.85rem;
+    font-size: 1rem;
     margin-bottom: 0.2rem;
     font-family: "Seenonim";
     text-shadow: 1px 1px 2px rgba(129, 0, 60, 0.15);
@@ -1018,7 +1018,7 @@
 
   .timeline-date {
     color: #ca77bb;
-    font-size: 0.75rem;
+    font-size: 0.9rem;
     font-family: "Seenonim";
     text-shadow: 1px 1px 2px rgba(202, 119, 187, 0.2);
   }
@@ -1030,7 +1030,7 @@
     gap: 0.25rem;
     width: 64%;
     margin-top: -1.5rem;
-    padding: 2rem;
+    padding: 3rem;
   }
 
   .prize-item {

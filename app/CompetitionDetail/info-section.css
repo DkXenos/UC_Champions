@@ -1035,8 +1035,8 @@
   .info-content {
     position: relative;
     z-index: 1;
-    padding-left: 0rem;
-    padding-right: 0rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 @media (max-width: 882px) and (max-height: 344px) and (orientation: landscape) {
