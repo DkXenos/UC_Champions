@@ -59,17 +59,17 @@ export default function About() {
           <div className="about-title-container">
             <img
               src="/Asset/Aboutpage/cloud_left1.svg"
-              alt=""
+              alt="Decorative cloud element left side"
               className="cloud_left1"
             />
             <img
               src="/Asset/Aboutpage/cloud_left2.svg"
-              alt=""
+              alt="Decorative cloud element left side"
               className="cloud_left2"
             />
             <img
               src="/Asset/Aboutpage/about_title.svg"
-              alt="about-title"
+              alt="About UC Champions - Who We Are"
               className="about-title"
               loading="lazy"
               decoding="async"
@@ -79,17 +79,17 @@ export default function About() {
           <div className="about-description-container">
             <img
               src="/Asset/Aboutpage/cloud_right1.svg"
-              alt=""
+              alt="Decorative cloud element right side"
               className="cloud_right1"
             />
             <img
               src="/Asset/Aboutpage/cloud_right2.svg"
-              alt=""
+              alt="Decorative cloud element right side"
               className="cloud_right2"
             />
             <img
               src="/Asset/Aboutpage/aboutdesc.png"
-              alt="about-description"
+              alt="UC Champions is a platform for students to showcase their creative talents through various competitions"
               className="about-description"
               loading="lazy"
               decoding="async"
@@ -99,17 +99,17 @@ export default function About() {
           <div className="partners-container">
             <img
               src="/Asset/Aboutpage/star_left.svg"
-              alt=""
+              alt="Decorative star element"
               className="star_left"
             />
             <img
               src="/Asset/Aboutpage/cake_right.svg"
-              alt=""
+              alt="Decorative cake element"
               className="cake_right"
             />
             <img
               src="/Asset/Aboutpage/partners_title.svg"
-              alt="partner-title"
+              alt="Our Partners and Collaborators"
               className="partners-title"
               loading="lazy"
               decoding="async"
@@ -133,18 +133,18 @@ export default function About() {
           <div className="sponsor-container">
             <img
               src="/Asset/Aboutpage/mochi_left.svg"
-              alt=""
+              alt="Decorative mochi element left"
               className="mochi_left"
             />
             <img
               src="/Asset/Aboutpage/kananmochi.png"
-              alt=""
+              alt="Decorative mochi element right"
               className="mochi_right"
             />
 
             <img
               src="/Asset/Aboutpage/sponsor_title.svg"
-              alt="partner-title"
+              alt="Our Sponsors - Supporting Student Excellence"
               className="sponsor-title"
               loading="lazy"
               decoding="async"
@@ -166,7 +166,7 @@ export default function About() {
           </div>
           <img
             src="/Asset/Aboutpage/mochi_bottom.svg"
-            alt=""
+            alt="Decorative mochi element bottom"
             className="mochi-bottom"
           />
         </div>

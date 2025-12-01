@@ -2,8 +2,39 @@
 
 import "./styles/homepage.css";
 import Link from "next/link";
+import { useEffect } from "react";
 
 export default function Home() {
+  useEffect(() => {
+    // Add structured data for SEO
+    const structuredData = {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "UC Champions",
+      "description": "Official competition platform by Universitas Ciputra Student Council featuring Short Movie, Digital Poster, and Essay Writing competitions for Indonesian students.",
+      "url": "https://www.ucchampion.com",
+      "logo": "https://www.ucchampion.com/Asset/Logo/LOGO.webp",
+      "sameAs": [
+        "https://www.instagram.com/ucchampions",
+        "https://www.youtube.com/@ucchampions"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Customer Service",
+        "availableLanguage": ["Indonesian", "English"]
+      }
+    };
+
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.text = JSON.stringify(structuredData);
+    document.head.appendChild(script);
+
+    return () => {
+      document.head.removeChild(script);
+    };
+  }, []);
+
   return (
     <>
       <div
@@ -32,7 +63,7 @@ export default function Home() {
         <div className="homepage-container ">
           <img
             src="Asset/Homepage/maintitle.svg"
-            alt="main-title"
+            alt="UC Champions - Official Student Competition Platform Universitas Ciputra"
             className="img-title"
           />
           <div className="infobutton button-decor">
@@ -43,7 +74,7 @@ export default function Home() {
           <div className="videobg">
             <img
               src="Asset/Homepage/videobg.svg"
-              alt="videobg"
+              alt="UC Champions Competition Promotional Video Frame"
               className="videoframe"
               loading="lazy"
               decoding="async"
@@ -52,7 +83,7 @@ export default function Home() {
               width="560"
               height="315"
               src="https://www.youtube.com/embed/cvoRaD5Zamo"
-              title="YouTube video player"
+              title="UC Champions 2024 - Official Competition Introduction Video"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerPolicy="strict-origin-when-cross-origin"
@@ -65,14 +96,14 @@ export default function Home() {
           <div className="bottomline">
             <img 
               src="Asset/Homepage/startline.svg" 
-              alt="" 
+              alt="Competition Start Line Decoration" 
               className="startline"
               loading="lazy"
               decoding="async"
             />
             <img
               src="Asset/Homepage/leftdecor.png"
-              alt=""
+              alt="Left Side Decorative Element"
               className="leftdecor"
               loading="lazy"
               decoding="async"
@@ -80,14 +111,14 @@ export default function Home() {
 
             <img
               src="Asset/Homepage/icedecor.svg"
-              alt=""
+              alt="Ice Cream Decorative Element"
               className="icedecor"
               loading="lazy"
               decoding="async"
             />
             <img
               src="Asset/Homepage/rightdecor.svg"
-              alt=""
+              alt="Right Side Decorative Element"
               className="rightdecor"
               loading="lazy"
               decoding="async"
