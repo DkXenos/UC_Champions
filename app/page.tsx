@@ -40,7 +40,7 @@ export default function Home() {
       <div
         className="homepage"
         style={{
-          backgroundImage: `url('Asset/Homepage/mainbg.svg')`,
+          backgroundImage: `url('Asset/Homepage/mainbg.webp')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
@@ -102,7 +102,7 @@ export default function Home() {
               decoding="async"
             />
             <img
-              src="Asset/Homepage/leftdecor.png"
+              src="Asset/Homepage/leftdecor.webp"
               alt="Left Side Decorative Element"
               className="leftdecor"
               loading="lazy"
@@ -117,7 +117,7 @@ export default function Home() {
               decoding="async"
             />
             <img
-              src="Asset/Homepage/rightdecor.svg"
+              src="Asset/Homepage/rightdecor.webp"
               alt="Right Side Decorative Element"
               className="rightdecor"
               loading="lazy"

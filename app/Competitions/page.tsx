@@ -160,9 +160,9 @@ export default function CompetitionsPage() {
             </Pagination>
           </div>
 
-          <img src="Asset/Competitionpage/portal.svg" alt="portal" className="img-portal" loading="lazy" decoding="async" />
-          <img src="Asset/Competitionpage/car.svg" alt="car" className="img-car" loading="lazy" decoding="async" />
-          <img src="Asset/Competitionpage/portal-car.svg" alt="portal-car" className="portal-car" loading="lazy" decoding="async" />
+          <img src="Asset/Competitionpage/portal.webp" alt="portal" className="img-portal" loading="lazy" decoding="async" />
+          <img src="Asset/Competitionpage/car.webp" alt="car" className="img-car" loading="lazy" decoding="async" />
+          <img src="Asset/Competitionpage/portal-car.webp" alt="portal-car" className="portal-car" loading="lazy" decoding="async" />
          
 
           <div className="stacked-images">

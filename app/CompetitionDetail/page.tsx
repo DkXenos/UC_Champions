@@ -144,7 +144,7 @@ function CompetitionDetailContent() {
       <main
         className="compdetail-main"
         style={{
-          backgroundImage: `url('Asset/CompetitionDetail/mainbgimg.png')`,
+          backgroundImage: `url('Asset/CompetitionDetail/mainbgimg.webp')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",

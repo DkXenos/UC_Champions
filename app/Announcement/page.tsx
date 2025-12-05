@@ -176,7 +176,7 @@ export default function AnnouncementsPage() {
       <div
         className="announcement"
         style={{
-          backgroundImage: `url('/Asset/Announcement/main-bg.png')`,
+          backgroundImage: `url('/Asset/Announcement/main-bg.webp')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
@@ -185,7 +185,7 @@ export default function AnnouncementsPage() {
         <div className="top-section">
           <img src="Asset/Announcement/title.png" alt="" className="title-bg" />
           <img
-            src="Asset/Announcement/section-juara.png"
+            src="Asset/Announcement/section-juara.webp"
             alt=""
             className="juara-img"
           />
@@ -217,7 +217,7 @@ export default function AnnouncementsPage() {
           </div>
 
           <img
-            src="Asset/Announcement/bgsearchbar.svg"
+            src="Asset/Announcement/bgsearchbar.webp"
             alt=""
             className="search-bg"
           />
@@ -310,7 +310,7 @@ export default function AnnouncementsPage() {
             )}
           </div>
           <img
-            src="Asset/Announcement/bottom-decor.png"
+            src="Asset/Announcement/bottom-decor.webp"
             alt=""
             className="bottomdecor"
           />
