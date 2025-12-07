@@ -31,7 +31,7 @@ export const featuredCompetitions: Competition[] = [
   },
   {
     id: "4",
-    title: "UCHSDC",
+    title: "UCHDS",
     category: "DEBATE",
     deadline: "CLOSED",
     ukm: "UCDC",
