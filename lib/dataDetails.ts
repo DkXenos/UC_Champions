@@ -26,7 +26,7 @@ export const competitionDetails: CompetitionDetail[] = [
     title: "STORIES OF GRACE",
     category: "SHORT MOVIE",
     deadline: "22 Feb 2026",
-    ukm: "PMK",
+    ukm: "UKM PMK",
     description: "Lomba Short Movie Kristen merupakan kompetisi film pendek berskala nasional yang diselenggarakan oleh UKM PMK Universitas Ciputra Surabaya yang bersifat individu maupun tim. Lomba ini bertujuan menjadi wadah bagi mahasiswa Kristen dari berbagai daerah di Indonesia untuk mengekspresikan penerapan nilai-nilai iman dengan ilmu pengetahuan melalui media visual yang kreatif dan kontekstual berdurasi 2-5 menit. Melalui karya-karya yang dibuat, peserta diharapkan mampu menyampaikan pesan rohani, kesaksian pribadi, atau refleksi kehidupan dari sudut pandang kekristenan yang berdampak bagi sesama.",
     requirements: [
       "Mahasiswa aktif dari seluruh Indonesia (individu/tim maksimal 5 orang)",
@@ -58,6 +58,40 @@ export const competitionDetails: CompetitionDetail[] = [
     maxParticipants: "5 (Per Team)",
     location: "Online Zoom",
     registrationLink: "https://forms.gle/ReUvEHU29yPwUMwWA"
+  },
+  {
+    id: "2",
+    title: "REKAM CERITA",
+    category: "ARTICLE WRITING",
+    deadline: "5 Jan 2026",
+    ukm: "UKM BALAWARTA",
+    description: "Lomba artikel nasional Rekam Cerita dengan tema Mengasah Pena, Menyuarakan Suara! merupakan kolaborasi UKM Balawarta Universitas Ciputra dan UC Champion untuk mendorong budaya literasi kritis di kalangan mahasiswa serta pelajar. Melalui kompetisi ini, peserta diajak mengekspresikan gagasan reflektif mengenai isu sosial, lingkungan, dan budaya melalui tulisan kreatif dan bermakna. Kegiatan ini bertujuan menciptakan ruang yang mengembangkan kreativitas, kepemimpinan, serta keberanian berkarya, sekaligus memperkuat jejaring literasi kampus di tingkat nasional.",
+    requirements: [
+      "Peserta merupakan mahasiswa aktif (PTN/PNS) atau siswa SMA/sederajat di seluruh Indonesia",
+      "Peserta dapat mendaftar secara individu, bukan tim",
+      "Setiap peserta hanya diperbolehkan mengirim satu karya artikel",
+      "Peserta wajib mengikuti seluruh rangkaian acara, termasuk technical meeting dan awarding", 
+    ],
+    prizes: [
+      "1st Place: Rp500.000",
+      "2nd Place: Rp300.000",
+      "3rd Place: Rp250.000",
+    ],
+    timeline: [
+      { date: "15 Dec 2025 - 5 Jan 2026", event: "Early Bird Registration" },
+      { date: "9 - 21 Feb 2026", event: "Penjurian Karya" },
+      { date: "19 Feb 2026", event: "Technical Meeting Peserta" },
+      { date: "22 Februari 2026", event: "Awarding & Pengumuman" },
+      { date: " ", event: " " }
+    ],
+    contactInfo: {
+      email: "",
+      phone: "+62 812 3456 7890"
+    },  
+    registrationFee: "Rp 15,000 (Early Bird)",
+    maxParticipants: "Individu",
+    location: "Online Zoom",
+    registrationLink: "https://forms.gle/ivR9o5o1dHWAJGZr5"
   },
 ];
 
