@@ -59,6 +59,11 @@ export const metadata: Metadata = {
     description: "Join exciting student competitions at UC Champion - Short Movie, Digital Poster, and Essay Writing contests.",
     images: ["/Asset/Logo/LOGO.webp"],
   },
+  icons: {
+    icon: "/Asset/Logo/LOGO.webp",
+    shortcut: "/Asset/Logo/LOGO.webp",
+    apple: "/Asset/Logo/LOGO.webp",
+  },
   metadataBase: new URL('https://www.ucchampion.com'),
   alternates: {
     canonical: "/",
