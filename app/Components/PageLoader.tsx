@@ -40,7 +40,7 @@ function PageLoaderContent() {
     <div
       className="page-loader-overlay"
       style={{
-        backgroundImage: `url('Asset/Homepage/mainbg.svg')`,
+        backgroundImage: `url('Asset/Homepage/mainbg.webp')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
