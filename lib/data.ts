@@ -57,11 +57,4 @@ export const featuredCompetitions: Competition[] = [
     deadline: "CLOSED", //ini deadline kompetisi kapan terakhir daftar
     ukm: "BIG DANCE CREW", //ukm e apa
   },
-  {
-    id: "8",
-    title: "UC VORTEX ARENA 2026",
-    category: "ESPORTS",
-    deadline: "CLOSED",
-    ukm: "E-Sports",
-  },
 ];
