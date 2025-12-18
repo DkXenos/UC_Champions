@@ -82,7 +82,7 @@ export default function Home() {
             <iframe
               width="560"
               height="315"
-              src="https://www.youtube.com/embed/cvoRaD5Zamo"
+              src="https://drive.google.com/file/d/1ATzS0DRl-_oAABgwqWFnA1KAFH9xfiEW/preview"
               title="UC Champions 2024 - Official Competition Introduction Video"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
