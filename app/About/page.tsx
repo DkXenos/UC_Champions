@@ -5,6 +5,7 @@ import CircularGallery from "../../components/CircularGallery";
 import RollingGallery from "../../components/RollingGallery";
 import LogoLoop from "../../components/LogoLoop";
 import "./styles.css";
+import Snowfall from "react-snowfall";
 
 export default function About() {
   const TEMP_LOGO_PATH = "/Asset/Logo/LOGO.webp";
@@ -46,6 +47,8 @@ export default function About() {
 
   return (
     <>
+          <Snowfall color="#e4f8ffff" />
+    
       <div
         className="about-background"
         style={{

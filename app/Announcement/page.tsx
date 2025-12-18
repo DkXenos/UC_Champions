@@ -1,5 +1,6 @@
 "use client";
 
+import Snowfall from "react-snowfall";
 import { useState, useEffect } from "react";
 import "./styles.css";
 import {
@@ -173,6 +174,8 @@ export default function AnnouncementsPage() {
 
   return (
     <>
+          <Snowfall color="#e4f8ffff" />
+    
       <div
         className="announcement"
         style={{

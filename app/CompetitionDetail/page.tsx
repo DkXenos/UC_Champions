@@ -8,6 +8,7 @@ import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 import "./styles.css";
 import CompetitionNotAvailable from "../Components/CompetitionNotAvailable";
+import Snowfall from "react-snowfall";
 
 // Loading component for Suspense
 function LoadingCompetition() {
@@ -141,6 +142,7 @@ function CompetitionDetailContent() {
 
   return (
     <>
+      <Snowfall color="#e4f8ffff" />
       <main
         className="compdetail-main"
         style={{
