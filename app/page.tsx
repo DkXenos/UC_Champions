@@ -3,6 +3,7 @@
 import "./styles/homepage.css";
 import Link from "next/link";
 import { useEffect } from "react";
+import Snowfall from "react-snowfall";
 
 export default function Home() {
   useEffect(() => {
@@ -10,23 +11,24 @@ export default function Home() {
     const structuredData = {
       "@context": "https://schema.org",
       "@type": "Organization",
-      "name": "UC Champions",
-      "description": "Official competition platform by Universitas Ciputra Student Council featuring Short Movie, Digital Poster, and Essay Writing competitions for Indonesian students.",
-      "url": "https://www.ucchampion.com",
-      "logo": "https://www.ucchampion.com/Asset/Logo/LOGO.webp",
-      "sameAs": [
+      name: "UC Champions",
+      description:
+        "Official competition platform by Universitas Ciputra Student Council featuring Short Movie, Digital Poster, and Essay Writing competitions for Indonesian students.",
+      url: "https://www.ucchampion.com",
+      logo: "https://www.ucchampion.com/Asset/Logo/LOGO.webp",
+      sameAs: [
         "https://www.instagram.com/ucchampions",
-        "https://www.youtube.com/@ucchampions"
+        "https://www.youtube.com/@ucchampions",
       ],
-      "contactPoint": {
+      contactPoint: {
         "@type": "ContactPoint",
-        "contactType": "Customer Service",
-        "availableLanguage": ["Indonesian", "English"]
-      }
+        contactType: "Customer Service",
+        availableLanguage: ["Indonesian", "English"],
+      },
     };
 
-    const script = document.createElement('script');
-    script.type = 'application/ld+json';
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
     script.text = JSON.stringify(structuredData);
     document.head.appendChild(script);
 
@@ -37,6 +39,7 @@ export default function Home() {
 
   return (
     <>
+      <Snowfall color="#e4f8ffff" />
       <div
         className="homepage"
         style={{
@@ -94,9 +97,9 @@ export default function Home() {
           </div>
 
           <div className="bottomline">
-            <img 
-              src="Asset/Homepage/startline.svg" 
-              alt="Competition Start Line Decoration" 
+            <img
+              src="Asset/Homepage/startline.svg"
+              alt="Competition Start Line Decoration"
               className="startline"
               loading="lazy"
               decoding="async"
