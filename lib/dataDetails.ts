@@ -112,7 +112,7 @@ export const competitionDetails: CompetitionDetail[] = [
   {
     id: "3",
     title: "UCDC SCHOOL",
-    category: "-",
+    category: "DEBATE",
     deadline: "28 Jan 2026",
     ukm: "UKM UCDS",
     description: "UCDC School merupakan kompetisi debat yang diinisiasi oleh UKM Universitas Ciputra Debate Society (UCDS). Kompetisi ini dirancang khusus bagi siswa SMA/sederajat sebagai wadah pengembangan keterampilan berpikir kritis, komunikasi efektif, kerja sama tim, serta keberanian berpendapat sejak dini. Menggunakan format Asian Parliamentary Style Debate dan mengusung tema “Anak Muda Berani Bersuara: Etis, Kritis, dan Analitis”, UCDC School mengangkat isu-isu relevan seputar generasi muda. Melalui kompetisi ini, UCDC School bertujuan memberikan pengalaman debat berstandar nasional hingga internasional sekaligus membentuk generasi muda yang kritis, adaptif, dan berpikiran terbuka",
