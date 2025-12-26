@@ -24,17 +24,17 @@ export const featuredCompetitions: Competition[] = [
   },
   {
     id: "3",
+    title: "UCDC SCHOOLS 2026",
+    category: "DEBATE",
+    deadline: "OPENED",
+    ukm: "UCDS",
+  },
+  {
+    id: "4",
     title: "NEOSANTARA FEST",
     category: "BUDAYA",
     deadline: "CLOSED",
     ukm: "Teater X Tari",
-  },
-  {
-    id: "4",
-    title: "UCDC SCHOOLS 2026",
-    category: "DEBATE",
-    deadline: "CLOSED",
-    ukm: "UCDS",
   },
   {
     id: "5",
