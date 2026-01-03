@@ -10,38 +10,57 @@ import Snowfall from "react-snowfall";
 export default function About() {
   const TEMP_LOGO_PATH = "/Asset/Logo/LOGO.webp";
 
-  const partnerLogos = [
+  const sponsorLogos = [
     {
-      src: TEMP_LOGO_PATH,
+      src: "/Asset/Logo/balawarta2.png",
       alt: "Partner 1",
     },
     {
-      src: TEMP_LOGO_PATH,
+      src: "/Asset/Logo/bdc.png",
       alt: "Partner 2",
     },
     {
-      src: TEMP_LOGO_PATH,
+      src: "/Asset/Logo/taekwondo.png",
       alt: "Partner 3",
     },
     {
-      src: TEMP_LOGO_PATH,
+      src: "/Asset/Logo/tari2.png",
       alt: "Partner 4",
     },
     {
-      src: TEMP_LOGO_PATH,
+      src: "/Asset/Logo/teater2.png",
       alt: "Partner 5",
     },
     {
-      src: TEMP_LOGO_PATH,
+      src: "/Asset/Logo/ucbc.png",
       alt: "Partner 6",
     },
     {
-      src: TEMP_LOGO_PATH,
+      src: "/Asset/Logo/ucds.png",
       alt: "Partner 7",
     },
     {
-      src: TEMP_LOGO_PATH,
+      src: "/Asset/Logo/pmk.png",
       alt: "Partner 8",
+    },
+  ];
+
+  const partnerLogos = [
+    {
+      src: "/Asset/Logo/beritalomba.webp",
+      alt: "Partner 1",
+    },
+    {
+      src: "/Asset/Logo/ikutevent.png",
+      alt: "Partner 2",
+    },
+    {
+      src: "/Asset/Logo/eventcampus.png",
+      alt: "Partner 3",
+    },
+    {
+      src: "/Asset/Logo/kompetisionline.jpg",
+      alt: "Partner 4",
     },
   ];
 
@@ -155,7 +174,7 @@ export default function About() {
 
             <div className="sponsor-loop-with-borders">
               <LogoLoop
-                logos={partnerLogos}
+                logos={sponsorLogos}
                 speed={40}
                 direction="right"
                 logoHeight={120}
