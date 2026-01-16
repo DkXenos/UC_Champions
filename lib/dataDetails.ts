@@ -155,9 +155,8 @@ export const competitionDetails: CompetitionDetail[] = [
     ukm: "UKM TAEKWONDO",
     description: "UKM Taekwondo Universitas Ciputra Surabaya bersama UC Champion menyelenggarakan kompetisi desain sampul Kickstart Creativity. Kompetisi ini berfungsi sebagai wadah kreatif yang mempertemukan bidang seni desain dan self-defense. Peserta diberikan kesempatan untuk mengekspresikan ide dan menghasilkan karya yang akan dimanfaatkan secara nyata dalam program pengabdian masyarakat. Dengan diselenggarakan secara online dan berskala internasional, Kickstart Creativity diharapkan dapat membuka partisipasi global sekaligus menjadi langkah strategis dalam meningkatkan kualitas media pembelajaran self-defense.",
     requirements: [
-      "Kompetisi Kickstart Creativity terbuka bagi peserta Internasional. Peserta dapat berasal dari berbagai latar belakang, termasuk pelajar, mahasiswa, maupun umum.",
+      "Kompetisi Kickstart Creativity terbuka bagi peserta Internasional.",
       "Setiap peserta hanya diperbolehkan mengunggah satu karya untuk setiap satu kali proses registrasi",
-      "Setiap peserta hanya diperbolehkan untuk mengunggah satu karya untuk setiap satu kali proses registrasi",
       "Kompetisi hanya menerima pendaftaran individu, bukan tim atau kelompok",
       "Peserta wajib memberikan data yang valid (nama lengkap, email, dan kontak aktif)",
       "Peserta wajib mengikuti seluruh ketentuan-ketentuan yang telah ditetapkan demi kelancaran kegiatan.",
