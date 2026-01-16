@@ -31,10 +31,10 @@ export const featuredCompetitions: Competition[] = [
   },
   {
     id: "4",
-    title: "NEOSANTARA FEST",
-    category: "BUDAYA",
-    deadline: "CLOSED",
-    ukm: "Teater X Tari",
+    title: "KICKSTART CREATIVITY",
+    category: "CREATIVE",
+    deadline: "OPENED",
+    ukm: "Taekwondo",
   },
   {
     id: "5",
@@ -45,10 +45,10 @@ export const featuredCompetitions: Competition[] = [
   },
   {
     id: "6",
-    title: "KICKSTART CREATIVITY",
-    category: "CREATIVE",
+    title: "NEOSANTARA FEST",
+    category: "BUDAYA",
     deadline: "CLOSED",
-    ukm: "Taekwondo",
+    ukm: "Teater X Tari",
   },
   {
     id: "7",

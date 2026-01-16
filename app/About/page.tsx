@@ -59,7 +59,7 @@ export default function About() {
       alt: "Partner 3",
     },
     {
-      src: "/Asset/Logo/kompetisionline.jpg",
+      src: "/Asset/Logo/kompetisionline.jpg ",
       alt: "Partner 4",
     },
   ];
