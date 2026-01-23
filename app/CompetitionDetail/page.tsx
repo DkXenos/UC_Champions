@@ -341,11 +341,13 @@ function CompetitionDetailContent() {
                   </div>
                 </div>
                 <div className="cp-info">
-                  {/* <img
-                    src="Asset/CompetitionDetail/cpbgnew.png"
-                    alt="contact person background"
-                    className="cpbg"
-                  /> */}
+                  {competition.contactPersonImage && (
+                    <img
+                      src={competition.contactPersonImage}
+                      alt="contact person background"
+                      className="cpbg"
+                    />
+                  )}
                 </div>
               </div>
 

@@ -18,6 +18,7 @@ export type CompetitionDetail = {
   location: string;
   poster?: string;
   registrationLink?: string;
+  contactPersonImage?: string;
 };
 
 export const competitionDetails: CompetitionDetail[] = [
@@ -57,13 +58,14 @@ export const competitionDetails: CompetitionDetail[] = [
     registrationFee: "Rp 100,000",
     maxParticipants: "5 (Per Team)",
     location: "Online Zoom",
-    registrationLink: "https://forms.gle/ReUvEHU29yPwUMwWA"
-  },
+    registrationLink: "https://forms.gle/ReUvEHU29yPwUMwWA",
+    contactPersonImage: ""
+  }, //Asset/CompetitionDetail/ContactPerson/
   {
     id: "2",
     title: "REKAM CERITA",
     category: "ARTICLE WRITING",
-    deadline: "5 Jan 2026",
+    deadline: "5 Feb 2026",
     ukm: "UKM BALAWARTA",
     description: "Lomba artikel nasional Rekam Cerita dengan tema Mengasah Pena, Menyuarakan Suara! merupakan kolaborasi UKM Balawarta Universitas Ciputra dan UC Champion untuk mendorong budaya literasi kritis di kalangan mahasiswa serta pelajar. Melalui kompetisi ini, peserta diajak mengekspresikan gagasan reflektif mengenai isu sosial, lingkungan, dan budaya melalui tulisan kreatif dan bermakna. Kegiatan ini bertujuan menciptakan ruang yang mengembangkan kreativitas, kepemimpinan, serta keberanian berkarya, sekaligus memperkuat jejaring literasi kampus di tingkat nasional.",
     requirements: [
@@ -94,7 +96,7 @@ export const competitionDetails: CompetitionDetail[] = [
      
     ],
     timeline: [
-      { date: "15 Dec 2025 - 5 Jan 2026", event: "Early Bird Registration" },
+      { date: "15 Dec 2025 - 8 Feb 2026", event: "Registration" },
       { date: "9 - 21 Feb 2026", event: "Penjurian Karya" },
       { date: "19 Feb 2026", event: "Technical Meeting Peserta" },
       { date: "22 Februari 2026", event: "Awarding & Pengumuman" },
@@ -107,7 +109,8 @@ export const competitionDetails: CompetitionDetail[] = [
     registrationFee: "Rp 15,000 (Early Bird)",
     maxParticipants: "Individu",
     location: "Online Zoom",
-    registrationLink: "https://forms.gle/ivR9o5o1dHWAJGZr5"
+    registrationLink: "https://forms.gle/ivR9o5o1dHWAJGZr5",
+    contactPersonImage: ""
   },
   {
     id: "3",
@@ -145,7 +148,8 @@ export const competitionDetails: CompetitionDetail[] = [
     registrationFee: "Rp 250.000 (Early Bird)",
     maxParticipants: "3 (Per Team)",
     location: "Online",
-    registrationLink: "https://forms.gle/zwXyyKwzo1JxxCe47"
+    registrationLink: "https://forms.gle/zwXyyKwzo1JxxCe47",
+    contactPersonImage: ""
   },
   {
     id: "4",
@@ -184,7 +188,8 @@ export const competitionDetails: CompetitionDetail[] = [
     registrationFee: "Rp 40.000 (Early Bird)",
     maxParticipants: "1 (Individual)",
     location: "Online",
-    registrationLink: "https://forms.gle/NU1axjHzK6C22WRN8"
+    registrationLink: "https://forms.gle/NU1axjHzK6C22WRN8",
+    contactPersonImage: ""
   },
 ];
 
