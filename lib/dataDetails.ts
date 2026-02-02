@@ -188,6 +188,48 @@ export const competitionDetails: CompetitionDetail[] = [
     registrationFee: "Rp 40.000 (Early Bird)",
     maxParticipants: "1 (Individual)",
     location: "Online",
+    registrationLink: "https://forms.gle/DVu4V1mE8sULCA5G7",
+    contactPersonImage: ""
+  },
+  {
+    id: "5",
+    title: "POSTER INTERNASIONAL",
+    category: "CREATIVE",
+    deadline: "19 Feb 2026",
+    ukm: "UKM UCBC",
+    description: "UCBC International Poster Competition 2026 is an international poster competition organized by Universitas Ciputra Buddhist Community (UCBC). This event provides a platform for students and the general public worldwide to express creative ideas and universal values through visual art. Focusing not only on design quality but also on meaningful moral and spiritual messages, the competition aims to promote compassion, empathy, inner healing, and peace, while encouraging cross-cultural and interfaith understanding through visual communication.",
+    requirements: [
+    "The competition is open to students and the general public of all religions and nationalities.",
+    "Each participant may submit one (1) poster only.",
+    "Submissions must be original, unpublished, and not entered in other competitions.",
+    "Poster language is flexible; English or bilingual is recommended.",
+    "Works must not contain SARA issues, violence, pornography, or hate speech.", 
+    ],
+    prizes: [
+      "1st Place: Rp 1,000,000",
+      "2nd Place: Rp 650,000",
+      "3rd Place: Rp 350,000",
+      " ",
+      " ",
+      " ",
+    ],
+    timeline: [
+      { date: "1 - 19 February 2026", event: "Registration" },
+      { date: "20 February 2026", event: "Deadline Submission" },
+      { date: "21 - 24 February 2026", event: "Judging Period" },
+      { date: "25 February 2026", event: "Winner Announcement" },
+      { date: " ", event: "   " },
+      { date: " ", event: "   " },
+      { date: " ", event: "   " },
+      { date: " ", event: "   " }
+    ],
+    contactInfo: {
+      email: "programming@uchampions.ac.id",
+      phone: "+62 812 3456 7890"
+    },
+    registrationFee: "Rp 25.000",
+    maxParticipants: "1 (Individual)",
+    location: "Online",
     registrationLink: "https://forms.gle/NU1axjHzK6C22WRN8",
     contactPersonImage: ""
   },

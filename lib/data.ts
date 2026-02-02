@@ -40,7 +40,7 @@ export const featuredCompetitions: Competition[] = [
     id: "5",
     title: "LOMBA POSTER INTERNASIONAL",
     category: "CREATIVE",
-    deadline: "CLOSED",
+    deadline: "OPENED",
     ukm: "UCBC",
   },
   {
