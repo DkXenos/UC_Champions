@@ -165,7 +165,7 @@ export default function About() {
             />
 
             <img
-              src="/Asset/Aboutpage/sponsor_title.svg"
+              src="/Asset/Aboutpage/ukmukm.png"
               alt="Our Sponsors - Supporting Student Excellence"
               className="sponsor-title"
               loading="lazy"

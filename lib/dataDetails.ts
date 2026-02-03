@@ -59,7 +59,7 @@ export const competitionDetails: CompetitionDetail[] = [
     maxParticipants: "5 (Per Team)",
     location: "Online Zoom",
     registrationLink: "https://forms.gle/ReUvEHU29yPwUMwWA",
-    contactPersonImage: ""
+    contactPersonImage: "/Asset/CompetitionDetail/ContactPerson/pmk.png"
   }, //Asset/CompetitionDetail/ContactPerson/
   {
     id: "2",
@@ -110,13 +110,13 @@ export const competitionDetails: CompetitionDetail[] = [
     maxParticipants: "Individu",
     location: "Online Zoom",
     registrationLink: "https://forms.gle/ivR9o5o1dHWAJGZr5",
-    contactPersonImage: ""
+    contactPersonImage: "/Asset/CompetitionDetail/ContactPerson/bala.png"
   },
   {
     id: "3",
     title: "UCDC SCHOOL",
     category: "DEBATE",
-    deadline: "28 Jan 2026",
+    deadline: "10 Feb 2026",
     ukm: "UKM UCDS",
     description: "UCDC School merupakan kompetisi debat yang diinisiasi oleh UKM Universitas Ciputra Debate Society (UCDS). Kompetisi ini dirancang khusus bagi siswa SMA/sederajat sebagai wadah pengembangan keterampilan berpikir kritis, komunikasi efektif, kerja sama tim, serta keberanian berpendapat sejak dini. Menggunakan format Asian Parliamentary Style Debate dan mengusung tema “Anak Muda Berani Bersuara: Etis, Kritis, dan Analitis”, UCDC School mengangkat isu-isu relevan seputar generasi muda. Melalui kompetisi ini, UCDC School bertujuan memberikan pengalaman debat berstandar nasional hingga internasional sekaligus membentuk generasi muda yang kritis, adaptif, dan berpikiran terbuka",
     requirements: [
@@ -136,7 +136,7 @@ export const competitionDetails: CompetitionDetail[] = [
     ],
     timeline: [
       { date: "27 December 2026", event: "Open Registration" },
-      { date: "28 Januari 2026", event: "Close Registration" },
+      { date: "10 Februari 2026", event: "Close Registration" },
       { date: "11 Februari 2026", event: "Technical Meeting" },
       { date: "14 Februari 2026", event: "Pre-Elimination Round" },
       { date: "15 Februari 2026", event: "Elimination Round" }
@@ -149,7 +149,7 @@ export const competitionDetails: CompetitionDetail[] = [
     maxParticipants: "3 (Per Team)",
     location: "Online",
     registrationLink: "https://forms.gle/zwXyyKwzo1JxxCe47",
-    contactPersonImage: ""
+    contactPersonImage: "/Asset/CompetitionDetail/ContactPerson/ucdc.png"
   },
   {
     id: "4",
@@ -189,7 +189,7 @@ export const competitionDetails: CompetitionDetail[] = [
     maxParticipants: "1 (Individual)",
     location: "Online",
     registrationLink: "https://forms.gle/DVu4V1mE8sULCA5G7",
-    contactPersonImage: ""
+    contactPersonImage: "/Asset/CompetitionDetail/ContactPerson/tkw.png"
   },
   {
     id: "5",
@@ -231,7 +231,7 @@ export const competitionDetails: CompetitionDetail[] = [
     maxParticipants: "1 (Individual)",
     location: "Online",
     registrationLink: "https://forms.gle/NU1axjHzK6C22WRN8",
-    contactPersonImage: ""
+    contactPersonImage: "/Asset/CompetitionDetail/ContactPerson/ucbc.png"
   },
 ];
 
