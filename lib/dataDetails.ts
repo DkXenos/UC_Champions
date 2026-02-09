@@ -65,7 +65,7 @@ export const competitionDetails: CompetitionDetail[] = [
     id: "2",
     title: "REKAM CERITA",
     category: "ARTICLE WRITING",
-    deadline: "5 Feb 2026",
+    deadline: "14 Feb 2026",
     ukm: "UKM BALAWARTA",
     description: "Lomba artikel nasional Rekam Cerita dengan tema Mengasah Pena, Menyuarakan Suara! merupakan kolaborasi UKM Balawarta Universitas Ciputra dan UC Champion untuk mendorong budaya literasi kritis di kalangan mahasiswa serta pelajar. Melalui kompetisi ini, peserta diajak mengekspresikan gagasan reflektif mengenai isu sosial, lingkungan, dan budaya melalui tulisan kreatif dan bermakna. Kegiatan ini bertujuan menciptakan ruang yang mengembangkan kreativitas, kepemimpinan, serta keberanian berkarya, sekaligus memperkuat jejaring literasi kampus di tingkat nasional.",
     requirements: [
@@ -155,7 +155,7 @@ export const competitionDetails: CompetitionDetail[] = [
     id: "4",
     title: "KICKSTART CREATIVITY",
     category: "CREATIVE",
-    deadline: "1 Mar 2026",
+    deadline: "28 Feb 2026",
     ukm: "UKM TAEKWONDO",
     description: "UKM Taekwondo Universitas Ciputra Surabaya bersama UC Champion menyelenggarakan kompetisi desain sampul Kickstart Creativity. Kompetisi ini berfungsi sebagai wadah kreatif yang mempertemukan bidang seni desain dan self-defense. Peserta diberikan kesempatan untuk mengekspresikan ide dan menghasilkan karya yang akan dimanfaatkan secara nyata dalam program pengabdian masyarakat. Dengan diselenggarakan secara online dan berskala internasional, Kickstart Creativity diharapkan dapat membuka partisipasi global sekaligus menjadi langkah strategis dalam meningkatkan kualitas media pembelajaran self-defense.",
     requirements: [
@@ -195,7 +195,7 @@ export const competitionDetails: CompetitionDetail[] = [
     id: "5",
     title: "POSTER INTERNASIONAL",
     category: "CREATIVE",
-    deadline: "19 Feb 2026",
+    deadline: "24 Feb 2026",
     ukm: "UKM UCBC",
     description: "UCBC International Poster Competition 2026 is an international poster competition organized by Universitas Ciputra Buddhist Community (UCBC). This event provides a platform for students and the general public worldwide to express creative ideas and universal values through visual art. Focusing not only on design quality but also on meaningful moral and spiritual messages, the competition aims to promote compassion, empathy, inner healing, and peace, while encouraging cross-cultural and interfaith understanding through visual communication.",
     requirements: [
