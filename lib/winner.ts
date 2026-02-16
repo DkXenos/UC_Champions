@@ -36,13 +36,13 @@ export const finishedCompetitions: FinishedCompetition[] = [
     category: "DANCE",
     endDate: "NOT ANNOUNCED",
     firstPlace: {
-      name: "Tim 1 ABC",
+      name: "NOT ANNOUNCED",
     },
     secondPlace: {
-      name: "Tim 2 ABC",
+      name: "NOT ANNOUNCED",
     },
     thirdPlace: {
-      name: "Tim 3 ABC",
+      name: "NOT ANNOUNCED",
     },
   },
   {
