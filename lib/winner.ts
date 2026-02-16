@@ -17,21 +17,36 @@ export interface FinishedCompetition {
 export const finishedCompetitions: FinishedCompetition[] = [
   {
     id: "finished-1",
-    title: "BOUNCEBACK",
-    category: "DANCE",
-    endDate: "NOT ANNOUNCED",
+    title: "UCDC SCHOOLS 2026",
+    category: "DEBATE",
+    endDate: "16 Feb 2026",
     firstPlace: {
-      name: "NOT ANNOUNCED",
+      name: "Sunshine",
     },
     secondPlace: {
-      name: "NOT ANNOUNCED",
+      name: "Fanbase Pak Hardy",
     },
     thirdPlace: {
-      name: "NOT ANNOUNCED",
+      name: "nama tim",
     },
   },
   {
     id: "finished-2",
+    title: "BOUNCEBACK",
+    category: "DANCE",
+    endDate: "NOT ANNOUNCED",
+    firstPlace: {
+      name: "Tim 1 ABC",
+    },
+    secondPlace: {
+      name: "Tim 2 ABC",
+    },
+    thirdPlace: {
+      name: "Tim 3 ABC",
+    },
+  },
+  {
+    id: "finished-3",
     title: "REKAM CERITA",
     category: "CREATIVE",
     endDate: "NOT ANNOUNCED",
@@ -46,24 +61,9 @@ export const finishedCompetitions: FinishedCompetition[] = [
     },
   },
   {
-    id: "finished-3",
+    id: "finished-4",
     title: "NEOSANTARA FEST",
     category: "BUDAYA",
-    endDate: "NOT ANNOUNCED",
-    firstPlace: {
-      name: "NOT ANNOUNCED",
-    },
-    secondPlace: {
-      name: "NOT ANNOUNCED",
-    },
-    thirdPlace: {
-      name: "NOT ANNOUNCED",
-    },
-  },
-  {
-    id: "finished-4",
-    title: "UCHSDC",
-    category: "DEBATE",
     endDate: "NOT ANNOUNCED",
     firstPlace: {
       name: "NOT ANNOUNCED",

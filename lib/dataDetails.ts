@@ -214,9 +214,9 @@ export const competitionDetails: CompetitionDetail[] = [
       " ",
     ],
     timeline: [
-      { date: "1 - 19 February 2026", event: "Registration" },
-      { date: "20 February 2026", event: "Deadline Submission" },
-      { date: "21 - 24 February 2026", event: "Judging Period" },
+      { date: "1 - 24 February 2026", event: "Registration" },
+      { date: "24 February 2026", event: "Deadline Submission" },
+      { date: "24 February 2026", event: "Judging Period" },
       { date: "25 February 2026", event: "Winner Announcement" },
       { date: " ", event: "   " },
       { date: " ", event: "   " },

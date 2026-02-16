@@ -38,10 +38,10 @@ export default function AnnouncementsPage() {
   const filteredCompetitions = finishedCompetitions
     .filter(
       (comp) =>
-        selectedCategory === "All" || comp.category === selectedCategory
+        selectedCategory === "All" || comp.category === selectedCategory,
     )
     .filter((comp) =>
-      comp.title.toLowerCase().includes(searchTerm.toLowerCase())
+      comp.title.toLowerCase().includes(searchTerm.toLowerCase()),
     );
 
   // Reset to page 1 when filters change
@@ -90,7 +90,7 @@ export default function AnnouncementsPage() {
             >
               {i}
             </PaginationLink>
-          </PaginationItem>
+          </PaginationItem>,
         );
       }
     } else {
@@ -108,22 +108,22 @@ export default function AnnouncementsPage() {
           >
             1
           </PaginationLink>
-        </PaginationItem>
+        </PaginationItem>,
       );
 
-            // Show ellipsis if needed before current page
+      // Show ellipsis if needed before current page
       if (currentPage > 3) {
         items.push(
           <PaginationItem key="ellipsis-start">
             <PaginationEllipsis />
-          </PaginationItem>
+          </PaginationItem>,
         );
       }
 
       // Show pages around current page
       const start = Math.max(2, currentPage - 1);
       const end = Math.min(totalPages - 1, currentPage + 1);
-      
+
       for (let i = start; i <= end; i++) {
         items.push(
           <PaginationItem key={i}>
@@ -138,7 +138,7 @@ export default function AnnouncementsPage() {
             >
               {i}
             </PaginationLink>
-          </PaginationItem>
+          </PaginationItem>,
         );
       }
 
@@ -147,7 +147,7 @@ export default function AnnouncementsPage() {
         items.push(
           <PaginationItem key="ellipsis-end">
             <PaginationEllipsis />
-          </PaginationItem>
+          </PaginationItem>,
         );
       }
 
@@ -165,7 +165,7 @@ export default function AnnouncementsPage() {
           >
             {totalPages}
           </PaginationLink>
-        </PaginationItem>
+        </PaginationItem>,
       );
     }
 
@@ -174,8 +174,8 @@ export default function AnnouncementsPage() {
 
   return (
     <>
-          <Snowfall color="#e4f8ffff" />
-    
+      <Snowfall color="#e4f8ffff" />
+
       <div
         className="announcement"
         style={{
@@ -209,7 +209,7 @@ export default function AnnouncementsPage() {
           />
         </div>
         <div className="bottom-section">
-          <div className="search-container"> 
+          <div className="search-container">
             <input
               className="search-input"
               type="text"
@@ -229,7 +229,9 @@ export default function AnnouncementsPage() {
             {categories.map((category) => (
               <Badge
                 key={category}
-                variant={selectedCategory === category ? "default" : "secondary"}
+                variant={
+                  selectedCategory === category ? "default" : "secondary"
+                }
                 onClick={() => setSelectedCategory(category)}
                 className={`categories-card ${selectedCategory === category ? "active" : ""}`}
               >
@@ -242,23 +244,20 @@ export default function AnnouncementsPage() {
           <div className="winner-container">
             <div className="winner-grid">
               {currentItems.map((comp) => (
-                <div
-                  key={comp.id}
-                  className="winner-card"
-                >
+                <div key={comp.id} className="winner-card">
                   <div className="winner-content">
-                    <span className="button-decor category-name">{comp.category}</span>
+                    <span className="button-decor category-name">
+                      {comp.category}
+                    </span>
                     <h3 className="competition-title">{comp.title}</h3>
-                    <p className="end-date">
-                      Berakhir pada: {comp.endDate}
-                    </p>
+                    <p className="end-date">Ends at: {comp.endDate}</p>
                   </div>
                   <div className="button-section">
                     <button
                       onClick={() => handleOpenModal(comp)}
                       className="winner-button button-decor"
                     >
-                      LIHAT PEMENANG
+                      SEE WINNERS
                     </button>
                   </div>
                 </div>
@@ -293,7 +292,7 @@ export default function AnnouncementsPage() {
                         onClick={(e) => {
                           e.preventDefault();
                           handlePageChange(
-                            Math.min(totalPages, currentPage + 1)
+                            Math.min(totalPages, currentPage + 1),
                           );
                         }}
                         style={{
@@ -332,11 +331,17 @@ export default function AnnouncementsPage() {
               />
               <div className="podium-section border-decor">
                 <div className="winner-names">
-                  <h1 className="second-place">{selectedCompetition.secondPlace.name}</h1>
-                  <h1 className="first-place">{selectedCompetition.firstPlace.name}</h1>
-                  <h1 className="third-place">{selectedCompetition.thirdPlace.name}</h1>
+                  <h1 className="third-place">
+                    {selectedCompetition.thirdPlace.name}
+                  </h1>
+                  <h1 className="first-place">
+                    {selectedCompetition.firstPlace.name}
+                  </h1>
+                  <h1 className="second-place">
+                    {selectedCompetition.secondPlace.name}
+                  </h1>
                 </div>
-                
+
                 <img
                   src="Asset/Announcement/podium-winner.png"
                   alt=""
@@ -344,11 +349,11 @@ export default function AnnouncementsPage() {
                 />
               </div>
               <button
-              onClick={handleCloseModal}
-              className="winner-close-button button-decor"
-            >
-              CLOSE
-            </button>
+                onClick={handleCloseModal}
+                className="winner-close-button button-decor"
+              >
+                CLOSE
+              </button>
             </div>
           </div>
         )}
