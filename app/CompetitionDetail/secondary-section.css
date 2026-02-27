@@ -1759,7 +1759,7 @@
     text-align: center;
   }
   .cpbg {
-    display: block;
+    display: none;
   }
   .timelinebg,
   .prizebg {

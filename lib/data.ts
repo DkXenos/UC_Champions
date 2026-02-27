@@ -47,7 +47,7 @@ export const featuredCompetitions: Competition[] = [
     id: "6",
     title: "NEOSANTARA FEST",
     category: "BUDAYA",
-    deadline: "CLOSED",
+    deadline: "OPENED",
     ukm: "Teater X Tari",
   },
   {
