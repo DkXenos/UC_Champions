@@ -32,6 +32,21 @@ export const finishedCompetitions: FinishedCompetition[] = [
   },
   {
     id: "finished-2",
+    title: "REKAM CERITA",
+    category: "CREATIVE",
+    endDate: "27 Feb 2026",
+    firstPlace: {
+      name: "Alia Pramesti Olifia Rahman",
+    },
+    secondPlace: {
+      name: "Challene Harijanto",
+    },
+    thirdPlace: {
+      name: "Nunuk Sulistyowati",
+    },
+  },
+  {
+    id: "finished-3",
     title: "BOUNCEBACK",
     category: "DANCE",
     endDate: "NOT ANNOUNCED",
@@ -45,21 +60,7 @@ export const finishedCompetitions: FinishedCompetition[] = [
       name: "NOT ANNOUNCED",
     },
   },
-  {
-    id: "finished-3",
-    title: "REKAM CERITA",
-    category: "CREATIVE",
-    endDate: "NOT ANNOUNCED",
-    firstPlace: {
-      name: "NOT ANNOUNCED",
-    },
-    secondPlace: {
-      name: "NOT ANNOUNCED",
-    },
-    thirdPlace: {
-      name: "NOT ANNOUNCED",
-    },
-  },
+  
   {
     id: "finished-4",
     title: "NEOSANTARA FEST",
@@ -109,21 +110,6 @@ export const finishedCompetitions: FinishedCompetition[] = [
     id: "finished-7",
     title: "STORIES OF GRACE",
     category: "CREATIVE",
-    endDate: "NOT ANNOUNCED",
-    firstPlace: {
-      name: "NOT ANNOUNCED",
-    },
-    secondPlace: {
-      name: "NOT ANNOUNCED",
-    },
-    thirdPlace: {
-      name: "NOT ANNOUNCED",
-    },
-  },
-  {
-    id: "finished-8",
-    title: "UC VORTEX ARENA 2026",
-    category: "ESPORTS",
     endDate: "NOT ANNOUNCED",
     firstPlace: {
       name: "NOT ANNOUNCED",
