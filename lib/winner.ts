@@ -47,6 +47,21 @@ export const finishedCompetitions: FinishedCompetition[] = [
   },
   {
     id: "finished-3",
+    title: "LOMBA POSTER INTERNASIONAL",
+    category: "CREATIVE",
+    endDate: "1 Mar 2026",
+    firstPlace: {
+      name: "Nanda Najla Arini",
+    },
+    secondPlace: {
+      name: "Vanessa Valeri Andrea",
+    },
+    thirdPlace: {
+      name: "Levia Johan",
+    },
+  },
+  {
+    id: "finished-4",
     title: "BOUNCEBACK",
     category: "DANCE",
     endDate: "NOT ANNOUNCED",
@@ -62,7 +77,7 @@ export const finishedCompetitions: FinishedCompetition[] = [
   },
   
   {
-    id: "finished-4",
+    id: "finished-5",
     title: "NEOSANTARA FEST",
     category: "BUDAYA",
     endDate: "NOT ANNOUNCED",
@@ -76,21 +91,7 @@ export const finishedCompetitions: FinishedCompetition[] = [
       name: "NOT ANNOUNCED",
     },
   },
-  {
-    id: "finished-5",
-    title: "LOMBA POSTER INTERNASIONAL",
-    category: "CREATIVE",
-    endDate: "NOT ANNOUNCED",
-    firstPlace: {
-      name: "NOT ANNOUNCED",
-    },
-    secondPlace: {
-      name: "NOT ANNOUNCED",
-    },
-    thirdPlace: {
-      name: "NOT ANNOUNCED",
-    },
-  },
+  
   {
     id: "finished-6",
     title: "KICKSTART CREATIVITY",
