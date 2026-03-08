@@ -62,6 +62,21 @@ export const finishedCompetitions: FinishedCompetition[] = [
   },
   {
     id: "finished-4",
+    title: "STORIES OF GRACE",
+    category: "CREATIVE",
+    endDate: "7 Mar 2026",
+    firstPlace: {
+      name: "29:11",
+    },
+    secondPlace: {
+      name: "Tuhan yang Lewat",
+    },
+    thirdPlace: {
+      name: "Tong Pu Bintang Su Menyala",
+    },
+  },
+  {
+    id: "finished-5",
     title: "BOUNCEBACK",
     category: "DANCE",
     endDate: "NOT ANNOUNCED",
@@ -77,7 +92,7 @@ export const finishedCompetitions: FinishedCompetition[] = [
   },
   
   {
-    id: "finished-5",
+    id: "finished-6",
     title: "NEOSANTARA FEST",
     category: "BUDAYA",
     endDate: "NOT ANNOUNCED",
@@ -93,7 +108,7 @@ export const finishedCompetitions: FinishedCompetition[] = [
   },
   
   {
-    id: "finished-6",
+    id: "finished-7",
     title: "KICKSTART CREATIVITY",
     category: "CREATIVE",
     endDate: "NOT ANNOUNCED",
@@ -107,19 +122,5 @@ export const finishedCompetitions: FinishedCompetition[] = [
       name: "NOT ANNOUNCED",
     },
   },
-  {
-    id: "finished-7",
-    title: "STORIES OF GRACE",
-    category: "CREATIVE",
-    endDate: "NOT ANNOUNCED",
-    firstPlace: {
-      name: "NOT ANNOUNCED",
-    },
-    secondPlace: {
-      name: "NOT ANNOUNCED",
-    },
-    thirdPlace: {
-      name: "NOT ANNOUNCED",
-    },
-  },
+  
 ];
