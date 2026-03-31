@@ -77,17 +77,17 @@ export const finishedCompetitions: FinishedCompetition[] = [
   },
   {
     id: "finished-5",
-    title: "BOUNCEBACK",
-    category: "DANCE",
-    endDate: "NOT ANNOUNCED",
+    title: "KICKSTART CREATIVITY",
+    category: "CREATIVE",
+    endDate: "31 Mar 2026",
     firstPlace: {
-      name: "NOT ANNOUNCED",
+      name: "Agnestasia Esther Ewitrawati",
     },
     secondPlace: {
-      name: "NOT ANNOUNCED",
+      name: "Shaquille Muhammad",
     },
     thirdPlace: {
-      name: "NOT ANNOUNCED",
+      name: "Reinaldo Wijaya",
     },
   },
   
@@ -109,8 +109,8 @@ export const finishedCompetitions: FinishedCompetition[] = [
   
   {
     id: "finished-7",
-    title: "KICKSTART CREATIVITY",
-    category: "CREATIVE",
+    title: "BOUNCEBACK",
+    category: "DANCE",
     endDate: "NOT ANNOUNCED",
     firstPlace: {
       name: "NOT ANNOUNCED",
