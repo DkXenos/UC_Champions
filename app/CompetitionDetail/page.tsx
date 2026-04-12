@@ -71,18 +71,18 @@ function CompetitionDetailContent() {
   const calculateTimeLeft = (deadline: string) => {
     // Parse the deadline (assuming format like "15 Agu 2024")
     const monthMap: { [key: string]: string } = {
-      Jan: "01",
-      Feb: "02",
-      Mar: "03",
-      Apr: "04",
-      Mei: "05",
-      Jun: "06",
-      Jul: "07",
-      Agu: "08",
-      Sep: "09",
-      Okt: "10",
-      Nov: "11",
-      Des: "12",
+      Jan: "01", January: "01", Januari: "01",
+      Feb: "02", February: "02", Februari: "02",
+      Mar: "03", March: "03", Maret: "03",
+      Apr: "04", April: "04",
+      Mei: "05", May: "05",
+      Jun: "06", June: "06", Juni: "06",
+      Jul: "07", July: "07", Juli: "07",
+      Agu: "08", August: "08", Agustus: "08",
+      Sep: "09", September: "09",
+      Okt: "10", Oct: "10", October: "10", Oktober: "10",
+      Nov: "11", November: "11",
+      Des: "12", Dec: "12", December: "12", Desember: "12",
     };
 
     console.log("Parsing deadline:", deadline);
@@ -219,25 +219,33 @@ function CompetitionDetailContent() {
                 alt="info background"
                 className="info-bg-image"
               />
-              <div className="info-content">
+                <div className="info-content">
                 <h3 className="section-title">Quick Information</h3>
                 <div className="info-item">
                   <span className="info-label">Registration Fee:</span>
-                  <span className="info-value">
-                    {competition.registrationFee}
+                  <span className="info-value break-words">
+                    {competition.registrationFee.split('\n').map((line, i) => (
+                      <span key={i} className="block">{line}</span>
+                    ))}
                   </span>
                 </div>
                 <div className="info-item">
                   <span className="info-label">Max Participants:</span>
-                  <span className="info-value">
-                    {competition.maxParticipants}
+                  <span className="info-value break-words">
+                    {competition.maxParticipants.split('\n').map((line, i) => (
+                      <span key={i} className="block">{line}</span>
+                    ))}
                   </span>
                 </div>
                 <div className="info-item">
                   <span className="info-label">Location:</span>
-                  <span className="info-value">{competition.location}</span>
+                  <span className="info-value break-words">
+                    {competition.location.split('\n').map((line, i) => (
+                      <span key={i} className="block">{line}</span>
+                    ))}
+                  </span>
                 </div>
-              </div>
+                </div>
             </div>
             <img
               src="Asset/CompetitionDetail/decor-kiri.png"

@@ -54,7 +54,7 @@ export const featuredCompetitions: Competition[] = [
     id: "7",
     title: "BOUNCEBACK", //ini judul kompetisi
     category: "DANCE", //kek buat di badge yg filtering gitu jadi bisa jadi kek ukm or kategori e
-    deadline: "CLOSED", //ini deadline kompetisi kapan terakhir daftar
+    deadline: "OPENED", //ini deadline kompetisi kapan terakhir daftar
     ukm: "BIG DANCE CREW", //ukm e apa
   },
 ];

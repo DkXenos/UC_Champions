@@ -279,6 +279,47 @@ export const competitionDetails: CompetitionDetail[] = [
     registrationLink: "https://forms.gle/ZySbWWLNFWYqmGrA6",
     contactPersonImage: "/Asset/CompetitionDetail/ContactPerson/txt.png",
   },
+  {
+    id: "7",
+    title: "BOUNCEBACK",
+    category: "DANCE",
+    deadline: "14 May 2026",
+    ukm: "UKM BDC",
+    description:
+      "BOUNCEBACK merupakan lomba tahunan yang telah berjalan selama tiga tahun dari UKM Dance Universitas Ciputra, yaitu Big Dance Crew (BDC). Lomba ini berfokus pada kompetisi tari dengan dua genre utama, yaitu Modern Dance dan K-Pop Dance, serta terdiri dari tiga kategori lomba: K-Pop Solo/Duo, K-Pop Group, dan Modern Group Dance. Setiap kategori dirancang untuk menjadi wadah bagi para penari berbakat dalam menampilkan kemampuan, kreativitas, dan karakter mereka di atas panggung. Melalui acara ini, BDC bertujuan untuk mengembangkan bakat para penari, mengasah keterampilan mereka, dan menumbuhkan rasa percaya diri dengan energi serta semangat yang positif",
+    requirements: [
+      "Lomba dibuka untuk umum (No Age Limit)",
+      "Performance tidak diperbolehkan untuk mengandung unsur SARA",
+      "Penggunaan lagi clean edit atau no explicit",
+      "Tidak boleh menggunakan properti yang dapat mengotori panggung"
+    ],
+    prizes: [
+      "Modern Dance: Rp 3.500.000 (Champion) / 2.500.000 (Runner Up)",
+      "K-Pop Group: Rp 2.500.000 (Champion) / 1.500.000 (Runner Up)",
+      "K-Pop Solo/Duo: Rp 1.500.000 (Champion) / 1.000.000 (Runner Up)",
+      " ",
+      " ",
+    ],
+    timeline: [
+      { date: "1-15 April 2026", event: "Early Bird" },
+      { date: "15 - 14 May 2026", event: "Normal Registration" },
+      { date: "15 May 2026", event: "TM" },
+      { date: "23 May 2026", event: "Hari-H" },
+      { date: " ", event: "   " },
+      { date: " ", event: "   " },
+      { date: " ", event: "   " },
+      { date: " ", event: "   " },
+    ],
+    contactInfo: {
+      email: "example@email.com",
+      phone: "+62 812 3456 7890",
+    },
+    registrationFee: "40K/75K/185K \n(Dance / Solo-Duo / Group)",
+    maxParticipants: "3-9 (Modern Dance) \n 1-2 (Solo-Duo) \n 3-9 (Group)",
+    location: "V-Junction,\n 3rd Floor,\n Ciputra World Surabaya",
+    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSfUSPw0qV4dYBvalvxiX34q_HSUFfQ5g0M7fIYltw9BH-I1sA/viewform",
+    contactPersonImage: "/Asset/CompetitionDetail/ContactPerson/bdc.png",
+  },
 ];
 
 /*
