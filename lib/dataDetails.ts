@@ -61,7 +61,7 @@ export const competitionDetails: CompetitionDetail[] = [
     location: "Online Zoom",
     registrationLink: "https://forms.gle/ReUvEHU29yPwUMwWA",
     contactPersonImage: "/Asset/CompetitionDetail/ContactPerson/pmk.png",
-  }, //Asset/CompetitionDetail/ContactPerson/
+  }, 
   {
     id: "2",
     title: "REKAM CERITA",
