@@ -123,7 +123,7 @@ export const finishedCompetitions: FinishedCompetition[] = [
   },
    {
     id: "finished-8",
-    title: "TARI TRADISIONALNEOSANTARA FEST",
+    title: "TARI TRADISIONAL NEOSANTARA FEST",
     category: "BUDAYA",
     endDate: "2 May 2026",
     firstPlace: {
