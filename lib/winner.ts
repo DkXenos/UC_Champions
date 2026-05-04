@@ -93,22 +93,53 @@ export const finishedCompetitions: FinishedCompetition[] = [
   
   {
     id: "finished-6",
-    title: "NEOSANTARA FEST",
+    title: "CIPTA BACA PUISI NEOSANTARA FEST",
     category: "BUDAYA",
-    endDate: "NOT ANNOUNCED",
+    endDate: "2 May 2026",
     firstPlace: {
-      name: "NOT ANNOUNCED",
+      name: "Dinda Ayu Varellina",
     },
     secondPlace: {
-      name: "NOT ANNOUNCED",
+      name: "Deby Rahmad Tika",
     },
     thirdPlace: {
-      name: "NOT ANNOUNCED",
+      name: "Andrew Septian Cahyo",
     },
   },
+   {
+    id: "finished-7",
+    title: "MONOLOG NEOSANTARA FEST",
+    category: "BUDAYA",
+    endDate: "2 May 2026",
+    firstPlace: {
+      name: "Nadya Rahma Saputri ",
+    },
+    secondPlace: {
+      name: "Dyah Ayu Firdasari",
+    },
+    thirdPlace: {
+      name: "Dinda Ayu Varelina",
+    },
+  },
+   {
+    id: "finished-8",
+    title: "TARI TRADISIONALNEOSANTARA FEST",
+    category: "BUDAYA",
+    endDate: "2 May 2026",
+    firstPlace: {
+      name: "Arunika ",
+    },
+    secondPlace: {
+      name: "Rumah Rentak Budaya",
+    },
+    thirdPlace: {
+      name: "Tatra Kosayu ",
+    },
+  },
+
   
   {
-    id: "finished-7",
+    id: "finished-9",
     title: "BOUNCEBACK",
     category: "DANCE",
     endDate: "NOT ANNOUNCED",
