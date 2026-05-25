@@ -140,17 +140,47 @@ export const finishedCompetitions: FinishedCompetition[] = [
   
   {
     id: "finished-9",
-    title: "BOUNCEBACK",
+    title: "KPOP SOLO/DUO BOUNCEBACK",
     category: "DANCE",
-    endDate: "NOT ANNOUNCED",
+    endDate: "23 May 2026",
     firstPlace: {
-      name: "NOT ANNOUNCED",
+      name: "ABELZ",
     },
     secondPlace: {
-      name: "NOT ANNOUNCED",
+      name: "DK",
     },
     thirdPlace: {
-      name: "NOT ANNOUNCED",
+      name: "-",
+    },
+  },
+  {
+    id: "finished-10",
+    title: "KPOP GROUP BOUNCEBACK",
+    category: "DANCE",
+    endDate: "23 May 2026",
+    firstPlace: {
+      name: "YOUNG CHIC",
+    },
+    secondPlace: {
+      name: "HIPSTER MONEY",
+    },
+    thirdPlace: {
+      name: "-",
+    },
+  },
+  {
+    id: "finished-11",
+    title: "MODERN DANCE BOUNCEBACK",
+    category: "DANCE",
+    endDate: "23 May 2026",
+    firstPlace: {
+      name: "LAST MINUTE STREET CREW",
+    },
+    secondPlace: {
+      name: "UNDOZEN",
+    },
+    thirdPlace: {
+      name: "-",
     },
   },
   
